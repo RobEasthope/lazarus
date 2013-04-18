@@ -8,9 +8,9 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
-        'assets/js/*.js',
-        'assets/js/plugins/*.js',
-        '!assets/js/scripts.min.js'
+        'assets/themes/saffron/js/*.js',
+        'assets/themes/saffron/js/plugins/*.js',
+        '!assets/themes/saffron/js/scripts.min.js'
       ]
     },
     recess: {
@@ -20,10 +20,10 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'assets/css/main.min.css': [
-            'assets/css/less/bootstrap/bootstrap.less',
-            'assets/css/less/retina/retina.less',
-            'assets/css/less/app.less'
+          'assets/themes/saffron/css/main.min.css': [
+            'assets/themes/saffron/css/less/bootstrap/bootstrap.less',
+            'assets/themes/saffron/css/less/retina/retina.less',
+            'assets/themes/saffron/css/less/app.less'
           ]
         }
       }
@@ -31,22 +31,22 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'assets/js/scripts.min.js': [
-            'assets/js/plugins/bootstrap/bootstrap-transition.js',
-            'assets/js/plugins/bootstrap/bootstrap-alert.js',
-            'assets/js/plugins/bootstrap/bootstrap-button.js',
-            'assets/js/plugins/bootstrap/bootstrap-carousel.js',
-            'assets/js/plugins/bootstrap/bootstrap-collapse.js',
-            'assets/js/plugins/bootstrap/bootstrap-dropdown.js',
-            'assets/js/plugins/bootstrap/bootstrap-modal.js',
-            'assets/js/plugins/bootstrap/bootstrap-tooltip.js',
-            'assets/js/plugins/bootstrap/bootstrap-popover.js',
-            'assets/js/plugins/bootstrap/bootstrap-scrollspy.js',
-            'assets/js/plugins/bootstrap/bootstrap-tab.js',
-            'assets/js/plugins/bootstrap/bootstrap-typehead.js',
-            'assets/js/plugins/retina/retina.js',
-            'assets/js/plugins/*.js',
-            'assets/js/_*.js'
+          'assets/themes/saffron/js/scripts.min.js': [
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-transition.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-alert.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-button.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-carousel.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-collapse.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-dropdown.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-modal.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-tooltip.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-popover.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-scrollspy.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-tab.js',
+            'assets/themes/saffron/js/plugins/bootstrap/bootstrap-typehead.js',
+            'assets/themes/saffron/js/plugins/retina/retina.js',
+            'assets/themes/saffron/js/plugins/*.js',
+            'assets/themes/saffron/js/_*.js'
           ]
         }
       }
@@ -54,9 +54,9 @@ module.exports = function(grunt) {
     watch: {
       less: {
         files: [
-          'assets/css/less/*.less',
-          'assets/css/less/bootstrap/*.less',
-          'assets/css/less/retina/*.less'
+          'assets/themes/saffron/css/less/*.less',
+          'assets/themes/saffron/css/less/bootstrap/*.less',
+          'assets/themes/saffron/css/less/retina/*.less'
         ],
         tasks: ['recess']
       },
@@ -69,8 +69,8 @@ module.exports = function(grunt) {
     },
     clean: {
       dist: [
-        'assets/css/main.min.css',
-        'assets/js/scripts.min.js'
+        'assets/themes/saffron/css/main.min.css',
+        'assets/themes/saffron/js/scripts.min.js'
       ]
     }
   });
