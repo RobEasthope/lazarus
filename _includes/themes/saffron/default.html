@@ -14,6 +14,10 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Typekit -->
+    <script type="text/javascript" src="//use.typekit.net/ypu6qvg.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/main.min.css" rel="stylesheet" type="text/css" media="all">
 
@@ -32,10 +36,11 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      
+      <div class="navbar">
+        <div class="navbar-inner">
           <ul class="nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
@@ -43,7 +48,7 @@
           </ul>
         </div>
       </div>
-    </div>
+
 
     <div class="container-narrow">
 

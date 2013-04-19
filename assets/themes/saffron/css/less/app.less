@@ -3,3 +3,62 @@ cd c:\Apps\wamp\www\robeasthope.github.io
 grunt watch
 */
 
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+@import "bootstrap/responsive-utilities.less";
+@import "bootstrap/utilities.less";
+@import "retina/retina.less";
+
+/******************************************************************************
+	Base
+******************************************************************************/
+// --- Structure ---
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+// --- Typography ---
+
+code {
+	font-size: 1.4rem;
+}
+
+/******************************************************************************
+	Branding
+******************************************************************************/
+
+.brand {
+	font-family: "flood-std", @font-family-sans-serif;
+	color: @text-color;
+	font-size: 3.2rem;
+	text-align: center;
+	display: block;
+
+	.at2x('../img/branding/roundel.png', 64px, 64px);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 74px;
+
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+
+}
+
+/******************************************************************************
+	Navigation
+******************************************************************************/
+
+.navbar {
+	background-color: transparent;
+}
+
+/******************************************************************************
+	Footer
+******************************************************************************/
+
+footer {
+	text-align: center;
+}
