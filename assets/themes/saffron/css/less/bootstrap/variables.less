@@ -40,17 +40,17 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
-@font-size-large:         (@font-size-base * 1.25); // ~18px
-@font-size-small:         (@font-size-base * 0.85); // ~12px
-@font-size-mini:          (@font-size-base * 0.75); // ~11px
+@font-size-base:          1.8rem;
+@font-size-large:         (@font-size-base * 2.0rem); // ~18px
+@font-size-small:         (@font-size-base * 1.4rem); // ~12px
+@font-size-mini:          (@font-size-base * 1.2rem); // ~11px
 
-@line-height-base:        20px;
+@line-height-base:        2.7rem;
 
 @headings-font-family:    inherit; // empty to use BS default, @font-family-base
 @headings-font-weight:    500;
@@ -60,13 +60,13 @@
 // -------------------------
 // Based on 14px font-size and 1.5 line-height
 
-@padding-large:           11px 14px; // 44px
-@padding-small:           2px 10px;  // 26px
-@padding-mini:            0 6px;   // 22px
+@padding-large:           1.1rem 1.4rem; // 44px
+@padding-small:           0.2rem 1rem;  // 26px
+@padding-mini:            0 0.6rem;   // 22px
 
-@border-radius-base:      4px;
-@border-radius-large:     6px;
-@border-radius-small:     3px;
+@border-radius-base:      0rem;
+@border-radius-large:     0rem;
+@border-radius-small:     0rem;
 
 @component-active-bg:            @brand-primary;
 
@@ -116,9 +116,9 @@
 
 @input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-base + 14px); // base line-height + 12px vertical padding + 2px top/bottom border
-@input-height-large:             (@line-height-base + 24px); // base line-height + 22px vertical padding + 2px top/bottom border
-@input-height-small:             (@line-height-base + 6px);  // base line-height + 4px vertical padding + 2px top/bottom border
+@input-height-base:              (@line-height-base + 1.4rem); // base line-height + 12px vertical padding + 2px top/bottom border
+@input-height-large:             (@line-height-base + 2.4rem); // base line-height + 22px vertical padding + 2px top/bottom border
+@input-height-small:             (@line-height-base + 0.6rem);  // base line-height + 4px vertical padding + 2px top/bottom border
 
 @form-actions-bg:                 #f5f5f5;
 
@@ -170,11 +170,11 @@
 @navbar-bg:                        #eee;
 
 // Navbar links
-@navbar-link-color:                #777;
-@navbar-link-hover-color:          #333;
+@navbar-link-color:                @text-color;
+@navbar-link-hover-color:          @text-color;
 @navbar-link-hover-bg:             transparent;
-@navbar-link-active-color:         #555;
-@navbar-link-active-bg:            darken(@navbar-bg, 10%);
+@navbar-link-active-color:         @text-color;
+@navbar-link-active-bg:            transparent;
 @navbar-link-disabled-color:       #ccc;
 @navbar-link-disabled-bg:          transparent;
 
