@@ -10,9 +10,7 @@ tag: landing
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
+          {% include themes/saffron/nav.html %}
         </ul>
       </div>
     </div>
