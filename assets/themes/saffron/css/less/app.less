@@ -30,6 +30,7 @@ small {font-size: 1.4rem;}
 	color: white;
 	background-repeat: no-repeat;
 	background-position: center top;
+	max-height: 2128px;
 
 	// Background fallback
 	background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
@@ -101,11 +102,13 @@ small {font-size: 1.4rem;}
 	  text-align:center;
 	}
 
-	.navbar .nav>li>
-	.navbar .nav>li>a:focus {
-		color: white;
-		&:hover, &:hover {
+	.navbar .nav > li {
+		> a {
+			color: white;
 
+			&:hover, &:focus {
+				color: white;
+			}
 		}
 	}
 }
