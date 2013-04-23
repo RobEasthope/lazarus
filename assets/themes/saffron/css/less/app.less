@@ -13,39 +13,117 @@ grunt watch
 	Base
 ******************************************************************************/
 // --- Structure ---
-body {
-	padding-left: 20px;
-	padding-right: 20px;
-}
+body {max-width: 2800px}
 
 // --- Typography ---
 
-code {
-	font-size: 1.4rem;
-}
+code {font-size: 1.4rem;}
+
+small {font-size: 1.4rem;}
 
 /******************************************************************************
 	Branding
 ******************************************************************************/
-
-.brand {
-	font-family: "flood-std", @font-family-sans-serif;
-	color: @text-color;
-	font-size: 3.2rem;
+.jumbotron {
+	// Structure
 	text-align: center;
-	display: block;
-
-	.at2x('../img/branding/roundel.png', 64px, 64px);
+	color: white;
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding-top: 74px;
+	max-height: 2128px;
+
+	// Background fallback
+	background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
+
+	// Background mobile
+	@media (min-width: 200px) and (max-width: 320px) and (orientation : portrait){
+		.at2x('../img/branding/seaclouds-portrait-mobile.jpg', 320px, 569px);
+		max-height: 569px;
+	}
+
+	@media (min-width: 200px) and (max-width: 569px) and (orientation : landscape){
+		.at2x('../img/branding/seaclouds-landscape-mobile.jpg', 569px, 320px);
+		max-height: 320px;
+	}
+
+	// Background tablet
+	@media (min-width: 320px)
+	and (max-width: 768px)
+	and (orientation : portrait) {
+		.at2x('../img/branding/seaclouds-portrait-tablet.jpg', 768px, 1024px);
+		max-height: 1024px;
+	}
+
+	@media (min-width: 768px)
+	and (max-width: 1024px) {
+		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
+		max-height: 768px;
+	}
+
+	@media (min-width: 768px)
+	and (max-width: 1024px)
+	and (orientation : landscape){
+		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
+		max-height: 768px;
+	}
+
+	// Desktop
+	@media (min-width: 1024px) and (max-width: 1600px) {
+		.at2x('../img/branding/seaclouds-landscape-widescreen.jpg');
+		max-height: 788px;
+	}
+
+	// IMAX
+	@media (min-width: 1600px) {
+		background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
+		max-height: 1575px;
+	}
 
 
-		&:hover, &:focus {
+	// Jumbotron content
+	.brand {
+		display: block;
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: white;
+
+
+			&:hover, &:focus {
 			text-decoration: none;
-		}
+			color: inherit;
+			}
 
+		.at2x('../img/branding/roundel.png', 64px, 64px);
+		background-repeat: no-repeat;
+		background-position: center top;
+		padding-top: 74px;
+	}
+
+	.navbar .nav,
+	.navbar .nav > li {
+	  float:none;
+	  display:inline-block;
+	  *display:inline; /* ie7 fix */
+	  *zoom:1; /* hasLayout ie7 trigger */
+	  vertical-align: top;
+	}
+
+	.navbar-inner {
+	  text-align:center;
+	}
+
+	.navbar .nav > li {
+		> a {
+			color: white;
+
+			&:hover, &:focus {
+				color: white;
+			}
+		}
+	}
 }
+
 
 /******************************************************************************
 	Navigation
@@ -53,6 +131,16 @@ code {
 
 .navbar {
 	background-color: transparent;
+}
+
+
+
+/******************************************************************************
+	Footer
+******************************************************************************/
+
+.content {
+
 }
 
 /******************************************************************************

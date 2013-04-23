@@ -46,6 +46,7 @@ module.exports = function(grunt) {
             'assets/themes/saffron/js/plugins/bootstrap/bootstrap-typehead.js',
             'assets/themes/saffron/js/plugins/retina/retina.js',
             'assets/themes/saffron/js/plugins/*.js',
+            'assets/themes/saffron/js/custom.js',
             'assets/themes/saffron/js/_*.js'
           ]
         }
@@ -64,7 +65,7 @@ module.exports = function(grunt) {
         files: [
           '<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'uglify', 'version']
+        tasks: ['jshint', 'uglify']
       }
     },
     clean: {
