@@ -4,15 +4,17 @@ title: Hello World!
 tag: landing
 ---
 <div class="jumbotron">
-  <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-  <span class="profession">Frontend designer</span>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <ul class="nav">
-        {% assign pages_list = site.pages %}
-        {% assign group = 'navigation' %}
-        {% include JB/pages_list %}
-      </ul>
+  <div class="jumbotron-content-wrap">
+    <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+    <span class="profession">Frontend designer</span>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          {% assign pages_list = site.pages %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
