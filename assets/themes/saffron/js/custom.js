@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	if ($(window).height() > $(".jumbotron-content-wrap").height()) {
-		$(".jumbotron").css("height",function(){
+		$(".jumbotron").css("min-height",function(){
 			return $(window).height();
 		});
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	if ($(window).height() > $(".jumbotron-content-wrap").height()) {
-		$(".jumbotron").css("height",function(){
+		$(".jumbotron").css("min-height",function(){
 			return $(window).height();
 		});
 

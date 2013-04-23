@@ -13,11 +13,7 @@ grunt watch
 	Base
 ******************************************************************************/
 // --- Structure ---
-<<<<<<< HEAD
 body {max-width: 2800px}
-=======
-body {}
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 
 // --- Typography ---
 
@@ -37,74 +33,42 @@ small {font-size: 1.4rem;}
 	max-height: 2128px;
 
 	// Background fallback
-	background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
+	background-image: url('../img/branding/seaclouds-portrait-mobile.jpg');
+	max-height: 569px;
 
 	// Background mobile
 	@media (min-width: 200px) and (max-width: 320px) and (orientation : portrait){
 		.at2x('../img/branding/seaclouds-portrait-mobile.jpg', 320px, 569px);
-<<<<<<< HEAD
 		max-height: 569px;
-=======
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 	}
 
 	@media (min-width: 200px) and (max-width: 569px) and (orientation : landscape){
 		.at2x('../img/branding/seaclouds-landscape-mobile.jpg', 569px, 320px);
-<<<<<<< HEAD
 		max-height: 320px;
-=======
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 	}
 
 	// Background tablet
-	@media (min-width: 320px)
-	and (max-width: 768px)
-	and (orientation : portrait) {
+	@media (min-width: 320px) and (max-width: 768px) and (orientation : portrait) {
 		.at2x('../img/branding/seaclouds-portrait-tablet.jpg', 768px, 1024px);
-<<<<<<< HEAD
 		max-height: 1024px;
 	}
 
-	@media (min-width: 768px)
-	and (max-width: 1024px) {
+	@media (min-width: 569px) and (max-width: 1024px) and (orientation : landscape){
 		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
 		max-height: 768px;
-=======
-	}
-
-		@media (min-width: 768px)
-	and (max-width: 1024px) {
-		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
-	}
-
-	@media (min-width: 768px)
-	and (max-width: 1024px)
-	and (orientation : landscape){
-		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
-<<<<<<< HEAD
-		max-height: 768px;
-=======
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 	}
 
 	// Desktop
 	@media (min-width: 1024px) and (max-width: 1600px) {
 		.at2x('../img/branding/seaclouds-landscape-widescreen.jpg');
-<<<<<<< HEAD
 		max-height: 788px;
-=======
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 	}
 
 	// IMAX
 	@media (min-width: 1600px) {
 		background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
-<<<<<<< HEAD
 		max-height: 1575px;
-=======
 		background-size: 1024px 768px;
->>>>>>> 08836fb1db22221850c2b2b0aeba166be6819520
 	}
 
 
