@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Hello World!
+title: Rob Easthope
 tag: landing
 ---
 <div class="jumbotron">
   <div class="jumbotron-content-wrap">
     <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-    <span class="profession">Frontend designer</span>
+    <span class="profession">Front end designer &amp; developer</span>
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
@@ -16,6 +16,9 @@ tag: landing
     </div>
   </div>
 </div>
+<p class="index-padding"></p>
+
+
 {% include JB/setup %}
 
 

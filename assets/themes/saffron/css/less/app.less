@@ -7,6 +7,7 @@ grunt watch
 @import "bootstrap/mixins.less";
 @import "bootstrap/responsive-utilities.less";
 @import "bootstrap/utilities.less";
+@import "bootstrap/grid.less";
 @import "retina/retina.less";
 
 /******************************************************************************
@@ -22,7 +23,7 @@ code {font-size: 1.4rem;}
 small {font-size: 1.4rem;}
 
 /******************************************************************************
-	Branding
+	Masthead
 ******************************************************************************/
 .jumbotron {
 	// Structure
@@ -31,6 +32,11 @@ small {font-size: 1.4rem;}
 	background-repeat: no-repeat;
 	background-position: center top;
 	max-height: 2128px;
+
+	// Jekyll hack to ensure 100% width
+	position: absolute;
+	width: 100%;
+	left: 0px;
 
 	// Background fallback
 	background-image: url('../img/branding/seaclouds-portrait-mobile.jpg');
@@ -92,6 +98,10 @@ small {font-size: 1.4rem;}
 		padding-top: 74px;
 	}
 
+	.navbar {
+	background-color: transparent;
+	}
+
 	.navbar .nav,
 	.navbar .nav > li {
 	  float:none;
@@ -122,7 +132,19 @@ small {font-size: 1.4rem;}
 ******************************************************************************/
 
 .navbar {
-	background-color: transparent;
+	background-color: white;
+
+	.navbar-brand {
+		display: block;
+		height: 30px;
+		width: 30px;
+		margin-left: 15px;
+		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.nav {float: right;}
 }
 
 
@@ -131,8 +153,29 @@ small {font-size: 1.4rem;}
 	Footer
 ******************************************************************************/
 
-.content {
+.container-narrow {
+	.container-fixed();
+	@media screen and (max-width: 768px) {
+	    margin-left: 15px;
+	    margin-right: 15px;
+	}
 
+	// Responsive: Tablets and up
+	@media screen and (min-width: 768px) {
+	    max-width: 728px;
+	}
+
+	// Responsive: Desktops and up
+	@media screen and (min-width: 992px) {
+	
+	    max-width: 940px;
+	  
+	}
+
+	// Responsive: Large desktops and up
+	@media screen and (min-width: 1200px) {
+	    max-width: 1170px;
+	}
 }
 
 /******************************************************************************

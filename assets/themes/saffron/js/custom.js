@@ -7,6 +7,10 @@ $(document).ready(function() {
 		$(".jumbotron-content-wrap").css("margin-top",function(){
 			return ($(".jumbotron").height() - $(".jumbotron-content-wrap").height()) / 2;
 		});
+
+		$(".index-padding").css("padding-bottom",function(){
+			return $(window).height();
+		});
 	}
 });
 
@@ -19,5 +23,10 @@ $(window).resize(function() {
 		$(".jumbotron-content-wrap").css("margin-top",function(){
 			return ($(".jumbotron").height() - $(".jumbotron-content-wrap").height()) / 2;
 		});
+		
+		$(".index-padding").css("padding-bottom",function(){
+			return $(window).height();
+		});
+
 	}
 });
