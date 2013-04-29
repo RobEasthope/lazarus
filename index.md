@@ -19,47 +19,79 @@ tag: landing
 
 
 {% include JB/setup %}
+
+<h1>Featured work</h1>
 <div class="row">
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+  <div class="thumbnails">
+    <div class="col-span-4">
+      <div class="thumbnail brixton">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>The Brixton Advice Centre</h5>
+            <p>Website</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+    <div class="col-span-4">
+      <div class="thumbnail lambeth">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>The Lambeth Advice Network</h5>
+            <p>Website</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+    <div class="col-span-4">
+      <div class="thumbnail lancastrians">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>The Association of Lancastrians in London</h5>
+            <p>Website &amp; logo design</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+    <div class="col-span-4">
+      <div class="thumbnail eufn">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>EUFN</h5>
+            <p>Website &amp; logo design</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+    <div class="col-span-4">
+      <div class="thumbnail layla">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>Layla Moran PPC</h5>
+            <p>Website &amp; logo design</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-span-4">
-    <div class="thumbnail layla">
-      <img data-src="holder.js/300x200" alt="">
-      <h3>Layla</h3>
-      <p>Layla Moran PPC (Oxford West &amp; Abingdon)</p>
+    <div class="col-span-4">
+      <div class="thumbnail ambr">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+              <h5>AMBR</h5>
+              <p>Logo design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-4">
+      <div class="thumbnail saffron">
+        <div class="thumbnail-rollover">
+          <div class="thumbnail-text-wrap">
+            <h5>Portfolio</h5>
+            <p>Website &amp; logo design</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
