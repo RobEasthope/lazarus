@@ -5,8 +5,8 @@ function oknFullScreen() {
 			return $(window).width();
 		});
 
-		$(".jumbotron").css("min-height",function(){
-			//return $(window).height();
+		$(".content").css("margin-top",function(){
+			return $(".navbar-fixed-top").height();
 		});
 
 		// Center jumbotron content vertically

@@ -7,7 +7,6 @@ grunt watch
 @import "bootstrap/mixins.less";
 @import "bootstrap/responsive-utilities.less";
 @import "bootstrap/utilities.less";
-@import "bootstrap/grid.less";
 @import "retina/retina.less";
 
 /******************************************************************************
@@ -24,10 +23,33 @@ small {font-size: 1.4rem;}
 
 .section-header {
 	margin-top: @line-height-base * 3;
-
 	font-weight: normal;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+/******************************************************************************
+	Navigation
+******************************************************************************/
+
+.navbar {
+	background-color: white;
+
+	.navbar-brand {
+		display: block;
+		height: 30px;
+		width: 30px;
+		margin-left: 15px;
+		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		@media (min-width: 768px) {
+			margin-top: 10px;
+		}
+	}
+
+	.nav {float: right;}
 }
 
 /******************************************************************************
@@ -42,49 +64,39 @@ small {font-size: 1.4rem;}
 	max-height: 2128px;
 
 	// Background fallback
-	background-image: url('../img/branding/seaclouds-portrait-mobile.jpg');
-	max-height: 569px;
+	background-image: url('../img/branding/sea-bkg-desktop.jpg');
+	height: 471px;
 
 	// Background mobile
-	@media (min-width: 200px) and (max-width: 320px) and (orientation : portrait){
-		.at2x('../img/branding/seaclouds-portrait-mobile.jpg', 320px, 569px);
-		max-height: 569px;
+	@media (min-width: 200px) and (max-width: 320px){
+		.at2x('../img/branding/sea-bkg-mobile-small.jpg', 320px, 471px);
 	}
 
-	@media (min-width: 200px) and (max-width: 569px) and (orientation : landscape){
-		.at2x('../img/branding/seaclouds-landscape-mobile.jpg', 569px, 320px);
-		max-height: 320px;
+	@media (min-width: 320px) and (max-width: 500px){
+		.at2x('../img/branding/sea-bkg-mobile-large.jpg', 569px, 471px);
 	}
 
 	// Background tablet
-	@media (min-width: 320px) and (max-width: 768px) and (orientation : portrait) {
-		.at2x('../img/branding/seaclouds-portrait-tablet.jpg', 768px, 1024px);
-		max-height: 1024px;
-	}
-
-	@media (min-width: 569px) and (max-width: 1024px) and (orientation : landscape){
-		.at2x('../img/branding/seaclouds-landscape-tablet.jpg', 1024px, 768px);
-		max-height: 768px;
+	@media (min-width: 500px) and (max-width: 720px) {
+		.at2x('../img/branding/sea-bkg-tablet.jpg', 768px, 471px);
 	}
 
 	// Desktop
-	@media (min-width: 1024px) and (max-width: 1600px) {
-		.at2x('../img/branding/seaclouds-landscape-widescreen.jpg');
-		max-height: 788px;
+	@media (min-width: 720px) and (max-width: 1400px) {
+		.at2x('../img/branding/sea-bkg-desktop.jpg');
 	}
 
 	// IMAX
 	@media (min-width: 1600px) {
-		background-image: url('../img/branding/seaclouds-landscape-widescreen-max.jpg');
-		max-height: 1575px;
-		background-size: 1024px 768px;
+		background-image: url('../img/branding/sea-bkg-imax.jpg');
+		background-size: contain;
 	}
 
 
 	// Jumbotron content
 	.brand {
 		display: block;
-		font-size: 4.25rem;
+		font-size: 3.2rem;
 		font-weight: 600;
 		text-transform: uppercase;
 		color: white;
@@ -130,26 +142,38 @@ small {font-size: 1.4rem;}
 }
 
 
+
+
 /******************************************************************************
-	Navigation
+	Social icons
 ******************************************************************************/
+.social-icons-wrap {
+	text-align: center;
 
-.navbar {
-	background-color: white;
-
-	.navbar-brand {
-		display: block;
-		height: 30px;
-		width: 30px;
-		margin-left: 15px;
-		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-
-	.nav {float: right;}
 }
 
+.social-icon {
+	display: inline-block;
+	margin-left: 16px;
+	margin-right: 16px;
+	width: 64px;
+	height: 64px;
+}
+
+.twitter-icon {
+	.social-icon();
+	.at2x('../img/social/twitter-colour.png', 64px, 64px);
+}
+
+.github-icon {
+	.social-icon();
+	.at2x('../img/social/github-colour.png', 64px, 64px);
+}
+
+.behance-icon {
+	.social-icon();
+	.at2x('../img/social/behance-colour.png', 64px, 64px);
+}
 
 
 /******************************************************************************
@@ -303,26 +327,5 @@ footer {
 
 	p {margin-top: @line-height-base}
 
-	.footer-icon {
-		display: inline-block;
-		margin-left: 16px;
-		margin-right: 16px;
-		width: 64px;
-		height: 64px;
-	}
 
-	.twitter-icon {
-		.footer-icon();
-		.at2x('../img/social/twitter-colour.png', 64px, 64px);
-	}
-
-	.github-icon {
-		.footer-icon();
-		.at2x('../img/social/github-colour.png', 64px, 64px);
-	}
-
-	.behance-icon {
-		.footer-icon();
-		.at2x('../img/social/behance-colour.png', 64px, 64px);
-	}
 }

@@ -3,24 +3,20 @@ layout: page
 title: Rob Easthope
 tag: landing
 ---
-<div class="jumbotron">
-  <div class="jumbotron-content-wrap">
-    <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-    <span class="profession">Front end designer &amp; developer</span>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav">
-          {% include themes/saffron/nav.html %}
-        </ul>
-      </div>
+<div class="masthead">
+  <div class="jumbotron">
+    <div class="jumbotron-content-wrap">
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <h4 class="profession">Front end designer &amp; developer</h4>
     </div>
   </div>
+  <div class="social-icons-wrap">
+    <a class="twitter-icon" href="#"><span class="invisible">clear</span></a>
+    <a class="github-icon" href="#"><span class="invisible">clear</span></a>
+    <a class="behance-icon" href="#"><span class="invisible">clear</span></a>
+  </div>
 </div>
-<div class="row">
-  <a class="twitter-icon" href="#"></a>
-  <a class="github-icon" href="#"></a>
-  <a class="behance-icon" href="#"></a>
-</div>
+
 
 {% include JB/setup %}
 
@@ -28,9 +24,11 @@ tag: landing
 
 <h4 class="section-header">About</h4>
 
-I am an web designer and developer with a penchant for creating responsive websites and branding.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-I grew up in Wiltshire and currently reside in London, England.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
 <h4 class="section-header">Featured work</h4>
 <div class="row">
