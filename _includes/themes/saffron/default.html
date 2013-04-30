@@ -37,7 +37,6 @@
 
   <body>
 
-      {% if page.tag != 'landing' %}
       <div class="navbar navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -54,19 +53,19 @@
             </nav>
           </div>
         </div>
-      {% endif %}
 
     <div class="container">
 
       <div class="content">
         {{ content }}
       </div>
-      <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
+        <div class="row">
+          <a class="twitter-icon" href="#"></a>
+          <a class="github-icon" href="#"></a>
+          <a class="behance-icon" href="#"></a>
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+        </div>
       </footer>
       
       <!-- Javascript -->
