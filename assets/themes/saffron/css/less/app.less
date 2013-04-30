@@ -22,6 +22,14 @@ code {font-size: 1.4rem;}
 
 small {font-size: 1.4rem;}
 
+.section-header {
+	margin-top: @line-height-base * 3;
+
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 /******************************************************************************
 	Masthead
 ******************************************************************************/
@@ -161,6 +169,7 @@ small {font-size: 1.4rem;}
 		height: 300px;
 		padding: 0;
 
+		background-size: 360px 300px;
 		background-position: center center;
 		background-repeat: no-repeat;
 		display: table;
@@ -198,7 +207,7 @@ small {font-size: 1.4rem;}
 	}
 
 	.ambr {
-		.at2x('../img/branding/ambr/ambr-thumbnail.png', 354px, 292px);
+		.at2x('../img/ambr/ambr-thumbnail.png', 354px, 292px);
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -230,7 +239,7 @@ small {font-size: 1.4rem;}
 	}
 
 	.lambeth {
-		.at2x('../img/branding/brixton/lambeth-thumbnail.png', 354px, 292px);
+		.at2x('../img/brixton/lambeth-thumbnail.png', 354px, 292px);
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -289,4 +298,31 @@ small {font-size: 1.4rem;}
 
 footer {
 	text-align: center;
+	margin-top: @line-height-base * 3;
+	margin-bottom: @line-height-base * 3;
+
+	p {margin-top: @line-height-base}
+
+	.footer-icon {
+		display: inline-block;
+		margin-left: 16px;
+		margin-right: 16px;
+		width: 64px;
+		height: 64px;
+	}
+
+	.twitter-icon {
+		.footer-icon();
+		.at2x('../img/social/twitter-colour.png', 64px, 64px);
+	}
+
+	.github-icon {
+		.footer-icon();
+		.at2x('../img/social/github-colour.png', 64px, 64px);
+	}
+
+	.behance-icon {
+		.footer-icon();
+		.at2x('../img/social/behance-colour.png', 64px, 64px);
+	}
 }
