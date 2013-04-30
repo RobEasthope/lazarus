@@ -16,11 +16,23 @@ tag: landing
     </div>
   </div>
 </div>
-
+<div class="row">
+  <a class="twitter-icon" href="#"></a>
+  <a class="github-icon" href="#"></a>
+  <a class="behance-icon" href="#"></a>
+</div>
 
 {% include JB/setup %}
 
-<h1>Featured work</h1>
+
+
+<h4 class="section-header">About</h4>
+
+I am an web designer and developer with a penchant for creating responsive websites and branding.
+
+I grew up in Wiltshire and currently reside in London, England.
+
+<h4 class="section-header">Featured work</h4>
 <div class="row">
   <div class="thumbnails">
     <div class="col-span-4">
@@ -96,4 +108,7 @@ tag: landing
   </div>
 </div>
 
-
+<div class="row">
+  <h4 class="section-header">Contact</h4>
+  If you would like to say hello or work with me on a project, feel free to <a href="mailton: robeasthope@gmail.com">contact me</a>.
+</div>
