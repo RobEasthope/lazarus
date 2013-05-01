@@ -18,10 +18,12 @@ function oknFullScreen() {
 }
 
 function oknSocialIcons() {
-	//Offset content
-	$(".social-icons-wrap").css("margin-top",function(){
-		return (($(window).height() - ($(".navbar-fixed-top").height() + $(".jumbotron").height() + $(".social-icons-wrap").height())) / 4);
-	});
+	if (($(".navbar-fixed-top").height() + $(".jumbotron").height() + 60) < $(window).height()) {
+		//Offset content
+		$(".social-icons-wrap").css("margin-top",function(){
+			return (($(window).height() - ($(".navbar-fixed-top").height() + $(".jumbotron").height() + $(".social-icons-wrap").height())) / 4);
+		});
+	}
 }
 
 function oknThumbnail() {
@@ -49,13 +51,13 @@ function oknThumbnailText() {
 $(document).ready(function() {
 	oknFullScreen();
 	oknThumbnail();
-	oknSocialIcons()
+	oknSocialIcons();
 });
 
 $(window).resize(function() {
 	oknFullScreen();
 	oknThumbnail();
-	oknSocialIcons()
+	oknSocialIcons();
 });
 
 $(".thumbnail").mouseover(function() {
