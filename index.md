@@ -6,8 +6,7 @@ tag: landing
 <div class="masthead">
   <div class="jumbotron">
     <div class="jumbotron-content-wrap">
-      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-      <h4 class="profession">Front end designer &amp; developer</h4>
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }} is a front end designer &amp; developer</a>
     </div>
   </div>
   <div class="social-icons-wrap">
