@@ -6,13 +6,13 @@ tag: landing
 <div class="masthead">
   <div class="jumbotron">
     <div class="jumbotron-content-wrap">
-      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }} is a front end designer &amp; developer</a>
+      <a class="brand" href="{{ HOME_PATH }}"><h1>{{ site.title }} is a front end designer &amp; developer</h1></a>
     </div>
   </div>
   <div class="social-icons-wrap">
-    <a class="twitter-icon" href="#"><span class="invisible">clear</span></a>
-    <a class="github-icon" href="#"><span class="invisible">clear</span></a>
-    <a class="behance-icon" href="#"><span class="invisible">clear</span></a>
+    <a class="twitter-icon" href="#"><span class="invisible">Twitter</span></a>
+    <a class="github-icon" href="#"><span class="invisible">Github</span></a>
+    <a class="behance-icon" href="#"><span class="invisible">Behance</span></a>
   </div>
 </div>
 
@@ -21,7 +21,7 @@ tag: landing
 
 
 
-<h4 class="section-header">About</h4>
+<h1 class="section-header">About</h1>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
@@ -29,7 +29,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
-<h4 class="section-header">Featured work</h4>
+<h1 class="section-header">Featured work</h1>
+
 <div class="row">
   <div class="thumbnails">
     <div class="col-span-4">
@@ -106,6 +107,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 </div>
 
 <div class="row">
-  <h4 class="section-header">Contact</h4>
+  <h1 class="section-header">Contact</h1>
   If you would like to say hello or work with me on a project, feel free to <a href="mailton: robeasthope@gmail.com">contact me</a>.
 </div>
