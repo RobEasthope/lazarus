@@ -14,7 +14,21 @@ grunt watch
 	Base
 ******************************************************************************/
 // --- Structure ---
+//Sticky Footer
+html, body {height: 100%;}
 
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -19.2rem auto; /* the bottom margin is the negative value of the footer's height */
+}
+
+.push {  height: 19.2rem; /* .push must be the same height as .footer */  }
+
+.footer {
+  height: 19.2rem; /* .push must be the same height as .footer */
+}
 
 // --- Typography ---
 
