@@ -12,7 +12,7 @@ function oknFullScreen() {
 
 		// Center jumbotron on screen
 		$(".jumbotron").css("margin-left",function(){
-			return -(($(window).width() - $(".col-span-12").width()) / 2);
+			return -(($(window).width() - $(".col-lg-12").width()) / 2);
 		});
 	}
 }

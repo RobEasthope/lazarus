@@ -4,6 +4,7 @@ grunt watch
 */
 
 @import "bootstrap/variables.less";
+@import "bootstrap/variables-custom.less";
 @import "bootstrap/mixins.less";
 @import "bootstrap/responsive-utilities.less";
 @import "bootstrap/utilities.less";
@@ -21,13 +22,13 @@ html, body {height: 100%;}
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -19.2rem auto; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -165px auto; /* the bottom margin is the negative value of the footer's height */
 }
 
-.push {  height: 19.2rem; /* .push must be the same height as .footer */  }
+.push {  height: 165px; /* .push must be the same height as .footer */  }
 
-.footer {
-  height: 19.2rem; /* .push must be the same height as .footer */
+footer {
+  height: 165px; /* .push must be the same height as .footer */
 }
 
 // --- Typography ---
@@ -36,11 +37,11 @@ code {font-size: 1.4rem;}
 
 small {font-size: 1.4rem;}
 
-.section-header {
+.page-header {
 	margin-top: @line-height-base * 3;
-	font-weight: normal;
 	text-transform: uppercase;
 	text-align: center;
+	border-bottom: none;
 }
 
 /******************************************************************************
@@ -361,8 +362,11 @@ small {font-size: 1.4rem;}
 
 footer {
 	text-align: center;
-	margin-top: @line-height-base * 3;
-	margin-bottom: @line-height-base * 3;
+	.row {
+		padding-top: 80px; // =@line-height-base * 3
+		padding-bottom: 25px;
+	}
+	
 
 	p {margin-top: @line-height-base}
 
