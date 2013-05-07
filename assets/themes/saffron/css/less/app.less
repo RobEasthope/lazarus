@@ -37,6 +37,8 @@ code {font-size: 1.4rem;}
 
 small {font-size: 1.4rem;}
 
+h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
+
 .page-header {
 	margin-top: @line-height-base * 3;
 	text-transform: uppercase;
@@ -65,8 +67,21 @@ small {font-size: 1.4rem;}
 		}
 	}
 
-	.nav {float: right;}
+		@media screen and (min-width: 768px) {
+		.nav {
+			float: right;
+		}
+	}
 }
+
+	// Nav hacks while waiting for BS 3.0 to settle down
+	.nav  li > a {
+		color: @text-color;
+		&:hover, &:focus {
+			color: @text-color;
+			background-color: white;
+		}
+	}
 
 /******************************************************************************
 	Masthead
@@ -76,38 +91,73 @@ small {font-size: 1.4rem;}
 	text-align: center;
 	color: white;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center top;
 	height: 350px;
+	background-size: 100%;
 
 	// Background fallback
-	background-image: url('../img/branding/sea-bkg-desktop.jpg');
+	background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
 
 	// Background mobile
-	@media (min-width: 200px) and (max-width: 320px){
-		.at2x('../img/branding/sea-bkg-mobile-small.jpg', 320px, 471px);
+	// Blackberry and others
+	@media (min-width: 240px) and (max-width: 320px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-blackberry.png', 320px, 240px);
 	}
 
-	@media (min-width: 320px) and (max-width: 500px){
-		.at2x('../img/branding/sea-bkg-mobile-large.jpg', 569px, 471px);
+	// Iphone5+
+	@media (min-width: 200px) and (max-width: 320px) and (orientation: portrait) {
+		.at2x('../img/branding/the-great-wave-16x9-portrait-iphone5.png', 320px, 240px);
+	}
+
+	@media (min-width: 320px) and (max-width: 581px) and (orientation: portrait) {
+		.at2x('../img/branding/the-great-wave-16x9-portrait-iphone5.png', 320px, 240px);
+	}
+
+	@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-blackberry.png', 320px, 240px);
+	}
+
+	@media (min-width: 568px) and (max-width: 768px) and (orientation: landscape) {
+		.at2x('../img/branding/sea-bkg-mobile-large.png', 569px, 471px);
 	}
 
 	// Background tablet
-	@media (min-width: 500px) and (max-width: 720px) {
-		.at2x('../img/branding/sea-bkg-tablet-landscape.jpg', 768px, 471px);
-		height: 471px;
+	@media (min-width: 581px) and (max-width: 768px) and (orientation: portrait) {
+		.at2x('../img/branding/the-great-wave-4x3-portrait-tablet.png', 768px, 471px);
+	}
+
+	@media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
+		height: 650px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
+		height: 650px;
 	}
 
 	// Desktop
-	@media (min-width: 720px) and (max-width: 1400px) {
-		.at2x('../img/branding/sea-bkg-desktop.jpg');
-		height: 471px;
+	@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-1.6x1-landscape-mid-desktop.png', 1024px, 800px);
+		height: 650px;
+	}
+
+	@media (min-width: 1280px) and (max-width: 1600px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-16x9-landscape-large-desktop.png', 1600px, 901px);
+		background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
+		height: 650px;
+	}
+
+	@media (min-width: 1600px) and (max-width: 2400px) and (orientation: landscape) {
+		.at2x('../img/branding/the-great-wave-16x9-landscape-super-desktop.png', 2400px, 1351px);
+		height: 650px;
 	}
 
 	// IMAX
-	@media (min-width: 1600px) {
-		background-image: url('../img/branding/sea-bkg-imax.jpg');
-		background-size: contain;
-		height: 471px;
+	@media (min-width: 2400px) {
+		background-image: url('../the-great-wave-16x9-landscape-imax.png');
+		
+		height: 650px;
 	}
 
 
@@ -121,6 +171,12 @@ small {font-size: 1.4rem;}
 			text-transform: uppercase;
 			margin-top: 0;
 			margin-bottom: 0;
+			background-color: white;
+			color: @text-color;
+			padding-left: 10px;
+			padding-bottom: 0px;
+			padding-right: 10px;
+			padding-top: 5px;
 		}
 		
 		color: white;
@@ -134,10 +190,10 @@ small {font-size: 1.4rem;}
 			color: inherit;
 			}
 
-		.at2x('../img/branding/roundel.png', 64px, 64px);
+		.at2x('../img/branding/roundel.png', 72px, 72px);
 		background-repeat: no-repeat;
 		background-position: center top;
-		padding-top: 100px;
+		padding-top: 112px;
 	}
 
 	h4 {
