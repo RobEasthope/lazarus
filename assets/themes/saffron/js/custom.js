@@ -4,10 +4,13 @@ function oknFullScreen() {
 		$(".jumbotron").css("min-width",function(){
 			return $(window).width();
 		});
+		$(".jumbotron").css("height",function(){
+			return ($(window).height() - 15);
+		});
 
 		// Center jumbotron content vertically
-		$(".jumbotron-content-wrap").css("margin-top",function(){
-			return ($(".jumbotron").height() - $(".jumbotron-content-wrap").height()) / 2;
+		$(".jumbotron-content-wrap").css("padding-top",function(){
+			return (($(".jumbotron").height() ) - ($(".brand").height() + $(".jumbotron h1").height() + ($(".jumbotron-nav").height() + 5))) / 2;
 		});
 
 		// Center jumbotron on screen

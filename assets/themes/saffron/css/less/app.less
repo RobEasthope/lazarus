@@ -15,6 +15,8 @@ grunt watch
 	Base
 ******************************************************************************/
 // --- Structure ---
+
+
 //Sticky Footer
 html, body {height: 100%;}
 
@@ -74,32 +76,25 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 }
 
-	// Nav hacks while waiting for BS 3.0 to settle down
-	.nav  li > a {
-		color: @text-color;
-		&:hover, &:focus {
-			color: @text-color;
-			background-color: white;
-		}
-	}
 
 /******************************************************************************
 	Masthead
 ******************************************************************************/
 .jumbotron {
-	// Structure
-	text-align: center;
-	color: white;
+	// Layout
+	margin-top: 15px;
+	margin-bottom: 0px;
+
+	// Background
 	background-repeat: no-repeat;
 	background-position: center top;
-	height: 350px;
 	background-size: 100%;
 
 	// Background fallback
 	background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
 
 	// Background mobile
-	// Blackberry and others
+	/* Blackberry and others
 	@media (min-width: 240px) and (max-width: 320px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-blackberry.png', 320px, 240px);
 	}
@@ -128,72 +123,68 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 
 	@media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
-		height: 650px;
 	}
 
 	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
-		height: 650px;
 	}
 
 	// Desktop
 	@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-1.6x1-landscape-mid-desktop.png', 1024px, 800px);
-		height: 650px;
 	}
 
 	@media (min-width: 1280px) and (max-width: 1600px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-16x9-landscape-large-desktop.png', 1600px, 901px);
 		background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
-		height: 650px;
 	}
 
 	@media (min-width: 1600px) and (max-width: 2400px) and (orientation: landscape) {
 		.at2x('../img/branding/the-great-wave-16x9-landscape-super-desktop.png', 2400px, 1351px);
-		height: 650px;
 	}
 
 	// IMAX
 	@media (min-width: 2400px) {
 		background-image: url('../the-great-wave-16x9-landscape-imax.png');
 		
-		height: 650px;
 	}
 
+*/
+/******************************************************************************
+	Masthead content
+******************************************************************************/
 
-	// Jumbotron content
 	.brand {
 		display: inline-block;
-		h1 {
-			font-size: 5.75rem;
-			line-height: 1;
-			font-weight: normal;
-			text-transform: uppercase;
-			margin-top: 0;
-			margin-bottom: 0;
-			background-color: white;
-			color: @text-color;
-			padding-left: 10px;
-			padding-bottom: 0px;
-			padding-right: 10px;
-			padding-top: 5px;
-		}
-		
-		color: white;
-
-		@media screen and (min-width: 992px) {
-			border-bottom: 3px solid white;
-		}
-		
-			&:hover, &:focus {
-			text-decoration: none;
-			color: inherit;
-			}
+		float: right;
+		height: 72px;
+		width: 72px;
+		margin-right: 10px;
 
 		.at2x('../img/branding/roundel.png', 72px, 72px);
 		background-repeat: no-repeat;
-		background-position: center top;
-		padding-top: 112px;
+		background-position: right top;
+	}
+
+	h1 {
+		float: right;
+		clear: both; 
+		width: 510px;
+		margin-top: 0;
+		margin-bottom: 0;
+		background-color: white;
+
+		padding-left: 10px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-top: 5px;
+
+		font-family: @headings-font-family;
+		font-size: 5.75rem;
+		font-weight: normal;
+		text-transform: uppercase;
+		line-height: 1;
+		text-align: right;
 	}
 
 	h4 {
@@ -201,35 +192,36 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		text-decoration: uppercase;
 	}
 
-	.navbar {
-	background-color: transparent;
+	@media screen and (min-width: @screen-tablet) {
+	  .jumbotron {
+	    padding: 50px 60px;
+	    border-radius: @border-radius-large; // Only round corners at higher resolutions
+
+	    h1 {
+	      font-size: (@font-size-base * 4.5);
+	    }
+	  }
 	}
+/******************************************************************************
+	Masthead Navigation
+******************************************************************************/
 
-	.navbar .nav,
-	.navbar .nav > li {
-	  float:none;
-	  display:inline-block;
-	  *display:inline; /* ie7 fix */
-	  *zoom:1; /* hasLayout ie7 trigger */
-	  vertical-align: top;
-	}
+	.jumbotron-nav {
+		float: right;
+		clear: both;
+		padding-top: 5px;
 
-	.navbar-inner {
-	  text-align:center;
-	}
-
-	.navbar .nav > li {
-		> a {
-			color: white;
-
-			&:hover, &:focus {
-				color: white;
+		.nav-pills > li {
+			background-color: white;
+			> a {
+				color: @text-color;
+				&:hover, &:focus {
+					background-color: white;
+				}
 			}
 		}
 	}
 }
-
-
 
 
 /******************************************************************************
@@ -268,7 +260,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	Content
 ******************************************************************************/
 .content {
-	margin-top: @navbar-height;
+	//margin-top: @navbar-height;
 }
 
 /******************************************************************************
