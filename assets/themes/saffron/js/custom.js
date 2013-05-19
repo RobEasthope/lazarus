@@ -9,8 +9,8 @@ function oknFullScreen() {
 		});
 
 		// Center jumbotron content vertically
-		$(".jumbotron-content-wrap").css("padding-top",function(){
-			return (($(".jumbotron").height() ) - ($(".brand").height() + $(".jumbotron h1").height() + ($(".jumbotron-nav").height() + 5))) / 2;
+		$(".jumbotron").css("padding-top",function(){
+			return ((($(".jumbotron").height() ) - ($(".brand").height() + $(".jumbotron-title-wrap").height())) / 2) + 40 ;
 		});
 
 		// Center jumbotron on screen

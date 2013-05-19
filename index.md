@@ -6,7 +6,12 @@ tag: landing
 <div class="jumbotron">
   <div class="jumbotron-content-wrap">
     <div class="brand"> </div>
-    <h1>Rob Easthope is a front end <br>designer &amp; developer.<br>Portfolio going live imminently</h1>
+    <div class="jumbotron-title-wrap">
+      <h1>Rob Easthope is a front end</h1>
+      <h1>designer &amp; developer.</h1>
+      <h1>Portfolio going live</h1>
+      <h1>imminently</h1>
+    </div>
     <!--
     <nav class="jumbotron-nav">
         <ul class="nav nav-pills">
