@@ -42,7 +42,7 @@ small {font-size: 1.4rem;}
 h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 
 .page-header {
-	margin-top: @line-height-base * 3;
+	//margin-top: @line-height-base * 3;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: none;
@@ -87,69 +87,29 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 
 	// Background
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100%;
+	background-position: left top;
+	background-size: cover;
 
-	// Background fallback
-	background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
-
-	// Background mobile
-	/* Blackberry and others
-	@media (min-width: 240px) and (max-width: 320px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-blackberry.png', 320px, 240px);
-	}
-
-	// Iphone5+
-	@media (min-width: 200px) and (max-width: 320px) and (orientation: portrait) {
-		.at2x('../img/branding/the-great-wave-16x9-portrait-iphone5.png', 320px, 240px);
-	}
-
-	@media (min-width: 320px) and (max-width: 581px) and (orientation: portrait) {
-		.at2x('../img/branding/the-great-wave-16x9-portrait-iphone5.png', 320px, 240px);
-	}
-
-	@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-blackberry.png', 320px, 240px);
-	}
-
-	@media (min-width: 568px) and (max-width: 768px) and (orientation: landscape) {
-		.at2x('../img/branding/sea-bkg-mobile-large.png', 569px, 471px);
-	}
-
-	// Background tablet
-	@media (min-width: 581px) and (max-width: 768px) and (orientation: portrait) {
-		.at2x('../img/branding/the-great-wave-4x3-portrait-tablet.png', 768px, 471px);
-	}
-
-	@media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
-	}
-
-	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-4x3-landscape-tablet.png', 768px, 471px);
-	}
-
-	// Desktop
-	@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-1.6x1-landscape-mid-desktop.png', 1024px, 800px);
-	}
-
-	@media (min-width: 1280px) and (max-width: 1600px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-16x9-landscape-large-desktop.png', 1600px, 901px);
-		background-image: url('../img/branding/the-great-wave-16x9-landscape-large-desktop.png');
-	}
-
-	@media (min-width: 1600px) and (max-width: 2400px) and (orientation: landscape) {
-		.at2x('../img/branding/the-great-wave-16x9-landscape-super-desktop.png', 2400px, 1351px);
-	}
-
-	// IMAX
-	@media (min-width: 2400px) {
-		background-image: url('../the-great-wave-16x9-landscape-imax.png');
+	// Portrait
+	@media (orientation: portrait) {
+		background-image: url('../img/branding/The-Kanawaga-Wave-portrait.png');
 		
 	}
 
-*/
+	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/branding/The-Kanawaga-Wave-portrait@2x.png');
+	} 
+
+	// Landscape
+	@media (orientation: landscape) {
+		.at2x('../img/branding/The-Kanawaga-Wave-landscape-1600.png', 100%);
+	}
+
+		@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1600@2x.png');
+	} 
+	
+
 /******************************************************************************
 	Masthead content
 ******************************************************************************/
@@ -162,7 +122,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		margin-right: 10px;
 		margin-bottom: 10px;
 
-		.at2x('../img/branding/roundel.png', 72px, 72px);
+		.at2x('../img/branding/saffron-roundel-circle.png', 72px, 72px);
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
@@ -267,20 +227,26 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	Portfolio
 ******************************************************************************/
 .thumbnails {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	.col {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.col-span-4 {
 		@media (min-width: 768px) and (max-width: 1200px) {
-			width: 50%;
+			//width: 50%;
 		}
 	}
 
 	.thumbnail {
-		margin-top: (@grid-gutter-width / 2);
-		margin-bottom: (@grid-gutter-width / 2);
 		width: 100%;
-		height: 300px;
-		padding: 0;
+		min-height: 150px;
 
-		background-size: 360px 300px;
+
+		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
 		display: table;
@@ -288,13 +254,14 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		border: none;
 
 		&:hover, &:focus {
-			background-size: 350px 290px;
+			//background-size: 350px 290px;
 			.thumbnail-text-wrap {
 				opacity: 1;
 			}
 		}
 
 		.thumbnail-rollover {
+			width: 100%;
 			height: 100%;
 		}
 
@@ -319,7 +286,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.ambr {
-		.at2x('../img/ambr/ambr-thumbnail.png', 354px, 292px);
+		background-image: url('../img/ambr/ambr-thumbnail.png');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -329,7 +296,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.brixton {
-		.at2x('../img/brixton/brixton-thumbnail.png', 354px, 292px);
+		background-image: url('../img/brixton/brixton-thumbnail.jpg');
 		
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -340,7 +307,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.eufn {
-		.at2x('../img/eufn/eufn-thumbnail.png', 354px, 292px);
+		background-image: url('../img/eufn/EUFN-thumbnail.png');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -351,7 +318,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.lambeth {
-		.at2x('../img/brixton/lambeth-thumbnail.png', 354px, 292px);
+		background-image: url('../img/lambeth/lambeth-thumbnail.jpg');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -361,7 +328,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.lancastrians {
-		.at2x('../img/lancastrians/lancastrians-thumbnail.jpg', 354px, 292px);
+		background-image: url('../img/lancastrians/lancastrians-thumbnail.jpg');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -371,7 +338,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.layla {
-		.at2x('../img/layla/layla-thumbnail.png', 360px, 300px);
+		background-image: url('../img/layla/layla-thumbnail.png');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -382,18 +349,28 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 	}
 
 	.saffron {
-		.at2x('../img/saffron/saffron-thumbnail.jpg', 360px, 300px);
+		background-image: url('../img/saffron/saffron-thumbnail.jpg');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
-				background: rgba(124, 183, 209, 0.75);
-				color: white;
+				background: rgba(255, 255, 255, 0.75);
+				//color: white;
+			}
+		}
+	}
+
+	.swimlondon {
+		background-image: url('../img/swimlondon/swimlondon-thumbnail.jpg');
+
+		&:hover, &:focus {
+			.thumbnail-rollover {
+				background: rgba(255, 255, 255, 0.75);
 			}
 		}
 	}
 	
 	.waterleaf {
-		.at2x('../img/waterleaf/waterleaf-thumbnail.jpg', 360px, 300px);
+		background-image: url('../img/waterleaf/waterleaf-thumbnail.jpg');
 
 		&:hover, &:focus {
 			.thumbnail-rollover {

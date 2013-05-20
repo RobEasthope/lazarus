@@ -30,14 +30,12 @@ function oknSocialIcons() {
 }
 
 function oknThumbnail() {
-	if ($(window).width() > 768) {
-		$(".thumbnail").css("min-height",function() {
-		return ($(".thumbnail").width() / 1.2);
-		});
-	}
+	$(".thumbnail").css("height",function() {
+		return ($(".thumbnail").width());
+	});
 
 	$(".thumbnail-rollover").css("min-height",function() {
-		//return ($(".thumbnail").width() / 1.2);
+		//return ($(".thumbnail").height());
 	});
 
 	$(".thumbnail").css(".background-size",function(){
