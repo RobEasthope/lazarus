@@ -39,13 +39,19 @@ code {font-size: 1.4rem;}
 
 small {font-size: 1.4rem;}
 
-h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
+h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 .page-header {
 	margin-top: @line-height-base;
 	text-transform: uppercase;
-	text-align: left;
+	text-align: center;
 	border-bottom: none;
+	margin-left: @font-size-base / 2;
+
+	@media screen and (min-width: @screen-small) {
+		text-align: left;
+		margin-left: 0;
+	}
 }
 
 /******************************************************************************
@@ -54,24 +60,50 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 
 .navbar {
 	background-color: white;
+	text-align: center;
+
+	.navbar-toggle {
+		position: relative;
+		top: 10px;
+		right: 0;
+		padding: 0;
+		border: 0;
+		&:hover, &:focus {
+			background-color: transparent;
+		}
+	}
 
 	.navbar-brand {
 		display: block;
 		height: 30px;
 		width: 30px;
-		margin-left: 15px;
 		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
 		background-repeat: no-repeat;
 		background-position: center center;
+
+		@media (min-width: @screen-small) {
+			margin-left: 15px;
+		}
 
 		@media (min-width: 768px) {
 			margin-top: 10px;
 		}
 	}
 
-		@media screen and (min-width: 768px) {
+	.nav {
+		> li:hover {
+			background-color: white;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
 		.nav {
 			float: right;
+			> li a {
+				&:hover {
+					background-color: white;
+				}
+			}
 		}
 	}
 }
@@ -138,7 +170,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		background-color: white;
 
 		font-family: @headings-font-family;
-		font-size: 5.75rem;
+		font-size: 2.4rem;
 		font-weight: normal;
 		text-transform: uppercase;
 		line-height: 1;
@@ -151,11 +183,18 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		&:first-of-type {
 			padding-top: 5px;
 		}
+
+		@media screen and (min-width: 450px) {
+			font-size: 3.75rem;
+		}
+
+		@media screen and (min-width: 797px) {
+			font-size: 5.75rem;
+		}
 	}
 
 	@media screen and (min-width: @screen-tablet) {
 	  .jumbotron {
-	    //padding: 50px 60px;
 
 	    h1 {
 	      //font-size: (@font-size-base * 4.5);
@@ -249,7 +288,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 		background-position: center center;
 		background-repeat: no-repeat;
 		display: table;
-
+		border-radius: 0;
 		border: none;
 
 		&:hover, &:focus {
@@ -387,8 +426,8 @@ h1, .h1 { font-size: (@font-size-base * 3.25); } // ~38px
 footer {
 	text-align: center;
 	.row {
-		padding-top: 80px; // =@line-height-base * 3
-		padding-bottom: 25px;
+		padding-top: 9rem; // =@line-height-base * 3
+		padding-bottom: 2.5rem;
 	}
 	
 
