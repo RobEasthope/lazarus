@@ -5,7 +5,7 @@ function oknFullScreen() {
 			return $(window).width();
 		});
 		$(".jumbotron").css("height",function(){
-			return ($(window).height() - 15);
+			return ($(window).height() - 12);
 		});
 
 		// Center jumbotron content vertically

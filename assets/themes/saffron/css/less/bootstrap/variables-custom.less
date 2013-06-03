@@ -13,6 +13,8 @@
 // Brand colors
 // -------------------------
 
+@brand-type-red:		#AF3740;
+@brand-primary:         @gray-dark;
 
 // Scaffolding
 // -------------------------
@@ -21,7 +23,7 @@
 // -------------------------
 
 @link-color:            @brand-primary;
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      @brand-primary;
 
 
 // Typography
@@ -47,11 +49,9 @@
 // -------------------------
 // Based on 14px font-size and 1.5 line-height
 
-@border-radius-base:      0rem;
-@border-radius-large:     0rem;
-@border-radius-small:     0rem;
-
-@component-active-bg:            @brand-primary;
+@border-radius-base:      0;
+@border-radius-large:     0;
+@border-radius-small:     0;
 
 
 
@@ -66,7 +66,7 @@
 // Navbar links
 @navbar-link-color:                @text-color;
 @navbar-link-hover-color:          @text-color;
-@navbar-link-hover-bg:             white;
+@navbar-link-hover-bg:             transparent;
 @navbar-link-active-color:         @text-color;
 @navbar-link-active-bg:            transparent;
 @navbar-link-disabled-color:       #ccc;

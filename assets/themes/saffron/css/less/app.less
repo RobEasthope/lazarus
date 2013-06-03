@@ -16,6 +16,7 @@ grunt watch
 ******************************************************************************/
 // --- Structure ---
 
+body {overflow-x: hidden;}
 
 //Sticky Footer
 html, body {height: 100%;}
@@ -42,7 +43,7 @@ small {font-size: 1.4rem;}
 h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 .page-header {
-	margin-top: @line-height-base;
+	//margin-top: @line-height-base;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: none;
@@ -81,10 +82,6 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 		background-repeat: no-repeat;
 		background-position: center center;
 
-		@media (min-width: @screen-small) {
-			margin-left: 15px;
-		}
-
 		@media (min-width: 768px) {
 			margin-top: 10px;
 		}
@@ -116,11 +113,15 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	// Layout
 	margin-top: 15px;
 	margin-bottom: 0px;
+	width: 100%;
 
 	// Background
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
+
+	//Border
+	border-bottom: 3px solid @gray-dark;
 
 	// Portrait
 	@media (orientation: portrait) {
@@ -137,7 +138,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 		.at2x('../img/branding/The-Kanawaga-Wave-landscape-1600.png', 100%);
 	}
 
-		@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
+	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
 		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1600@2x.png');
 	} 
 	
@@ -273,9 +274,9 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 		padding-right: 0;
 	}
 
-	.col-span-4 {
-		@media (min-width: 768px) and (max-width: 1200px) {
-			//width: 50%;
+	.col-lg-3 {
+		@media (min-width: 768px) and (max-width: 992px) {
+			width: 33.33333333333333%;
 		}
 	}
 
