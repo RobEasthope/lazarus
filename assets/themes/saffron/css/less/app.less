@@ -376,12 +376,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 		border-radius: 0;
 		border: none;
 
-		&:hover, &:focus {
-			//background-size: 350px 290px;
-			.thumbnail-text-wrap {
-				opacity: 1;
-			}
-		}
+
 
 		.thumbnail-rollover {
 			display: table;
@@ -396,6 +391,10 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 			padding-left: 10%;
 			padding-right: 10%;
 			opacity: 0;
+
+			&:hover, &:focus {
+				opacity: 1;
+			}
 
 			.portfolio-title {
 				font-family: @font-family-sans-serif;
@@ -442,6 +441,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	.brixton {
 		background-image: url('../img/brixton/brixton-thumbnail.jpg');
 		color: white;
+
 		&:hover, &:focus {
 			.thumbnail-rollover {
 				background: rgba(192, 12, 0, 0.90);
@@ -465,7 +465,8 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 	.lambeth {
 		background-image: url('../img/lambeth/lambeth-thumbnail.jpg');
-		color: white;	
+		color: white;
+
 		&:hover, &:focus {
 			.thumbnail-rollover {
 				background: rgba(0, 161, 66, 0.90);
@@ -490,9 +491,10 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	.layla {
 		background-image: url('../img/layla/layla-thumbnail.png');
 		color: white;
+
 		&:hover, &:focus {
 			.thumbnail-rollover {
-				background: rgba(253, 187, 48, 0.9);
+				background: rgba(253, 187, 48, 0.90);
 				
 				.portfolio-title {opacity: 1}
 				.portfolio-sub {opacity: 1}
@@ -544,11 +546,11 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 footer {
 	text-align: center;
+
 	.row {
-		padding-top: 9rem; // =@line-height-base * 3
-		padding-bottom: 2.5rem;
+		padding-top: 9rem;
+		padding-bottom: 3rem;
 	}
 	
-
 	p {margin-top: @line-height-base}
 }

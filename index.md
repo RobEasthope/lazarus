@@ -15,17 +15,22 @@ tag: landing
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <div class="navbar-brand"></div> 
           </button>
-          <div class="navbar-brand hidden-sm"> </div> 
+          <div class="navbar-brand hidden-sm"> </div> <!-- Desktop branding -->
           <nav class="nav-collapse collapse center-nav">
             <ul class="nav">
               {% include themes/saffron/nav.html %}
             </ul>
           </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        </div> <!-- /container -->
+      </div> <!-- /navbar -->
+    </div> <!-- /jumbotron-title-wrap -->
+  </div> <!-- /jumbotron-content-wrap -->
+</div> <!-- /Jumbotron -->
+
+<section class="about">
+  <a id="about"></a>
+</section>
+
 <section class="portfolio">
   <a id="portfolio"></a>
   <div class="row">
@@ -84,7 +89,7 @@ tag: landing
         <div class="thumbnail layla">
           <div class="thumbnail-rollover">
             <div class="thumbnail-text-wrap">
-              <h3 class="portfolio-title">Layla Moran PPC</h3>
+              <h3 class="portfolio-title">Layla Moran - Oxford West &amp; Abingdon campaign</h3>
               <h4 class="portfolio-sub">Website &amp; logo design</h4>
             </div>
           </div>
@@ -122,5 +127,14 @@ tag: landing
       </div>
     </div>
   </div>
+</section>
+
+<section class="contact">
+  <a id="Contact"></a>
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-8">
+        If you would like to say hello or work with me on a project, feel free to <a href="mailto: robeasthope@gmail.com">email</a> or tweet me<a href="http://twitter.com/robeasthope"> @robeasthope</a>.
+      </div>
+    </div>
 </section>
 {% include JB/setup %}
