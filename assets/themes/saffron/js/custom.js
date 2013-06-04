@@ -5,7 +5,7 @@ function oknFullScreen() {
 			return $(window).width() + 2;
 		});
 		$(".jumbotron").css("height",function(){
-			return ($(window).height() - 12);
+			return ($(window).innerHeight() - 12);
 		});
 
 		// Center jumbotron content vertically
@@ -33,19 +33,17 @@ function oknThumbnail() {
 	$(".thumbnail").css("height",function() {
 		return ($(".thumbnail").width());
 	});
-
-	$(".thumbnail-rollover").css("min-height",function() {
-		//return ($(".thumbnail").height());
-	});
-
-	$(".thumbnail").css(".background-size",function(){
-		//return ($(".thumbnail").width(), $(".thumbnail").height());
-	});
 }
 
-function oknThumbnailText() {
-	$(".thumbnail-text-wrap").css("padding-top",function() {
-		return ($(".thumbnail").height() - $(".thumbnail-text-wrap").height())/ 2;
+function oknNavbar() {
+	$(".affix").css("margin-left",function(){
+		//return -(($(window).width() - $(".col-lg-12").width()) / 2);
+	});
+
+	$('#sidebar').affix({
+	offset:{
+		bottom: $(".jumbotron").height() + 13
+		}
 	});
 }
 
@@ -55,12 +53,18 @@ $(document).ready(function() {
 	oknSocialIcons();
 });
 
+$(window).scroll(function() {
+	oknNavbar();
+});
+
 $(window).resize(function() {
 	oknFullScreen();
 	oknThumbnail();
 	oknSocialIcons();
+	oknNavbar();
 });
 
 $(".thumbnail").mouseover(function() {
-	oknThumbnailText();
+
 });
+

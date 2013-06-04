@@ -9,113 +9,118 @@ tag: landing
     <div class="jumbotron-title-wrap">
       <h1>Rob Easthope is a front end</h1>
       <h1>designer &amp; developer.</h1>
-      <h1>Portfolio going live</h1>
-      <h1>imminently</h1>
-    </div>
-    <!--
-    <nav class="jumbotron-nav">
-        <ul class="nav nav-pills">
-          {% include themes/saffron/nav.html %}
-        </ul>
-      </nav>
-    -->
-  </div>
-</div>
-<div class="page-header">
-  <h1>Portfolio</h1>
-</div>
-<div class="row">
-  <div class="thumbnails">
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail brixton">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>The Brixton Advice Centre</h5>
-            <p>Website</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail lambeth">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>The Lambeth Advice Network</h5>
-            <p>Website</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail lancastrians">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>The Association of Lancastrians in London</h5>
-            <p>Website &amp; logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail eufn">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>EUFN</h5>
-            <p>Website &amp; logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail ambr">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-              <h5>AMBR</h5>
-              <p>Logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail layla">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>Layla Moran PPC</h5>
-            <p>Website &amp; logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail saffron">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>Portfolio</h5>
-            <p>Website &amp; logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail swimlondon">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>Swim London</h5>
-            <p>Website &amp; logo design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-sm-6 col-lg-3">
-      <div class="thumbnail waterleaf">
-        <div class="thumbnail-rollover">
-          <div class="thumbnail-text-wrap">
-            <h5>Waterleaf</h5>
-            <p>Website &amp; logo design</p>
-          </div>
+
+      <div class="navbar " data-spy="affix" data-offset-top="500">
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <div class="navbar-brand"></div> 
+          </button>
+          <div class="navbar-brand hidden-sm"> </div> 
+          <nav class="nav-collapse collapse center-nav">
+            <ul class="nav">
+              {% include themes/saffron/nav.html %}
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </div>
 </div>
+<section class="portfolio">
+  <a id="portfolio"></a>
+  <div class="row">
+    <div class="thumbnails">
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail brixton">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">The Brixton Advice Centre</h3>
+              <h4 class="portfolio-sub">Website</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail lambeth">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">The Lambeth Advice Network</h3>
+              <h4 class="portfolio-sub">Website</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail lancastrians">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">The Association of Lancastrians in London</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail eufn">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">EUFN</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail ambr">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+                <h3 class="portfolio-title">AMBR</h3>
+                <h4 class="portfolio-sub">Logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail layla">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">Layla Moran PPC</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail saffron">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">Portfolio</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail swimlondon">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">Swim London</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-md-4 col-lg-3">
+        <div class="thumbnail waterleaf">
+          <div class="thumbnail-rollover">
+            <div class="thumbnail-text-wrap">
+              <h3 class="portfolio-title">Waterleaf</h3>
+              <h4 class="portfolio-sub">Website &amp; logo design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% include JB/setup %}

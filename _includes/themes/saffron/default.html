@@ -36,53 +36,52 @@
   </head>
 
   <body>
-    {% if page.tag != 'landing' %}
-    <div class="navbar">
+    <!-- {% if page.tag != 'landing' %} -->
+    <div class="navbar navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <div class="navbar-brand"></div> 
+          <div class="navbar-brand"> </div> 
         </button>
         
         <a class="navbar-brand hidden-sm" href="{{ HOME_PATH }}"></a>  
-        <nav class="nav-collapse collapse">
+        <nav class="nav-collapse collapse center-nav">
           <ul class="nav">
             {% include themes/saffron/nav.html %}
           </ul>
         </nav>
       </div>
     </div>
-    {% endif %}
+    <!-- {% endif %} -->
     <div class="container wrap">
 
       <div class="content">
         {{ content }}
       </div>
-      {% if page.tag != 'landing' %}
+
+      
       <div class="push"></div>
-      {% endif %}
+      
           </div>
           
-      {% if page.tag != 'landing' %}
+      
         <footer>
           <div class="container">
             <div class="row">
               <div class="col col-sm-12 col-lg-12">
                 <a class="twitter-icon" href="#"></a>
-                <a class="behance-icon" href="#"></a>
                 <a class="github-icon" href="#"></a>
+                <a class="behance-icon" href="#"></a>
               </div>
             </div>
           </div>
         </footer>
-      {% endif %}      
+      
+
       <!-- Javascript -->
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
       <script type="text/javascript" src="{{ ASSET_PATH }}/js/scripts.min.js""></script>
-      <script type="text/javascript" src="{{ ASSET_PATH }}/js/retina/retina.js""></script>
-  
-      
-
-
+      <script type="text/javascript" src="{{ ASSET_PATH }}/js/plugins/retina/retina.js""></script>
+      <script type="text/javascript" src="{{ ASSET_PATH }}/js/plugins/bootstrap/affix.js""></script>
 
     {% include JB/analytics %}
   </body>
