@@ -47,19 +47,25 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: none;
-	margin-left: @font-size-base / 2;
+	//margin-left: @font-size-base / 2;
 
 	@media screen and (min-width: @screen-small) {
-		text-align: left;
-		margin-left: 0;
+		//text-align: left;
+		//margin-left: 0;
 	}
 }
+
+.section-header {
+	text-transform: uppercase;
+}
+
+a:hover, a:focus {text-decoration: none}
 
 /******************************************************************************
 	Navigation
 ******************************************************************************/
 .navbar-slide {
-	opacity: 1;
+	//opacity: 1;
 }
 
 .affix-top {
@@ -67,7 +73,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	float: right;
 	clear: both;
 	padding: 0;
-	
+
 	// Typography
 	font-family: @headings-font-family;
 	text-transform: uppercase;
@@ -87,17 +93,23 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	.navbar-brand {
 		position: absolute;
 		left: 10000000px;
-	}
+}
 
 	.nav {
-		
+		background-color: @jbt-heading-bkg;
 
 		li {
 			width: auto !important;
 			margin: 10px !important;
 			a {
+				color: white;
 				padding-left: 0;
 				padding-right: 0;
+				transition: color 0.25s ease-in;
+				&:hover, &:focus {
+					color: #27ae60;
+					background-color: @jbt-heading-bkg !important;
+				}
 			}
 		}
 	}
@@ -108,11 +120,13 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	top: 0;
 	width: 100%;
 	left: 0;
+
 	.nav {
 		li {width: 100px;
 			a {
 				font-size: @font-size-base;
 				line-height: 1;
+				transition: color 0.4s ease-in;
 			}
 		}
 	}
@@ -255,12 +269,14 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 		// Bkg Stripes
 		background-color: @jbt-heading-bkg;
-		padding-left: 10px;
-		padding-bottom: 5px;
-		padding-right: 10px;
+		padding: 5px 10px;
 		
 		&:first-of-type {
-			padding-top: 5px;
+			padding-bottom: 0px;
+		}
+
+		&:last-of-type {
+			padding-top: 0px;
 		}
 
 		@media screen and (min-width: 450px) {
@@ -342,7 +358,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 }
 
 /******************************************************************************
-	Portfolio
+	Portfolio thumbnails
 ******************************************************************************/
 .portfolio {
 
@@ -351,24 +367,18 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 .thumbnails {
 	margin-top: 100px;
 	margin-bottom: 100px;
-	padding-left: 15px;
-	padding-right: 15px;
-	.col {
-		padding-left: 0;
-		padding-right: 0;
-	}
+	padding-left: 0px;
+	padding-right: 0px;
 
-	.col-lg-3 {
-		@media (min-width: 768px) and (max-width: 992px) {
-			//width: 33.33333333333333%;
-		}
+	.col {
+		padding: 0;
 	}
 
 	.thumbnail {
 		width: 100%;
 		min-height: 150px;
 		padding: 0px;
-
+		
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -395,34 +405,19 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 			&:hover, &:focus {
 				opacity: 1;
 			}
+		}
 
-			.portfolio-title {
-				font-family: @font-family-sans-serif;
-				font-size: @font-size-base;
-				line-height: 1.1;
-				font-weight: normal;
-		  		text-align: center;
-		  		margin-top: 0;
-				margin-bottom: 0;
-				text-transform: uppercase;
-				opacity: 0;
-				transition: all 0.4s ease-in;
-			}
-
-			.portfolio-sub {
-				margin: 0;
-				font-family: @font-family-sans-serif;
-				font-size: @font-size-base;
-				line-height: @line-height-base;
-				font-weight: normal;
-		  		text-align: center;
-		  		display: none;
-		  		opacity: 0;
-		  		transition: all 0.4s ease-in;
-		  		@media screen and (min-width: @screen-tablet) {
-		  			display: block;
-		  		}
-			}
+		.portfolio-title {
+			font-family: @font-family-sans-serif;
+			font-size: @font-size-base;
+			line-height: 1.1;
+			font-weight: normal;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			opacity: 0;
+			transition: all 0.4s ease-in;
 		}
 	}
 
@@ -440,7 +435,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 	.brixton {
 		background-image: url('../img/brixton/brixton-thumbnail.jpg');
-		color: white;
+		a {color: white;}
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -456,7 +451,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
+				background: rgba(255, 255, 255, 0.95);
 				.portfolio-title {opacity: 1}
 				.portfolio-sub {opacity: 1}
 			}
@@ -465,7 +460,10 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 	.lambeth {
 		background-image: url('../img/lambeth/lambeth-thumbnail.jpg');
-		color: white;
+		a {
+			color: white;
+			text-decoration: none;
+		}
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
@@ -490,11 +488,12 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 	.layla {
 		background-image: url('../img/layla/layla-thumbnail.png');
-		color: white;
+		a {color: white;}
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
 				background: rgba(253, 187, 48, 0.90);
+				a {text-decoration: none;}
 				
 				.portfolio-title {opacity: 1}
 				.portfolio-sub {opacity: 1}
@@ -519,7 +518,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
+				background: rgba(255, 255, 255, 0.95);
 				.portfolio-title {opacity: 1}
 				.portfolio-sub {opacity: 1}
 			}
@@ -531,7 +530,7 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 		&:hover, &:focus {
 			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
+				background: rgba(255, 255, 255, 0.95);
 				.portfolio-title {opacity: 1}
 				.portfolio-sub {opacity: 1}
 			}
@@ -539,6 +538,42 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 	}
 }
 
+/******************************************************************************
+	About
+******************************************************************************/
+.about {
+	margin-top: 100px;
+
+	.section-header {text-align: center;}
+	p {text-align: center;}
+
+	@media screen and (min-width: @screen-tablet) {
+		.section-header {text-align: right;}
+		p {text-align: right;}
+	}
+
+}
+
+/******************************************************************************
+	Contact
+******************************************************************************/
+.contact {
+	margin-top: 100px;
+	.section-header {text-align: center;}
+	p {text-align: center;}
+
+	@media screen and (min-width: @screen-tablet) {
+		.section-header {text-align: left;}
+		p {text-align: left;}
+	}
+
+	.col-12 {
+		@media screen and (min-width: @screen-tablet) {
+			border-left: 1px solid #333;
+		}
+	}
+
+}
 
 /******************************************************************************
 	Footer
