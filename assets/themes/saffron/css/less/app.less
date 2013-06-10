@@ -25,22 +25,32 @@ html, body {height: 100%;}
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -165px auto; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -256px auto; /* the bottom margin is the negative value of the footer's height */
 }
 
-.push {  height: 165px; /* .push must be the same height as .footer */  }
+.push {  height: 256px; /* .push must be the same height as .footer */  }
 
 footer {
-  height: 165px; /* .push must be the same height as .footer */
+  height: 256px; /* .push must be the same height as .footer */
 }
 
-// --- Typography ---
+/******************************************************************************
+	Typography
+******************************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font-family-sans-serif;
+}
 
 code {font-size: 1.4rem;}
 
 small {font-size: 1.4rem;}
 
 h1, .h1 { font-size: (@font-size-base * 3.25); }
+
+a:hover, a:focus {text-decoration: none}
+
+// Headers
 
 .page-header {
 	//margin-top: @line-height-base;
@@ -56,17 +66,19 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 }
 
 .section-header {
-	text-transform: uppercase;
+	font-size: 8rem;
+	line-height: 1;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+	margin-bottom: @line-height-base * 1.5;
+	//border-bottom: 1px solid @gray-lighter;
 }
 
-a:hover, a:focus {text-decoration: none}
 
 /******************************************************************************
 	Navigation
 ******************************************************************************/
-.navbar-slide {
-	//opacity: 1;
-}
 
 .affix-top {
 	// Structure
@@ -124,6 +136,7 @@ a:hover, a:focus {text-decoration: none}
 	.nav {
 		li {width: 100px;
 			a {
+				font-family: @font-family-sans-serif;
 				font-size: @font-size-base;
 				line-height: 1;
 				transition: color 0.4s ease-in;
@@ -131,8 +144,6 @@ a:hover, a:focus {text-decoration: none}
 		}
 	}
 }
-
-
 
 .navbar {
 	background-color: white;
@@ -147,22 +158,6 @@ a:hover, a:focus {text-decoration: none}
 		border: 0;
 		&:hover, &:focus {
 			background-color: transparent;
-		}
-	}
-
-	.navbar-brand {
-		display: block;
-		height: 30px;
-		width: 30px;
-		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
-		background-repeat: no-repeat;
-		background-position: center center;
-
-		@media (min-width: 768px) {
-			float: none;
-			margin-top: 10px;
-			margin-left: auto;
-			margin-right: auto;
 		}
 	}
 
@@ -192,7 +187,21 @@ a:hover, a:focus {text-decoration: none}
 	}
 }
 
+.navbar-brand {
+		display: block;
+		height: 30px;
+		width: 30px;
+		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
+		background-repeat: no-repeat;
+		background-position: center center;
 
+		@media (min-width: 768px) {
+			float: none;
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+}
 /******************************************************************************
 	Masthead
 ******************************************************************************/
@@ -208,7 +217,7 @@ a:hover, a:focus {text-decoration: none}
 	background-size: cover;
 
 	//Border
-	border-bottom: 3px solid @gray-dark;
+	border-bottom: 1px solid @gray-lighter;
 
 	// Portrait
 	@media (orientation: portrait) {
@@ -230,9 +239,9 @@ a:hover, a:focus {text-decoration: none}
 	}
 	
 
-/******************************************************************************
-	Masthead content
-******************************************************************************/
+
+// Masthead content
+
 
 	.brand {
 		display: inline-block;
@@ -296,59 +305,8 @@ a:hover, a:focus {text-decoration: none}
 	    }
 	  }
 	}
-/******************************************************************************
-	Masthead Navigation
-******************************************************************************/
-
-	.jumbotron-nav {
-		float: right;
-		clear: both;
-		padding-top: 5px;
-
-		.nav-pills > li {
-			background-color: white;
-			> a {
-				color: @text-color;
-				&:hover, &:focus {
-					background-color: white;
-				}
-			}
-		}
-	}
 }
 
-
-/******************************************************************************
-	Social icons
-******************************************************************************/
-.social-icons-wrap {
-	text-align: center;
-
-}
-
-.social-icon {
-	display: inline-block;
-	margin-left: 16px;
-	margin-right: 16px;
-	width: 50px;
-	height: 50px;
-	background-size: 50px 50px;
-}
-
-.twitter-icon {
-	.social-icon();
-	.at2x('../img/social/twitter-colour.png', 64px, 64px);
-}
-
-.github-icon {
-	.social-icon();
-	.at2x('../img/social/github-colour.png', 64px, 64px);
-}
-
-.behance-icon {
-	.social-icon();
-	.at2x('../img/social/behance-colour.png', 64px, 64px);
-}
 
 /******************************************************************************
 	Content
@@ -361,14 +319,18 @@ a:hover, a:focus {text-decoration: none}
 	Portfolio thumbnails
 ******************************************************************************/
 .portfolio {
-
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .thumbnails {
-	margin-top: 100px;
-	margin-bottom: 100px;
 	padding-left: 0px;
 	padding-right: 0px;
+
+	@media screen and (min-width: @screen-tablet) {
+		padding-left: @grid-gutter-width / 2;
+		padding-right: @grid-gutter-width / 2;
+	}
 
 	.col {
 		padding: 0;
@@ -539,58 +501,110 @@ a:hover, a:focus {text-decoration: none}
 }
 
 /******************************************************************************
-	About
+	Profile
 ******************************************************************************/
-.about {
-	
-
-	.section-header {text-align: center;}
-	p {text-align: center;}
-
-	@media screen and (min-width: @screen-tablet) {
-		.section-header {text-align: right;}
-		p {text-align: right;}
-	}
-
+.profile {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 /******************************************************************************
-	Contact
+	About
 ******************************************************************************/
-.contact {
-	margin-top: 100px;
-
-	.section-header {
-		text-align: center;
-		
-		h1 {font-weight: 300;}
+.profile-details, .about {
+	h3 {
+		font-size: @font-size-base;
+		font-weight: 600;
+		line-height: 2.7rem;
+		margin: 0;
 	}
 
-	p {text-align: center;}
+	.profile-header {
+	margin-bottom: 2rem;
+}
 
-	@media screen and (min-width: @screen-tablet) {
-		.section-header {text-align: left;}
-		p {text-align: left;}
+	h5 {
+		font-weight: 300;
+		line-height: 2.7rem;
+	}
+	ul {
+		margin: 0;
+		list-style-type: none;
+		color: @gray-light;
 	}
 
-	.col-12 {
-		@media screen and (min-width: @screen-tablet) {
-			border-left: 1px solid #333;
-		}
-	}
+	a {color: @gray-light;}
 
+}
+
+
+
+/******************************************************************************
+	Social icons
+******************************************************************************/
+
+.social-icon {
+	display: inline-block;
+	margin-left: 16px;
+	margin-right: 16px;
+	width: 24px;
+	height: 24px;
+	background-size: 24px 24px;
+}
+
+.twitter-icon {
+	.social-icon();
+	.at2x('../img/social/twitter-colour.png', 64px, 64px);
+}
+
+.github-icon {
+	.social-icon();
+	.at2x('../img/social/github-colour.png', 64px, 64px);
+}
+
+.behance-icon {
+	.social-icon();
+	.at2x('../img/social/behance-colour.png', 64px, 64px);
 }
 
 /******************************************************************************
 	Footer
 ******************************************************************************/
 
-footer {
-	text-align: center;
-	margin-top: 8rem;
-	padding-top: 1rem;
-	background-color: #333;
+.footer {
+	padding-top: @line-height-base;
+	background-color: @royal-yellow;
+	width: 100%;
+	display: table;
 
-	h4 {color: white}
-	p {margin-top: @line-height-base}
+	//Contact details
+	.contact {
+		
+		background-color: transparent;
+		color: white;
+
+		h5 {
+		font-weight: 300;
+		line-height: 2.7rem;
+		color: white;
+	}
+	ul {
+		margin: 0;
+		list-style-type: none;
+		color: white;
+	}
+
+	a {color: white;}
+	}
+
+	.copyright {
+		font-family: @font-family-sans-serif;
+		font-size: @font-size-small;
+		text-align: left;
+		color: white;
+		margin: @line-height-base 0;
+	}
+
+	.contact-details {text-align: right;}
 }
+

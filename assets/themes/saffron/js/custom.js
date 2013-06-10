@@ -1,9 +1,6 @@
 function oknFullScreen() {
 	if ($(window).height() > $(".jumbotron-content-wrap").height()) {
 		// Enlarge jumbotron to fullscreen
-		$(".jumbotron").css("min-width",function(){
-			return $(window).width() + 2;
-		});
 		$(".jumbotron").css("height",function(){
 			return ($(window).innerHeight() - 12);
 		});
@@ -11,11 +8,6 @@ function oknFullScreen() {
 		// Center jumbotron content vertically
 		$(".jumbotron").css("padding-top",function(){
 			return ((($(".jumbotron").height() ) - ($(".brand").height() + $(".jumbotron-title-wrap").height())) / 2) + 40 ;
-		});
-
-		// Center jumbotron on screen
-		$(".jumbotron").css("margin-left",function(){
-			return -(($(window).width() - $(".col-lg-12").width()) / 2);
 		});
 	}
 }

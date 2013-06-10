@@ -52,35 +52,46 @@
       </div>
     </div>
     <!-- {% endif %} -->
-    <div class="container wrap">
+    <div class="wrap">
 
       <div class="content">
         {{ content }}
       </div>
 
-      {% if page.tag != 'landing' %}
+      
       <div class="push"></div>
       
      </div>
           
       
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col col-sm-12 col-md-8 col-lg-8 col-offset-2">
-              <h4>Follow me on
+      <footer class="footer">
+        <section class="contact">
+          <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2 col-offset-4">
+                  <h5>Contact</h5>
+                  <ul>
+                    <li><a href="mailto: robeasthope@gmail.com">Email</a></li>
+                    <li><a href="skype:rob01225">Skype</a></li>
+                    <li><a href="https://twitter.com/RobEasthope">Twitter</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                  <h5>Follow me on</h5>
+                  <ul>
+                    <li><a href="https://github.com/robeasthope">Github</a></li>
+                    <li><a href="http://www.behance.net/RobEasthope">Behance</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-offset-4">
+                  <p class="copyright">Copyright {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+                </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col col-sm-12 col-md-8 col-lg-8 col-offset-2">
-              <a class="twitter-icon" href="#"></a>
-              <a class="github-icon" href="#"></a>
-              <a class="behance-icon" href="#"></a>
-            </div>
-          </div>
-        </div>
+          </section>
       </footer>
-      {% endif %}
+      
       <!-- Javascript -->
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
       <script type="text/javascript" src="{{ ASSET_PATH }}/js/scripts.min.js""></script>
