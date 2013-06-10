@@ -13,15 +13,7 @@ tag: landing
 
       <div class="navbar" data-spy="affix" data-offset-top="500">
         <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <a class="navbar-brand" href="{{ HOME_PATH }}/#"> </a> 
-          </button>
-          <a class="navbar-brand hidden-sm" href="{{ HOME_PATH }}/#"> </a> <!-- Desktop branding -->
-          <nav class="nav-collapse collapse center-nav">
-            <ul class="nav">
-              {% include themes/saffron/nav.html %}
-            </ul>
-          </nav>
+          <a class="navbar-brand" href="{{ HOME_PATH }}/#"> </a> 
         <!-- /container -->
         </div>
       <!-- /navbar -->
