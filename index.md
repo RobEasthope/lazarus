@@ -119,7 +119,6 @@ tag: landing
     </div>
   </div>
 </section>
-
 <section class="profile">
   <a id="about"> </a>
   <div class="container">
@@ -127,7 +126,7 @@ tag: landing
       <div class="col-lg-12">
         <h2 class="section-header">About</h2>
       </div>
-      <div class="col-lg-10 col-offset-1">
+      <div class="col-lg-12">
         <div class="row">
           <section class="about">
             <div class="col-12 col-md-12 col-lg-6">
