@@ -29,7 +29,7 @@ tag: landing
     <a id="portfolio"></a>
     <div class="row">
       <div class="col-12 cold-md-12 col-lg-12">
-        <h2 class="section-header">Work.</h2>
+        <h2 class="section-header">Work</h2>
       </div>
       <div class="thumbnails">
         <div class="col col-6 col-md-4 col-lg-3">
@@ -125,7 +125,7 @@ tag: landing
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="section-header">About.</h2>
+        <h2 class="section-header">About</h2>
       </div>
       <div class="col-lg-10 col-offset-1">
         <div class="row">
