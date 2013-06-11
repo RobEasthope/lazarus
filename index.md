@@ -139,7 +139,7 @@ tag: landing
           <section class="profile-details">
             <a id="contact"> </a>
               <div class="col-12 col-md-12 col-lg-6">
-                <h3>Capabilities</h3>
+                <h3>Toolkit</h3>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
                 <h5>Design</h5>
