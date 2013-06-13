@@ -132,7 +132,7 @@ tag: landing
             <div class="col-12 col-md-12 col-lg-6">
               <h3 class="profile-header">Profile</h3>
               <p>I design and build clean and harmonious responsive websites that that run on any modern device.</p>
-              <p>If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or hit me up on <a href="https://twitter.com/RobEasthope">twitter</a>.</p>
+              <p>If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or say hello on <a href="https://twitter.com/RobEasthope">twitter</a>.</p>
             </div>
           </section>
           <section class="profile-details">
