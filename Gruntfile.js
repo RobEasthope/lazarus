@@ -57,7 +57,8 @@ module.exports = function(grunt) {
         files: [
           'assets/themes/saffron/css/less/*.less',
           'assets/themes/saffron/css/less/bootstrap/*.less',
-          'assets/themes/saffron/css/less/retina/*.less'
+          'assets/themes/saffron/css/less/retina/*.less',
+          'assets/themes/saffron/css/less/portfolio-projects/*.less'
         ],
         tasks: ['recess']
       },
