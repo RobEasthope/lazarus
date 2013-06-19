@@ -4,11 +4,6 @@ function oknFullScreen() {
 		$(".jumbotron").css("height",function(){
 			return ($(window).innerHeight() - 12);
 		});
-
-		// Center jumbotron content vertically
-		$(".jumbotron").css("padding-top",function(){
-			return ((($(".jumbotron").height() ) - ($(".brand").height() + $(".jumbotron-title-wrap").height())) / 2) + 40 ;
-		});
 	}
 }
 
