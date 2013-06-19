@@ -69,7 +69,7 @@ p {margin-bottom: @line-height-base;}
 	@media screen and (min-width: @screen-small) {
 		text-align: left;
 		margin: 0;
-		margin-bottom: @line-height-base;
+		margin-bottom: @line-height-base * 1.5;
   	padding: (@line-height-computed * 5) 0 @line-height-computed;
 	}
 }
@@ -79,7 +79,7 @@ p {margin-bottom: @line-height-base;}
 	line-height: 1;
 	font-weight: 300;
 	margin: 0;
-	margin-bottom: @line-height-base;
+	margin-bottom: @line-height-base / 1.33;
 	padding-bottom: @line-height-base / 3;
 	border-bottom: 1px solid @gray-lighter;
 }
@@ -219,8 +219,8 @@ p {margin-bottom: @line-height-base;}
 ******************************************************************************/
 .jumbotron {
 	// Layout
-	margin-top: 15px;
-	margin-bottom: 0px;
+	//margin-top: 15px;
+	//margin-bottom: 0px;
 	width: 100%;
 
 	// Background
@@ -261,12 +261,12 @@ p {margin-bottom: @line-height-base;}
 	.brand {
 		display: inline-block;
 		float: right;
-		height: 72px;
-		width: 72px;
+		height: 75px;
+		width: 75px;
 		margin-right: 10px;
 		margin-bottom: 10px;
 
-		.at2x('../img/branding/roundel.png', 72px, 72px);
+		.at2x('../img/branding/saffron-roundel-circle.png', 75px, 75px);
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
@@ -413,10 +413,11 @@ p {margin-bottom: @line-height-base;}
 
 
 /******************************************************************************
-	Portfolio projects
+	Portfolio project pages
 ******************************************************************************/
 
 // Set thumbnails & project page mastheads
+// ***************************************
 
 // Portfolio Project Mixin order
 // @project-name,
@@ -454,6 +455,10 @@ p {margin-bottom: @line-height-base;}
 
 // Saffron
 .portfolio-project-mixin (saffron, white, png, png);
+.saffron {
+	.page-header-bkg();
+	.page-header h1, .page-header p, .page-header a {background-color: @jbt-heading-bkg}
+}
 
 // Swim London
 .portfolio-project-mixin (swimlondon, @gray-dark, jpg, jpg);
@@ -461,15 +466,29 @@ p {margin-bottom: @line-height-base;}
 // Waterleaf
 .portfolio-project-mixin (waterleaf, @gray-dark, png, jpg);
 
-//Project requiring page-header backgrounds
-.saffron {
-	.page-header-bkg();
-}
 
-.saffron .page-header h1,
-.saffron .page-header p,
-.saffron .page-header a 
-{background-color: @jbt-heading-bkg}
+// Portfolio images
+// ****************
+
+.gallery {
+	padding: @line-height-base 0;
+	text-align: right;
+
+	figure {
+		margin-bottom: @line-height-base * 2;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	figcaption {
+		font-style: italic;
+		font-size: @font-size-small;
+		margin-top: @line-height-base / 2;
+	}
+}
 
 /******************************************************************************
 	Profile
