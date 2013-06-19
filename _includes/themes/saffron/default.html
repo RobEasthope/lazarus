@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <!-- {% if page.tag != 'landing' %} -->
+    {% if page.tag != 'landing' %}
     <div class="navbar navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -51,7 +51,7 @@
         </nav>
       </div>
     </div>
-    <!-- {% endif %} -->
+    {% endif %}
     <div class="wrap">
 
       <div class="content">
@@ -68,23 +68,17 @@
         <section class="contact">
           <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3 col-lg-2 col-offset-4">
-                  <h5>Contact</h5>
-                  <ul>
-                    <li><a href="mailto: robeasthope@gmail.com">Email</a></li>
-                    <li><a href="skype:rob01225">Skype</a></li>
-                    <li><a href="https://twitter.com/RobEasthope">Twitter</a></li>
-                  </ul>
+                <div class="col-12 col-md-6 col-lg-6 contact">
+                    <a class="email-icon" href="mailto: robeasthope@gmail.com">Email</a>
+                    <a class="skype-icon" href="skype:rob01225">Skype</a>
+                    <a class="twitter-icon" href="https://twitter.com/RobEasthope">Twitter</a>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                  <h5>Follow me on</h5>
-                  <ul>
-                    <li><a href="https://github.com/robeasthope">Github</a></li>
-                    <li><a href="http://www.behance.net/RobEasthope">Behance</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                  </ul>
+                <div class="col-12 col-md-6 col-lg-6 social-networks">
+                    <a class="github-icon" href="https://github.com/robeasthope">Github</a>
+                    <a class="behance-icon" href="http://www.behance.net/RobEasthope">Behance</a>
+                    <a class="linkedin-icon" href="#">LinkedIn</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-offset-4">
+                <div class="col-12 col-md-12 col-lg-12">
                   <p class="copyright">Copyright {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
                 </div>
             </div>
