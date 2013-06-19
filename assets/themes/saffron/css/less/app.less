@@ -10,6 +10,7 @@ grunt watch
 @import "bootstrap/utilities.less";
 @import "retina/retina.less";
 @import "bootstrap/grid.less";
+@import "mixins/project.less";
 
 /******************************************************************************
 	Base
@@ -25,13 +26,13 @@ html, body {height: 100%;}
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -256px auto; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -123px auto; /* the bottom margin is the negative value of the footer's height */
 }
 
-.push {  height: 256px; /* .push must be the same height as .footer */  }
+.push {  height: 123px; /* .push must be the same height as .footer */  }
 
 footer {
-  height: 256px; /* .push must be the same height as .footer */
+  height: 123px; /* .push must be the same height as .footer */
 }
 
 /******************************************************************************
@@ -50,18 +51,26 @@ h1, .h1 { font-size: (@font-size-base * 3.25); }
 
 a:hover, a:focus {text-decoration: none}
 
+p {margin-bottom: @line-height-base;}
+
 // Headers
 
 .page-header {
-	//margin-top: @line-height-base;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: none;
-	//margin-left: @font-size-base / 2;
+	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0;
+	h1, a, p {margin: 0;}
 
 	@media screen and (min-width: @screen-small) {
-		//text-align: left;
-		//margin-left: 0;
+		text-align: left;
+		margin: 0;
+		margin-bottom: @line-height-base;
+  	padding: (@line-height-computed * 5) 0 @line-height-computed;
 	}
 }
 
@@ -70,7 +79,8 @@ a:hover, a:focus {text-decoration: none}
 	line-height: 1;
 	font-weight: 300;
 	margin: 0;
-	margin-bottom: @line-height-base * 1.5;
+	margin-bottom: @line-height-base;
+	padding-bottom: @line-height-base / 3;
 	border-bottom: 1px solid @gray-lighter;
 }
 
@@ -224,7 +234,6 @@ a:hover, a:focus {text-decoration: none}
 	// Portrait
 	@media (orientation: portrait) {
 		background-image: url('../img/branding/The-Kanawaga-Wave-portrait.png');
-		
 	}
 
 	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
@@ -239,11 +248,15 @@ a:hover, a:focus {text-decoration: none}
 	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
 		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1400@2x.png');
 	}
-	
 
-
-// Masthead content
-
+	// Masthead content
+	.jumbotron-content-wrap {
+		position: absolute;
+		display: inline-block;
+		right: 5%;
+		bottom: 15%;
+		left: 5%;
+	}
 
 	.brand {
 		display: inline-block;
@@ -256,10 +269,6 @@ a:hover, a:focus {text-decoration: none}
 		.at2x('../img/branding/roundel.png', 72px, 72px);
 		background-repeat: no-repeat;
 		background-position: right top;
-	}
-
-	.jumbotron-title-wrap {
-
 	}
 
 	h1 {
@@ -301,7 +310,6 @@ a:hover, a:focus {text-decoration: none}
 
 	@media screen and (min-width: @screen-tablet) {
 	  .jumbotron {
-
 	    h1 {
 	      //font-size: (@font-size-base * 4.5);
 	    }
@@ -318,21 +326,19 @@ a:hover, a:focus {text-decoration: none}
 }
 
 /******************************************************************************
-	Portfolio thumbnails
+	Portfolio
 ******************************************************************************/
+
+//Thumbnails structure
 .portfolio {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .thumbnails {
-	padding-left: 0px;
-	padding-right: 0px;
-
-	@media screen and (min-width: @screen-tablet) {
 		padding-left: @grid-gutter-width / 2;
 		padding-right: @grid-gutter-width / 2;
-	}
+	
 
 	.col {
 		padding: 0;
@@ -350,7 +356,14 @@ a:hover, a:focus {text-decoration: none}
 		border-radius: 0;
 		border: none;
 
-
+		&:hover, &:focus {
+			.thumbnail-rollover {
+				background-color: rgba(255, 255, 255, 0.5);
+				.thumbnail-text-wrap {opacity: 1;}
+				.portfolio-title {opacity: 1;}
+				.portfolio-sub {opacity: 1;}
+			}
+		}
 
 		.thumbnail-rollover {
 			display: table;
@@ -365,10 +378,7 @@ a:hover, a:focus {text-decoration: none}
 			padding-left: 10%;
 			padding-right: 10%;
 			opacity: 0;
-
-			&:hover, &:focus {
-				opacity: 1;
-			}
+			text-align: center;
 		}
 
 		.portfolio-title {
@@ -377,137 +387,96 @@ a:hover, a:focus {text-decoration: none}
 			line-height: 1.1;
 			font-weight: normal;
 			text-align: center;
+			text-transform: uppercase;
+			color: #666;
+
+			background-color: white;
+
+			display: inline-block;
 			margin-top: 0;
 			margin-bottom: 0;
-			text-transform: uppercase;
+			padding: 8px;
+
 			opacity: 0;
 			transition: all 0.4s ease-in;
 		}
 	}
+}
 
-	.ambr {
-		background-image: url('../img/ambr/ambr-thumbnail.png');
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
+// Portfolio pages structure
+.project-details {
+	text-align: center;
+	@media screen and (min-width: @screen-tablet) {
+		text-align: right;
 	}
+}
 
-	.brixton {
-		background-image: url('../img/brixton/brixton-thumbnail.jpg');
-		a {color: white;}
 
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(192, 12, 0, 0.90);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
+/******************************************************************************
+	Portfolio projects
+******************************************************************************/
 
-	.eufn {
-		background-image: url('../img/eufn/EUFN-thumbnail.png');
+// Set thumbnails & project page mastheads
 
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.95);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
+// Portfolio Project Mixin order
+// @project-name,
+// @project-header-colour,
+// @thumbnail-filetype,
+// @masthead-filetype
 
-	.lambeth {
-		background-image: url('../img/lambeth/lambeth-thumbnail.jpg');
-		a {
-			color: white;
-			text-decoration: none;
-		}
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(0, 161, 66, 0.90);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
-
-	.lancastrians {
-		background-image: url('../img/lancastrians/lancastrians-thumbnail.jpg');
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
-
-	.layla {
-		background-image: url('../img/layla/layla-thumbnail.png');
-		a {color: white;}
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(253, 187, 48, 0.90);
-				a {text-decoration: none;}
-				
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
-
-	.saffron {
-		background-image: url('../img/saffron/saffron-thumbnail.png');
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.90);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
-
-	.swimlondon {
-		background-image: url('../img/swimlondon/swimlondon-thumbnail.jpg');
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.95);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
-		}
-	}
-	
-	.waterleaf {
-		background-image: url('../img/waterleaf/waterleaf-thumbnail.png');
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background: rgba(255, 255, 255, 0.95);
-				.portfolio-title {opacity: 1}
-				.portfolio-sub {opacity: 1}
-			}
+.page-header-bkg {
+	.page-header {
+		h1, a, p {
+			display: inline-block;
+			background-color: white;
+			padding: 8px;
 		}
 	}
 }
+
+//Ambr
+.portfolio-project-mixin (ambr, @gray-dark, png, png);
+
+// Brixton
+.portfolio-project-mixin (brixton, white, jpg, jpg);
+
+// EUFN
+.portfolio-project-mixin (eufn, white, png, png);
+
+// Lambeth
+.portfolio-project-mixin (lambeth, white, jpg, jpg);
+
+// Lancastrians
+.portfolio-project-mixin (lancastrians, white, jpg, jpg);
+
+// Layla
+.portfolio-project-mixin (layla, white, png, jpg);
+
+// Saffron
+.portfolio-project-mixin (saffron, white, png, png);
+
+// Swim London
+.portfolio-project-mixin (swimlondon, @gray-dark, jpg, jpg);
+
+// Waterleaf
+.portfolio-project-mixin (waterleaf, @gray-dark, png, jpg);
+
+//Project requiring page-header backgrounds
+.saffron {
+	.page-header-bkg();
+}
+
+.saffron .page-header h1,
+.saffron .page-header p,
+.saffron .page-header a 
+{background-color: @jbt-heading-bkg}
 
 /******************************************************************************
 	Profile
 ******************************************************************************/
 .profile {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 /******************************************************************************
@@ -549,24 +518,45 @@ a:hover, a:focus {text-decoration: none}
 	display: inline-block;
 	margin-left: 16px;
 	margin-right: 16px;
-	width: 24px;
-	height: 24px;
-	background-size: 24px 24px;
+	width: 48px;
+	height: 48px;
+	background-size: 48px 48px;
+}
+
+.email-icon {
+	.social-icon();
+	@media screen and (min-width: @screen-small) {
+		margin-left: 0;
+	}
+	//.at2x('../img/social/email-colour.png', 64px, 64px);
+}
+
+.skype-icon {
+	.social-icon();
+	//.at2x('../img/social/skype-colour.png', 64px, 64px);
 }
 
 .twitter-icon {
 	.social-icon();
-	.at2x('../img/social/twitter-colour.png', 64px, 64px);
+	//.at2x('../img/social/twitter-colour.png', 64px, 64px);
 }
 
 .github-icon {
 	.social-icon();
-	.at2x('../img/social/github-colour.png', 64px, 64px);
+	//.at2x('../img/social/github-colour.png', 64px, 64px);
 }
 
 .behance-icon {
 	.social-icon();
-	.at2x('../img/social/behance-colour.png', 64px, 64px);
+	//.at2x('../img/social/behance-colour.png', 64px, 64px);
+}
+
+.linkedin-icon {
+	.social-icon();
+	@media screen and (min-width: @screen-small) {
+		margin-right: 0;
+	}
+	//.at2x('../img/social/linkedin-colour.png', 64px, 64px);
 }
 
 /******************************************************************************
@@ -575,38 +565,34 @@ a:hover, a:focus {text-decoration: none}
 
 .footer {
 	padding-top: @line-height-base;
-	background-color: @gray-dark;
 	width: 100%;
 	display: table;
+	border-top: 1px solid @gray-lighter;
 
 	//Contact details
 	.contact {
-		
-		background-color: transparent;
-		color: white;
-
-		h5 {
-		font-weight: 300;
-		line-height: 2.7rem;
-		color: white;
-	}
-	ul {
-		margin: 0;
-		list-style-type: none;
-		color: white;
+		text-align: center;
+		@media screen and (min-width: @screen-small) {
+			text-align: left;
+		}
 	}
 
-	a {color: white;}
-	}
 
 	.copyright {
 		font-family: @font-family-sans-serif;
 		font-size: @font-size-small;
-		text-align: left;
-		color: white;
 		margin: @line-height-base 0;
+		text-align: center;
+		@media screen and (min-width: @screen-small) {
+			text-align: left;
+		}
 	}
 
-	.contact-details {text-align: right;}
+	.social-networks {
+		text-align: center;
+		@media screen and (min-width: @screen-small) {
+			text-align: right;
+		}
+		}
 }
 
