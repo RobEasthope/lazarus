@@ -29,19 +29,21 @@ tag: landing
     <a id="portfolio"></a>
     <div class="row">
       <div class="col-12 cold-md-12 col-lg-12">
-        <h2 class="section-header">Work</h2>
+        <h2 class="section-header">Selected works</h2>
       </div>
       <div class="thumbnails">
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail brixton">
-            <a class="thumbnail-rollover" href="http://www.brixtonadvice.org.uk.php53-6.ord1-1.websitetestlink.com/">
-              <h3 class="portfolio-title thumbnail-text-wrap">The Brixton Advice Centre</h3>
+          <div class="thumbnail brixton-thb">
+            <a class="thumbnail-rollover" href="/brixton">
+              <div class="thumbnail-text-wrap">
+                <h3 class="portfolio-title">The Brixton Advice Centre</h3>
+              </div>
             </a>
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail lambeth">
-            <a class="thumbnail-rollover" href="http://www.lambethadvice.org.uk/">
+          <div class="thumbnail lambeth-thb">
+            <a class="thumbnail-rollover" href="/lambeth">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">The Lambeth Advice Network</h3>
               </div>
@@ -49,18 +51,17 @@ tag: landing
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail lancastrians">
-            <a class="thumbnail-rollover" href="http://lancastriansinlondon.org.uk">
+          <div class="thumbnail lancastrians-thb">
+            <a class="thumbnail-rollover" href="/lancastrians">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">The Association of Lancastrians in London</h3>
               </div>
             </a>
           </div>
         </div>
-        <!--
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail eufn">
-            <a class="thumbnail-rollover" href="#">
+          <div class="thumbnail eufn-thb">
+            <a class="thumbnail-rollover" href="/eufn">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">The European Union Families Network</h3>
               </div>
@@ -68,37 +69,36 @@ tag: landing
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail ambr">
-            <a class="thumbnail-rollover" href="#">
+          <div class="thumbnail ambr-thb">
+            <a class="thumbnail-rollover" href="/ambr">
               <div class="thumbnail-text-wrap">
                   <h3 class="portfolio-title">AMBR Media</h3>
               </div>
             </a>
           </div>
         </div>
-      -->
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail layla">
-            <a class="thumbnail-rollover" href="http://www.laylamoran.com/">
+          <div class="thumbnail layla-thb">
+            <a class="thumbnail-rollover" href="/layla">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">Layla Moran<br>(Oxford West &amp; Abingdon campaign)</h3>
               </div>
             </a>
           </div>
         </div>
-        <!--
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail saffron">
-            <a class="thumbnail-rollover" href="#">
+          <div class="thumbnail saffron-thb">
+            <a class="thumbnail-rollover" href="/saffron">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">Portfolio</h3>
               </div>
             </a>
           </div>
         </div>
+        <!--
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail swimlondon">
-            <a class="thumbnail-rollover" href="#">
+          <div class="thumbnail swimlondon-thb">
+            <a class="thumbnail-rollover" href="swimlondon">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">Swim London</h3>
               </div>
@@ -106,8 +106,8 @@ tag: landing
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="thumbnail waterleaf">
-            <a class="thumbnail-rollover" href="#">
+          <div class="thumbnail waterleaf-thb">
+            <a class="thumbnail-rollover" href="waterleaf">
               <div class="thumbnail-text-wrap">
                 <h3 class="portfolio-title">Waterleaf</h3>
               </div>
