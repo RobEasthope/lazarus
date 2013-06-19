@@ -145,18 +145,21 @@ tag: landing
                 <ul>
                   <li>Branding</li>
                   <li>Logo design</li>
+                  <li>Wire-framing and prototyping</li>
                   <li>Adobe Creative Suite</li>
-                  <li>Web standards &amp; accessability</li>
+                  <li>Print design</li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
               <h5>Development</h5>
               <ul>
-                <li>HTML5, CSS 2 &amp; 3</li>
-                <li>SASS/LESS</li>
-                <li>PHP, JQuery, JavaScript</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>SASS &amp; LESS</li>
+                <li>JavaScript, JQuery, and NodeJS</li>
+                <li>PHP &amp; MySQL</li>
+                <li>Git</li>
+                <li>Wordpress &amp; Jekyll</li>
                 <li>Bootstrap &amp; Foundation</li>
-                <li>Wordpress</li>
               </ul>
             </div>
           </section>
