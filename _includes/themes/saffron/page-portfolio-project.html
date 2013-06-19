@@ -1,0 +1,43 @@
+<div class="row">
+	<article class="{{ page.short-name }}">
+		<div class="page-header">
+			<div class="container">
+				<div class="col-12 col-md-10 col-lg-10 col-offset-1">
+			  	<h1>{{ page.title }}</h1>
+			  	<a href="{{ page.site-url }}">{{ page.site-url }}</a>
+			  	<aside class="visible-sm project-details">
+						{% if page.client %}
+							<p>Client: {{ page.client }}</p>
+						{% endif %}
+						{% if page.works  %}
+							<p>Works: {{ page.works }}</p>
+						{% endif %}
+						{% if page.github-link  %}
+							<p>Github: {{ page.github-link }}</p>
+						{% endif %}
+					</aside>
+			  </div>
+		  </div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-10 col-lg-10 col-offset-1">
+					<aside class="hidden-sm col-md-4 col-lg-4 project-details">
+						{% if page.client %}
+							<p>Client: {{ page.client }}</p>
+						{% endif %}
+						{% if page.works  %}
+							<p>Works: {{ page.works }}</p>
+						{% endif %}
+						{% if page.github-link  %}
+							<p>Github: {{ page.github-link }}</p>
+						{% endif %}
+					</aside>
+				  <div class="col-12 col-md-8 col-lg-8">
+				    {{ content | markdownify  }}
+				  </div>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>
