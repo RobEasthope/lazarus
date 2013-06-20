@@ -4,7 +4,12 @@
 			<div class="container">
 				<div class="col-12 col-md-10 col-lg-10 col-offset-1">
 			  	<h1>{{ page.title }}</h1>
-			  	<a href="{{ page.site-url }}">{{ page.site-url }}</a>
+			  	{% if page.site-url %}
+			  		<a href="{{ page.site-url }}">{{ page.site-url }}</a>
+			  	{% endif %}
+			  	{% if page.hidden-url %}
+			  		<a href="{{ page.hidden-url }}">www.brixtonadvice.org.uk</a>
+			  	{% endif %}
 			  	<aside class="visible-sm project-details">
 						{% if page.client %}
 							<p>Client: {{ page.client }}</p>
