@@ -131,7 +131,7 @@ tag: landing
           <section class="about">
             <div class="col-12 col-md-12 col-lg-6">
               <h3 class="profile-header">Profile</h3>
-              <p>I design and build clean and harmonious responsive websites that that run on any modern device.</p>
+              <p>I design and build clean, harmonious, responsive websites that that run on any modern device.</p>
               <p>If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or tweet me at <a href="https://twitter.com/RobEasthope">@robeasthope</a>.</p>
             </div>
           </section>
