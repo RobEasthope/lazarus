@@ -57,8 +57,7 @@ module.exports = function(grunt) {
         files: [
           'assets/themes/saffron/css/less/*.less',
           'assets/themes/saffron/css/less/bootstrap/*.less',
-          'assets/themes/saffron/css/less/retina/*.less',
-          'assets/themes/saffron/css/less/portfolio-projects/*.less'
+          'assets/themes/saffron/css/less/retina/*.less'
         ],
         tasks: ['recess']
       },
@@ -78,7 +77,7 @@ module.exports = function(grunt) {
   });
 
   // Load tasks
-  grunt.loadTasks('tasks');
+  //grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
