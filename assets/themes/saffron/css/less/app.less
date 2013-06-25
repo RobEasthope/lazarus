@@ -17,7 +17,7 @@ grunt watch
 ******************************************************************************/
 // --- Structure ---
 
-body {overflow-x: hidden;}
+body {}
 
 //Sticky Footer
 html, body {height: 100%;}
@@ -77,13 +77,13 @@ p {margin-bottom: @line-height-base;}
 }
 
 .section-header {
+	font-family: @font-family-flood;
 	font-size: @font-size-base;
-	line-height: 1;
+	line-height: 1.2;
 	font-weight: 300;
+	text-align: center;
 	margin: 0;
-	margin-bottom: @line-height-base / 1.33;
-	padding-bottom: @line-height-base / 3;
-	border-bottom: 1px solid @gray-lighter;
+	margin-bottom: @line-height-base / 3;
 }
 
 
@@ -162,6 +162,9 @@ p {margin-bottom: @line-height-base;}
 	background-color: white;
 	text-align: center;
 	min-height: @navbar-height;
+	@media screen {
+		display: block;
+	}
 
 	.navbar-toggle {
 		position: relative;
@@ -286,7 +289,7 @@ p {margin-bottom: @line-height-base;}
 		text-transform: uppercase;
 		line-height: 1;
 		text-align: right;
-		color: white;
+		color: @gray-dark;
 
 		// Bkg Stripes
 		background-color: @jbt-heading-bkg;
