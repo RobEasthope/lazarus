@@ -184,17 +184,15 @@ th {
 // -----------------
 
 // Reset default table behavior
-table col[class^="col-"] {
+table col[class*="col-span-"] {
   float: none;
   display: table-column;
 }
-table td[class^="col-"],
-table th[class^="col-"] {
+table td[class*="col-span-"],
+table th[class*="col-span-"] {
   float: none;
   display: table-cell;
 }
-
-
 
 // TABLE BACKGROUNDS
 // -----------------
