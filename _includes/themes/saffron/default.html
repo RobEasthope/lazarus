@@ -36,20 +36,11 @@
   </head>
 
   <body>
+    {% if page.tag != 'landing' %}
     <div class="navbar navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <a class="navbar-brand" href="{{ HOME_PATH }}"> </a> 
-        </button>
-        
-        <a class="navbar-brand hidden-sm" href="{{ HOME_PATH }}"> </a>  
-        <nav class="nav-collapse collapse center-nav">
-          <ul class="nav">
-            {% include themes/saffron/nav.html %}
-          </ul>
-        </nav>
-      </div>
+      <a class="navbar-brand" href="{{ HOME_PATH }}"> </a>
     </div>
+    {% endif %}
     <div class="wrap">
 
       <div class="content">
@@ -63,25 +54,20 @@
           
       
       <footer class="footer">
-        <section class="contact">
           <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 contact">
-                    <a class="email-icon" href="mailto: robeasthope@gmail.com">Email</a>
-                    <a class="skype-icon" href="skype:rob01225">Skype</a>
-                    <a class="twitter-icon" href="https://twitter.com/RobEasthope">Twitter</a>
+                <div class="col-12 col-md-6 col-lg-6 contact-details">
+                    <a class="icon-email" href="mailto: robeasthope@gmail.com"></a>
+                    <a class="icon-skype" href="skype:rob01225"></a>
+                    <a class="icon-twitter" href="https://twitter.com/RobEasthope"></a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 social-networks">
-                    <a class="github-icon" href="https://github.com/robeasthope">Github</a>
-                    <a class="behance-icon" href="http://www.behance.net/RobEasthope">Behance</a>
-                    <a class="linkedin-icon" href="#">LinkedIn</a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                  <p class="copyright">Copyright {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+                    <a class="icon-github" href="https://github.com/robeasthope"></a>
+                    <a class="icon-behance" href="http://www.behance.net/RobEasthope"></a>
+                    <a class="icon-linkedin" href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0"></a>
                 </div>
             </div>
           </div>
-          </section>
       </footer>
       
       <!-- Javascript -->
