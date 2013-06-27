@@ -8,8 +8,20 @@
 
 // Social icon generation
 .social-icon-mixin (@contact-type) {
-	.icon-@{contact-type} {
+	// Icon bkg
+	.icon-@{contact-type}-bkg {
 		.social-icon-base();
 		background-image: url('../img/branding/icon-@{contact-type}.svg');
+
+	}
+	// Inline icons
+	.icon-@{contact-type} {
+	.social-icon-base();
+			background-image: url('../img/branding/icon-@{contact-type}.svg');
+			padding-left: 56px;
+			line-height: 40px;
+			margin-left: 0px;
+			margin-bottom: (@line-height-base / 2);
+			opacity: 1;
 	}
 }

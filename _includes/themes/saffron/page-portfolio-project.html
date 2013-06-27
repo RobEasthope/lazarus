@@ -3,9 +3,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-10 col-lg-10 col-offset-1">
-					<aside class="hidden-sm col-md-4 col-lg-4 project-details">
-						<p>{{ page.title }}</p>
-						{{ page.description | markdownify  }}
+					<aside class="col-12 col-md-4 col-lg-4 project-details">
+						<h4 class="project-title">{{ page.title }}</h4>
+						{{ page.copy | markdownify  }}
 						{% if page.client %}
 							<p>Client: {{ page.client }}</p>
 						{% endif %}
@@ -16,7 +16,7 @@
 							<p>Github: {{ page.github-link }}</p>
 						{% endif %}
 					</aside>
-				  <div class="col-12 col-md-8 col-lg-8">
+				  <div class="col-12 col-md-8 col-lg-8 main-content">
 				    {{ content | markdownify  }}
 				  </div>
 				</div>

@@ -71,7 +71,7 @@ grunt watch
 
 // Plugins
 @import "retina/retina.less";
-@import "mixins.less";
+@import "mixins/project.less";
 
 /******************************************************************************
 	Base
@@ -87,13 +87,13 @@ html, body {height: 100%;}
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -90px auto; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -63px auto; /* the bottom margin is the negative value of the footer's height */
 }
 
-.push {  height: 90px; /* .push must be the same height as .footer */  }
+.push {  height: 63px; /* .push must be the same height as .footer */  }
 
 footer {
-  height: 90px; /* .push must be the same height as .footer */
+  height: 63px; /* .push must be the same height as .footer */
 }
 
 .col-centered {
@@ -144,28 +144,88 @@ p {margin-bottom: @line-height-base;}
 
 .section-header {
 	font-family: @font-family-flood;
-	font-size: 5rem;
+	font-size: @font-size-base * 5;
 	line-height: 1.2;
 	font-weight: 300;
 	text-align: center;
 	margin: 0;
 	margin-top: @line-height-base * 3;
 	margin-bottom: @line-height-base * 2;
-
-	@media (min-width: @screen-tablet) {
-		font-size: @font-size-base * 5;
-	}
 }
 
-.hidden-li {
-	list-style-type: none;
-	padding-left: 0;
-}
 
-.center-text {text-align: center;}
 /******************************************************************************
 	Navigation
 ******************************************************************************/
+
+.affix-top {
+	// Structure
+	width: 0;
+	float: right;
+	clear: both;
+	padding: 0;
+	display: none;
+
+	// Typography
+	font-family: @headings-font-family;
+	text-transform: uppercase;
+	font-size: 2.6rem;
+
+	// Background stripes
+	margin-top: 10px;
+
+	@media screen and (min-width: 450px) {
+		font-size: 3.75rem;
+	}
+
+	@media screen and (min-width: 797px) {
+		font-size: 5.75rem;
+	}
+
+	.navbar-brand {
+		//position: absolute;
+		//left: 10000000px;
+}
+
+	.nav {
+		background-color: @jbt-heading-bkg;
+
+		li {
+			width: auto;
+			margin: 10px;
+
+			a {
+				color: white;
+				padding-left: 0;
+				padding-right: 0;
+				transition: color 0.25s ease-in;
+				&:hover, &:focus {
+					color: #27ae60;
+					background-color: @jbt-heading-bkg 
+					;
+				}
+			}
+		}
+	}
+}
+
+.affix {
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	left: 0;
+
+	.nav {
+		li {width: 100px;
+			a {
+				font-family: @font-family-sans-serif;
+				font-size: @font-size-base;
+				line-height: 1;
+				transition: color 0.4s ease-in;
+			}
+		}
+	}
+}
 
 .navbar {
 	background-color: white;
@@ -213,13 +273,13 @@ p {margin-bottom: @line-height-base;}
 		display: block;
 		height: 30px;
 		width: 30px;
-		margin-top: 10px;
 		.at2x('../img/branding/roundel-micro.png', 30px, 30px);
 		background-repeat: no-repeat;
 		background-position: center center;
 
 		@media all and (min-width: 768px) {
 			float: none;
+			margin-top: 10px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -229,13 +289,14 @@ p {margin-bottom: @line-height-base;}
 ******************************************************************************/
 .jumbotron {
 	// Layout
-	margin-top: -@navbar-height;
+	//margin-top: 15px;
+	//margin-bottom: 0px;
 	display: table;
 	width: 100%;
 
 	// Background
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: left top;
 	background-size: cover;
 
 	//Border
@@ -292,16 +353,16 @@ p {margin-bottom: @line-height-base;}
 		margin-bottom: 0;
 		
 		// Typography
-		font-family: @font-family-league;
+		font-family: "league-gothic", @font-family-sans-serif;
 		font-size: 2.6rem;
 		font-weight: normal;
 		text-transform: uppercase;
 		line-height: 1;
 		text-align: center;
-		color: @india-ink;
+		color: @gray-dark;
 
 		// Bkg Stripes
-		padding: 5px 15px;
+		padding: 5px 10px;
 		background-color: @jbt-heading-bkg;
 		
 		&:first-of-type {
@@ -335,19 +396,17 @@ p {margin-bottom: @line-height-base;}
 	Content
 ******************************************************************************/
 .content {
-	margin-top: @navbar-height;
+	//margin-top: @navbar-height;
 }
 
 /******************************************************************************
-	Portfolio section
+	Portfolio
 ******************************************************************************/
 
 //Thumbnails structure
 .portfolio {
-	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 75px;
-	}
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .thumbnails {
@@ -418,7 +477,13 @@ p {margin-bottom: @line-height-base;}
 	}
 }
 
-
+// Portfolio pages structure
+.project-details {
+	text-align: center;
+	@media screen and (min-width: @screen-tablet) {
+		text-align: right;
+	}
+}
 
 
 /******************************************************************************
@@ -433,6 +498,16 @@ p {margin-bottom: @line-height-base;}
 // @project-header-colour,
 // @thumbnail-filetype,
 // @masthead-filetype
+
+.page-header-bkg {
+	.page-header {
+		h1, a, p {
+			display: inline-block;
+			background-color: white;
+			padding: 8px;
+		}
+	}
+}
 
 //Ambr
 .portfolio-project-mixin (ambr, png);
@@ -455,22 +530,6 @@ p {margin-bottom: @line-height-base;}
 // Saffron
 .portfolio-project-mixin (saffron, png);
 
-
-// Portfolio pages structure
-// *************************
-
-.project-title {font-weight: 300;}
-
-.project-details {
-	text-align: center;
-	@media screen and (min-width: @screen-tablet) {
-		text-align: left;
-	}
-}
-
-.main-content {
-	//margin-left: percentage((4 / @grid-columns));
-}
 
 // Portfolio images
 // ****************
@@ -495,17 +554,17 @@ p {margin-bottom: @line-height-base;}
 	}
 }
 
+/******************************************************************************
+	Profile
+******************************************************************************/
+.profile {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
 
 /******************************************************************************
 	About
 ******************************************************************************/
-.profile {
-	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 75px;
-	}
-}
-
 .profile-details, .about {
 	h3 {
 		font-size: @font-size-base;
@@ -532,53 +591,52 @@ p {margin-bottom: @line-height-base;}
 
 }
 
-/******************************************************************************
-	Contact
-******************************************************************************/
 
-.contact {
-	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 100px;
-	}
-}
 
 /******************************************************************************
 	Social icons
 ******************************************************************************/
 
-.social-icon-base {
+.social-icon {
 	display: inline-block;
 	margin-left: 16px;
 	margin-right: 16px;
-	width: 40px;
-	height: 40px;
-	background-size: 40px 40px;
-	background-repeat: no-repeat;
-	transition: all 0.5s ease-in;
-	opacity: 0.6;
-
-	&:hover, &:focus {
-		opacity: 1;
-	}
+	width: 48px;
+	height: 48px;
+	background-size: 48px 48px;
 }
-// Email icon
-.social-icon-mixin (email);
 
-// Skype icon
-.social-icon-mixin (skype);
+.email-icon {
+	.social-icon();
 
-// Twitter icon
-.social-icon-mixin (twitter);
+	//.at2x('../img/social/email-colour.png', 64px, 64px);
+}
 
-// Github icon
-.social-icon-mixin (github);
+.skype-icon {
+	.social-icon();
+	//.at2x('../img/social/skype-colour.png', 64px, 64px);
+}
 
-// Behance icon
-.social-icon-mixin (behance);
+.twitter-icon {
+	.social-icon();
+	//.at2x('../img/social/twitter-colour.png', 64px, 64px);
+}
 
-// Linkedin icon
-.social-icon-mixin (linkedin);
+.github-icon {
+	.social-icon();
+	//.at2x('../img/social/github-colour.png', 64px, 64px);
+}
+
+.behance-icon {
+	.social-icon();
+	//.at2x('../img/social/behance-colour.png', 64px, 64px);
+}
+
+.linkedin-icon {
+	.social-icon();
+
+	//.at2x('../img/social/linkedin-colour.png', 64px, 64px);
+}
 
 /******************************************************************************
 	Footer
@@ -586,16 +644,15 @@ p {margin-bottom: @line-height-base;}
 
 .footer {
 	border-top: 1px solid @gray-lighter;
-	padding-top: @line-height-base;
-	padding-bottom: @line-height-base;
-
 
 	//Contact details
-	.contact-details {
+	.contact {
 		text-align: center;
 		@media screen and (min-width: @screen-small) {
 			text-align: left;
 		}
+
+		padding-top: @line-height-base;
 	}
 
 
@@ -604,7 +661,6 @@ p {margin-bottom: @line-height-base;}
 		font-size: @font-size-small;
 		margin: @line-height-base 0;
 		text-align: center;
-
 		@media screen and (min-width: @screen-small) {
 			text-align: left;
 		}
@@ -612,10 +668,10 @@ p {margin-bottom: @line-height-base;}
 
 	.social-networks {
 		text-align: center;
-
 		@media screen and (min-width: @screen-small) {
 			text-align: right;
 		}
+		padding-top: @line-height-base;
 	}
 }
 

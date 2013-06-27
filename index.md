@@ -10,10 +10,7 @@ tag: landing
         <h1>Rob Easthope</h1>
       </div>
       <div class="jbt-text-wrap">
-        <h1>Front end designer</h1>
-      </div>
-      <div class="jbt-text-wrap">
-        <h1>&amp; developer</h1>
+        <h1>Front end designer &amp; developer</h1>
       </div>
   <!-- /jumbotron-content-wrap -->
   </div>
@@ -157,20 +154,20 @@ tag: landing
         <h2 class="section-header">Contact</h2>
         <p class="center-text">If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or tweet me at <a href="https://twitter.com/RobEasthope">@robeasthope</a>.</p>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
+          <div class="col-6 col-md-6 col-lg-6">
             <h5>Contact</h5>
             <ul class="hidden-li">
-              <li><a href="mailto: robeasthope@gmail.com">Email</a></li>
-              <li><a href="skype:rob01225">Skype</a></li>
-              <li><a href="https://twitter.com/RobEasthope">Twitter</a></li>
+              <li><a class="icon-email" href="mailto: robeasthope@gmail.com">Email</a></li>
+              <li><a class="icon-skype" href="skype:rob01225">Skype</a></li>
+              <li><a class="icon-twitter" href="https://twitter.com/RobEasthope">Twitter</a></li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <h5>Follow me on</h5>
+          <div class="col-6 col-md-6 col-lg-6">
+            <h5>Find me on</h5>
             <ul class="hidden-li">
-              <li><a href="https://github.com/robeasthope">Github</a></li>
-              <li><a href="http://www.behance.net/RobEasthope">Behance</a></li>
-              <li><a href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0">LinkedIn</a></li>
+              <li><a class="icon-github" href="https://github.com/robeasthope">Github</a></li>
+              <li><a class="icon-behance" href="http://www.behance.net/RobEasthope">Behance</a></li>
+              <li><a class="icon-linkedin" href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0">LinkedIn</a></li>
             </ul>
           </div>
         </div>
