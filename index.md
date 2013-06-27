@@ -6,30 +6,22 @@ tag: landing
 <div class="jumbotron">
   <div class="jumbotron-content-wrap">
     <div class="brand"> </div>
-    <div class="jumbotron-title-wrap">
-      <h1>I'm Rob Easthope</h1>
-      <h1>A Front end designer &amp; developer</h1>
-      <h1>Based in London, England.</h1>
-
-      <div class="navbar" data-spy="affix" data-offset-top="500">
-        <div class="container">
-          <a class="navbar-brand" href="{{ HOME_PATH }}/#"> </a> 
-        <!-- /container -->
-        </div>
-      <!-- /navbar -->
+      <div class="jbt-text-wrap">
+        <h1>Rob Easthope</h1>
       </div>
-    <!-- /jumbotron-title-wrap -->
-    </div>
+      <div class="jbt-text-wrap">
+        <h1>Front end designer &amp; developer</h1>
+      </div>
   <!-- /jumbotron-content-wrap -->
   </div>
 <!-- /Jumbotron -->
 </div>
 <section class="portfolio">
   <div class="container">
-    <a id="portfolio"></a>
+    <a id="portfolio"> </a>
     <div class="row">
       <div class="col-12 cold-md-12 col-lg-12">
-        <h2 class="section-header">Selected work</h2>
+        <h2 class="section-header">Portfolio</h2>
       </div>
       <div class="thumbnails">
         <div class="col col-6 col-md-4 col-lg-3">
@@ -123,46 +115,61 @@ tag: landing
   <a id="about"> </a>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-12 col-md-12 col-lg-6 col-centered">
         <h2 class="section-header">About</h2>
-      </div>
-      <div class="col-lg-12">
+        <p class="center-text">I’m a passionate hybrid front end web designer and developer who builds clean, responsive and usable websites that work solidly and look pretty.</p>
         <div class="row">
-          <section class="about">
-            <div class="col-12 col-md-12 col-lg-6">
-              <h3 class="profile-header">Profile</h3>
-              <p>I design and build clean, responsive websites that that run on any modern device.</p>
-              <p>If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or tweet me at <a href="https://twitter.com/RobEasthope">@robeasthope</a>.</p>
-            </div>
-          </section>
-          <section class="profile-details">
-            <a id="contact"> </a>
-              <div class="col-12 col-md-12 col-lg-6">
-                <h3>Toolkit</h3>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <h5>Design</h5>
-                <ul>
-                  <li>Branding</li>
-                  <li>Logo design</li>
-                  <li>Wire-framing and prototyping</li>
-                  <li>Adobe Creative Suite</li>
-                  <li>Print design</li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <h5>Development</h5>
-              <ul>
-                <li>HTML5 &amp; CSS3</li>
-                <li>SASS &amp; LESS</li>
-                <li>JavaScript, JQuery, and NodeJS</li>
-                <li>PHP &amp; MySQL</li>
-                <li>Git</li>
-                <li>Wordpress &amp; Jekyll</li>
-                <li>Bootstrap &amp; Foundation</li>
-              </ul>
-            </div>
-          </section>
+          <div class="col-12 col-md-6 col-lg-6">
+            <h5>Design</h5>
+            <ul class="hidden-li">
+              <li>Branding</li>
+              <li>Logo design</li>
+              <li>Wire-framing and prototyping</li>
+              <li>Adobe Creative Suite</li>
+              <li>Print design</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <h5>Development</h5>
+            <ul class="hidden-li">
+              <li>HTML5 &amp; CSS3</li>
+              <li>SASS &amp; LESS</li>
+              <li>JavaScript, JQuery, and NodeJS</li>
+              <li>PHP &amp; MySQL</li>
+              <li>Git</li>
+              <li>Wordpress &amp; Jekyll</li>
+              <li>Bootstrap &amp; Foundation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact">
+  <a id="contact"> </a>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 col-centered">
+        <h2 class="section-header">Contact</h2>
+        <p class="center-text">If you want to work together on a project or just want to say hello either <a href="mailto: robeasthope@gmail.com">email</a> or tweet me at <a href="https://twitter.com/RobEasthope">@robeasthope</a>.</p>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-6">
+            <h5>Contact</h5>
+            <ul class="hidden-li">
+              <li><a class="icon-email" href="mailto: robeasthope@gmail.com">Email</a></li>
+              <li><a class="icon-skype" href="skype:rob01225">Skype</a></li>
+              <li><a class="icon-twitter" href="https://twitter.com/RobEasthope">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-6">
+            <h5>Find me on</h5>
+            <ul class="hidden-li">
+              <li><a class="icon-github" href="https://github.com/robeasthope">Github</a></li>
+              <li><a class="icon-behance" href="http://www.behance.net/RobEasthope">Behance</a></li>
+              <li><a class="icon-linkedin" href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -16,13 +16,10 @@ module.exports = function(grunt) {
     recess: {
       dist: {
         options: {
-          compile: true,
-          compress: true
+          compile: true
         },
         files: {
           'assets/themes/saffron/css/main.min.css': [
-            'assets/themes/saffron/css/less/bootstrap/bootstrap.less',
-            'assets/themes/saffron/css/less/retina/retina.less',
             'assets/themes/saffron/css/less/app.less'
           ]
         }
@@ -57,8 +54,7 @@ module.exports = function(grunt) {
         files: [
           'assets/themes/saffron/css/less/*.less',
           'assets/themes/saffron/css/less/bootstrap/*.less',
-          'assets/themes/saffron/css/less/retina/*.less',
-          'assets/themes/saffron/css/less/portfolio-projects/*.less'
+          'assets/themes/saffron/css/less/retina/*.less'
         ],
         tasks: ['recess']
       },
