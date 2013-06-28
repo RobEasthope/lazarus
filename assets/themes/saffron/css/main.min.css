@@ -5225,6 +5225,10 @@ a.list-group-item.active > .badge,
 	Base
 ******************************************************************************/
 
+body {
+  overflow-x: hidden;
+}
+
 html,
 body {
   height: 100%;
@@ -5544,12 +5548,12 @@ p {
   padding-left: 15px;
 }
 
-.thumbnails .col {
+.thumbnails .micro-sm-col {
   padding: 0;
 }
 
 @media (max-width: 379px) {
-  .thumbnails .col {
+  .thumbnails .micro-sm-col {
     width: 100%;
   }
 }
