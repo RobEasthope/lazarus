@@ -5687,9 +5687,13 @@ p {
 }
 
 .gallery figcaption {
+  display: inline-block;
+  padding: 0 5px;
   margin-top: 1.25rem;
   font-size: 1.3333333333333335rem;
   font-style: italic;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 /******************************************************************************
