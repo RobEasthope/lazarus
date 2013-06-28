@@ -5548,6 +5548,12 @@ p {
   padding: 0;
 }
 
+@media (max-width: 379px) {
+  .thumbnails .col {
+    width: 100%;
+  }
+}
+
 .thumbnails .thumbnail {
   display: table;
   width: 100%;
