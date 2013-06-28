@@ -12,6 +12,9 @@ tag: landing
       <div class="jbt-text-wrap">
         <h1>Front end designer &amp; developer</h1>
       </div>
+      <ul class="nav nav-pills">
+        {% include themes/saffron/nav.html %}
+      </ul>
   <!-- /jumbotron-content-wrap -->
   </div>
 <!-- /Jumbotron -->
