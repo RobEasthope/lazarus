@@ -13,34 +13,13 @@ function oknThumbnail() {
 	});
 }
 
-function oknNavbar() {
-	$(".affix").css("margin-left",function(){
-		//return -(($(window).width() - $(".col-lg-12").width()) / 2);
-	});
-
-	$('#sidebar').affix({
-	offset:{
-		bottom: $(".jumbotron").height() + 13
-		}
-	});
-}
-
 $(document).ready(function() {
 	oknFullScreen();
 	oknThumbnail();
 });
 
-$(window).scroll(function() {
-	oknNavbar();
-});
-
 $(window).resize(function() {
 	oknFullScreen();
 	oknThumbnail();
-	oknNavbar();
-});
-
-$(".thumbnail").mouseover(function() {
-
 });
 

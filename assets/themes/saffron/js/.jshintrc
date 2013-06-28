@@ -4,7 +4,7 @@
   "curly": true,
   "eqeqeq": true,
   "eqnull": true,
-  "es5": true,
+  "es3": true,
   "esnext": true,
   "immed": true,
   "jquery": true,
