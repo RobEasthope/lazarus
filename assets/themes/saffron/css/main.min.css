@@ -5645,7 +5645,10 @@ p {
 }
 
 .project-title {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   font-weight: 300;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-details {
