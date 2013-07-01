@@ -34,7 +34,7 @@ grunt watch
 
 // Components: common
 @import "bootstrap/component-animations.less";
-@import "bootstrap/glyphicons.less";
+//@import "bootstrap/glyphicons.less";
 @import "bootstrap/dropdowns.less";
 @import "bootstrap/list-group.less";
 @import "bootstrap/panels.less";
@@ -157,6 +157,15 @@ p {margin-bottom: @line-height-base;}
 	@media (min-width: @screen-tablet) {
 		font-size: @font-size-base * 5;
 	}
+
+	&:after {
+		width: 1.75em;
+		height: 0.2rem;
+		display: block;
+		background: @saffron;
+		margin: 0.5rem auto 0 auto;
+		content: ' ';
+}
 }
 
 .hidden-li {
@@ -204,6 +213,7 @@ p {margin-bottom: @line-height-base;}
 	@media screen and (min-width: 768px) {
 		.nav {
 			> li a {
+				padding: 10px 15px;
 				&:hover {
 					background-color: white;
 				}
@@ -246,16 +256,16 @@ p {margin-bottom: @line-height-base;}
 
 	// Portrait
 	@media (orientation: portrait) {
-		background-image: url('../img/The-Kanawaga-Wave-portrait.png');
+		background-image: url('../img/The-Kanawaga-Wave-landscape-1400@2x.jpg');
 	}
 
 	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Kanawaga-Wave-portrait@2x.png');
+		background-image: url('../img/The-Kanawaga-Wave-landscape-1400@2x.jpg');
 	} 
 
 	// Landscape
 	@media (orientation: landscape) {
-		background-image: url('../img/The-Kanawaga-Wave-landscape-1400.png');
+		background-image: url('../img/The-Kanawaga-Wave-landscape-1400@2x.jpg');
 	}
 
 	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
@@ -302,6 +312,8 @@ p {margin-bottom: @line-height-base;}
 		line-height: 1;
 		text-align: center;
 		color: @india-ink;
+
+		opacity: 0.9;
 
 		// Bkg Stripes
 		padding: 5px 15px;
