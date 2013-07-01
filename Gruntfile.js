@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         files: [
           '<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'uglify']
+        tasks: ['uglify']
       }
     },
     clean: {
