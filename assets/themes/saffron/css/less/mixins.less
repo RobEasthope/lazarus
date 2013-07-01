@@ -1,0 +1,29 @@
+
+// Thumbnail generation
+.portfolio-project-mixin (@project-name, @thumbnail-filetype,) {
+	
+	
+	.@{project-name}-thb {
+		background-image: url('http://robeasthope.com/assets/img/@{project-name}/@{project-name}-thumbnail.@{thumbnail-filetype}');
+	}
+}
+
+// Social icon generation
+.social-icon-mixin (@contact-type) {
+	// Icon bkg
+	.icon-@{contact-type}-bkg {
+		.social-icon-base();
+		background-image: url('../img/icon-@{contact-type}.svg');
+
+	}
+	// Inline icons
+	.icon-@{contact-type} {
+	.social-icon-base();
+			background-image: url('../img/icon-@{contact-type}.svg');
+			padding-left: 56px;
+			line-height: 40px;
+			margin-left: 0px;
+			margin-bottom: (@line-height-base / 2);
+			opacity: 1;
+	}
+}
