@@ -12,9 +12,11 @@ tag: landing
       <div class="jbt-text-wrap">
         <h1>Front end designer &amp; developer</h1>
       </div>
+    <!--
       <ul class="nav nav-pills">
         {% include themes/saffron/nav.html %}
       </ul>
+    -->
   <!-- /jumbotron-content-wrap -->
   </div>
 <!-- /Jumbotron -->
@@ -30,34 +32,37 @@ tag: landing
           <div class="thumbnail brixton-thb">
             <a class="thumbnail-rollover" href="/brixton">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">The Brixton Advice Centre</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
+            <!--<a class="portfolio-title" href="/brixton">The Brixton Advice Centre</a>-->
           </div>
         </div>
         <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail lambeth-thb">
             <a class="thumbnail-rollover" href="/lambeth">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">The Lambeth Advice Network</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
+            <!--<a class="portfolio-title" href="/lambeth">The Lambeth Advice Network</a>-->
           </div>
         </div>
         <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail lancastrians-thb">
             <a class="thumbnail-rollover" href="/lancastrians">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">The Association of Lancastrians in London</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
+            <!--<a class="portfolio-title" href="/lancastrians">The Association of Lancastrians in London</a>-->
           </div>
         </div>
         <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail eufn-thb">
             <a class="thumbnail-rollover" href="/eufn">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">The European Union Families Network</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
           </div>
@@ -66,25 +71,27 @@ tag: landing
           <div class="thumbnail ambr-thb">
             <a class="thumbnail-rollover" href="/ambr">
               <div class="thumbnail-text-wrap">
-                  <h3 class="portfolio-title">AMBR Media</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
+            <!--<h3 class="portfolio-title">AMBR Media</h3>-->
           </div>
         </div>
         <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail layla-thb">
             <a class="thumbnail-rollover" href="/layla">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">Layla Moran<br>(Oxford West &amp; Abingdon campaign)</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
+            <!--<p>Layla Moran</p>-->
           </div>
         </div>
         <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail saffron-thb">
             <a class="thumbnail-rollover" href="/saffron">
               <div class="thumbnail-text-wrap">
-                <h3 class="portfolio-title">Portfolio</h3>
+                <p class="learn-more">Learn More</p>
               </div>
             </a>
           </div>
@@ -122,7 +129,7 @@ tag: landing
         <h2 class="section-header">About</h2>
         <p class="center-text">I’m a passionate hybrid front end web designer and developer who builds clean, responsive and usable websites that work solidly and look pretty.</p>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
+          <div class="micro-sm-col col-6 col-md-6 col-lg-6">
             <h5>Design</h5>
             <ul class="hidden-li">
               <li>Branding</li>
@@ -132,7 +139,7 @@ tag: landing
               <li>Print design</li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
+          <div class="micro-sm-col col-6 col-md-6 col-lg-6">
             <h5>Development</h5>
             <ul class="hidden-li">
               <li>HTML5 &amp; CSS3</li>
