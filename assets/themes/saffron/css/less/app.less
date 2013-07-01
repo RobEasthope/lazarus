@@ -34,7 +34,7 @@ grunt watch
 
 // Components: common
 @import "bootstrap/component-animations.less";
-@import "bootstrap/glyphicons.less";
+//@import "bootstrap/glyphicons.less";
 @import "bootstrap/dropdowns.less";
 @import "bootstrap/list-group.less";
 @import "bootstrap/panels.less";
@@ -143,20 +143,28 @@ p {margin-bottom: @line-height-base;}
 }
 
 .section-header {
-	font-family: @font-family-flood;
+	//font-family: @font-family-flood;
 	font-size: 5rem;
-	line-height: 1.2;
-	font-weight: 300;
+	line-height: 1;
+	//font-weight: 300;
 	text-align: center;
 	margin: 0;
-	margin-top: @line-height-base * 3;
-	margin-bottom: @line-height-base * 2;
+	margin-bottom: @line-height-base;
 
 	border-bottom: none;
 
 	@media (min-width: @screen-tablet) {
-		font-size: @font-size-base * 5;
+		//font-size: @font-size-base * 5;
 	}
+
+	&:after {
+		width: 1.75em;
+		height: 0.2rem;
+		display: block;
+		background: @saffron;
+		margin: @line-height-base auto 0 auto;
+		content: ' ';
+}
 }
 
 .hidden-li {
@@ -204,6 +212,7 @@ p {margin-bottom: @line-height-base;}
 	@media screen and (min-width: 768px) {
 		.nav {
 			> li a {
+				padding: 10px 15px;
 				&:hover {
 					background-color: white;
 				}
@@ -216,13 +225,14 @@ p {margin-bottom: @line-height-base;}
 		display: block;
 		height: 30px;
 		width: 30px;
-		margin-top: 10px;
+		
 		.at2x('../img/roundel-micro.png', 30px, 30px);
 		background-repeat: no-repeat;
 		background-position: center center;
 
 		@media all and (min-width: 768px) {
 			float: none;
+			margin-top: 10px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -244,23 +254,74 @@ p {margin-bottom: @line-height-base;}
 	//Border
 	border-bottom: 1px solid @gray-lighter;
 
-	// Portrait
-	@media (orientation: portrait) {
-		background-image: url('../img/The-Kanawaga-Wave-portrait.png');
+	// Mobile (Portrait)
+	@media only screen and (orientation: portrait) and (max-width: @screen-phone) {
+		background-image: url('../img/The-Wave-portrait-500.png');
 	}
 
-	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Kanawaga-Wave-portrait@2x.png');
+	@media only screen and (orientation: portrait) and (max-width: @screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/The-Wave-portrait-500@2x.png');
 	} 
 
-	// Landscape
-	@media (orientation: landscape) {
-		background-image: url('../img/The-Kanawaga-Wave-landscape-1400.png');
+	// Mobile (Landscape)
+	@media only screen and (orientation: landscape) and (max-height: @screen-phone) {
+		background-image: url('../img/The-Wave-landscape-500.png');
 	}
 
-	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Kanawaga-Wave-landscape-1400@2x.jpg');
+	@media screen and (orientation: landscape) and (max-height: @screen-phone) and (-webkit-min-device-pixel-ratio: 1.5),
+	screen and (orientation: landscape) and (max-height: @screen-phone) and (-min-moz-device-pixel-ratio: 1.5),
+	screen and (orientation: landscape) and (max-height: @screen-phone) and (-min-device-pixel-ratio: 1.5) {
+		background-image: url('../img/The-Wave-landscape-500@2x.png');
+	} 
+
+	// Tablet (Portrait)
+	@media only screen and (orientation: portrait) and (min-width: @screen-phone) and (max-width: @screen-small) {
+		background-image: url('../img/The-Wave-portrait-700.png');
 	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-phone) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (min-width: @screen-phone) and (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (min-width: @screen-phone) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/The-Wave-portrait-700@2x.png');
+	} 
+
+	// Tablet (Landscape)
+	@media only screen and (orientation: landscape) and (min-height: @screen-phone) and (max-height: @screen-tablet) {
+		background-image: url('../img/The-Wave-landscape-700.png');
+	}
+
+	@media
+	only screen and (orientation: landscape) and (min-height: @screen-phone) and (max-height: @screen-tablet) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-height: @screen-phone) and (max-height: @screen-tablet) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-height: @screen-phone) and (max-height: @screen-tablet) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/The-Wave-landscape-700@2x.png');
+	}
+
+	// Desktop (max-1400px)
+	@media only screen and (orientation: landscape) and (min-width: @screen-tablet) and (max-width: 1400px) {
+		background-image: url('../img/The-Wave-landscape-1400.png');
+	}
+
+	@media
+	only screen and (orientation: landscape) and (min-width: @screen-tablet) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-width: @screen-tablet) and (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-width: @screen-tablet) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/The-Wave-landscape-1400@2x.png');
+	}
+
+		// Desktop (max-1400px)
+	@media only screen and (orientation: landscape) and (min-width: 1400px) {
+		background-image: url('../img/The-Wave-landscape-2000.png');
+	}
+
+	@media
+	only screen and (orientation: landscape) and (min-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (min-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/The-Wave-landscape-2000@2x.png');
+	} 
 
 	// Masthead content
 	.jumbotron-content-wrap {
@@ -301,7 +362,7 @@ p {margin-bottom: @line-height-base;}
 		text-transform: uppercase;
 		line-height: 1;
 		text-align: center;
-		color: @india-ink;
+		color: @emerald;
 
 		// Bkg Stripes
 		padding: 5px 15px;
@@ -319,17 +380,9 @@ p {margin-bottom: @line-height-base;}
 			font-size: 3.75rem;
 		}
 
-		@media screen and (min-width: 797px) {
-			font-size: 5.75rem;
+		@media screen and (min-width: @screen-tablet) {
+			font-size: 8rem;
 		}
-	}
-
-	@media screen and (min-width: @screen-tablet) {
-	  .jumbotron {
-	    h1 {
-	      //font-size: (@font-size-base * 4.5);
-	    }
-	  }
 	}
 }
 
@@ -338,7 +391,7 @@ p {margin-bottom: @line-height-base;}
 	Content
 ******************************************************************************/
 .content {
-	margin-top: @navbar-height;
+	margin-top: @navbar-height * 1.5;
 }
 
 /******************************************************************************
@@ -347,10 +400,13 @@ p {margin-bottom: @line-height-base;}
 
 //Thumbnails structure
 .portfolio {
-	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 75px;
-	}
+	padding-top: @section-padding-mobile;
+	padding-bottom: @section-padding-mobile;
+
+		@media (min-width: @screen-tablet) {
+			padding-top: @section-padding;
+			padding-bottom: @section-padding;
+		}
 }
 
 .thumbnails {
@@ -359,7 +415,7 @@ p {margin-bottom: @line-height-base;}
 	
 
 	.micro-sm-col {
-		padding: 0;
+		padding: 15px;
 		@media (max-width: 379px) {
 			width: 100%;
 		}
@@ -381,7 +437,7 @@ p {margin-bottom: @line-height-base;}
 			.thumbnail-rollover {
 				background-color: rgba(255, 255, 255, 0.5);
 				.thumbnail-text-wrap {opacity: 1;}
-				.portfolio-title {opacity: 1;}
+				.learn-more {opacity: 1;}
 				.portfolio-sub {opacity: 1;}
 			}
 		}
@@ -402,16 +458,14 @@ p {margin-bottom: @line-height-base;}
 			text-align: center;
 		}
 
-		.portfolio-title {
-			font-family: @font-family-sans-serif;
+		.learn-more {
 			font-size: @font-size-base;
 			line-height: 1.1;
 			font-weight: normal;
 			text-align: center;
-			text-transform: uppercase;
-			color: #666;
+			color: white;
 
-			background-color: white;
+			background-color: @emerald;
 
 			display: inline-block;
 			margin-top: 0;
@@ -420,6 +474,10 @@ p {margin-bottom: @line-height-base;}
 
 			opacity: 0;
 			transition: all 0.4s ease-in;
+		}
+
+		.portfolio-title {
+			text-align: center;
 		}
 	}
 }
@@ -467,7 +525,7 @@ p {margin-bottom: @line-height-base;}
 
 .project-title {
 	font-weight: 300;
-	border-bottom: 1px solid @gray-lighter;
+	border-bottom: 1px solid @saffron;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 }
@@ -488,7 +546,10 @@ p {margin-bottom: @line-height-base;}
 
 .gallery {
 	padding: @line-height-base 0;
-	text-align: right;
+	text-align: center;
+	@media (min-width: @screen-tablet) {
+		text-align: right;
+	}
 
 	figure {
 		margin-bottom: @line-height-base * 2;
@@ -503,10 +564,6 @@ p {margin-bottom: @line-height-base;}
 		font-style: italic;
 		font-size: @font-size-small;
 		margin-top: @line-height-base / 2;
-		display: inline-block;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-		padding: 0 5px;
 	}
 }
 
@@ -515,9 +572,13 @@ p {margin-bottom: @line-height-base;}
 	About
 ******************************************************************************/
 .profile {
+	padding-top: @section-padding-mobile;
+	padding-bottom: @section-padding-mobile;
+	background-color: rgb(243, 242, 238);
+
 	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 75px;
+		padding-top: @section-padding;
+		padding-bottom: @section-padding;
 	}
 }
 
@@ -552,9 +613,12 @@ p {margin-bottom: @line-height-base;}
 ******************************************************************************/
 
 .contact {
+	padding-top: @section-padding-mobile;
+	padding-bottom: @section-padding-mobile;
+
 	@media (min-width: @screen-tablet) {
-		margin-top: 75px;
-		margin-bottom: 100px;
+		padding-top: @section-padding;
+		padding-bottom: @section-padding;
 	}
 }
 
