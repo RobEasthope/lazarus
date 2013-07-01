@@ -23,11 +23,10 @@ tag: landing
   <div class="container">
     <a id="portfolio"> </a>
     <div class="row">
-      <div class="col-12 cold-md-12 col-lg-12">
+      <div class="col-12 cold-md-12 col-lg-9 col-centered">
         <h2 class="section-header">Portfolio</h2>
-      </div>
       <div class="thumbnails">
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail brixton-thb">
             <a class="thumbnail-rollover" href="/brixton">
               <div class="thumbnail-text-wrap">
@@ -36,7 +35,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail lambeth-thb">
             <a class="thumbnail-rollover" href="/lambeth">
               <div class="thumbnail-text-wrap">
@@ -45,7 +44,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail lancastrians-thb">
             <a class="thumbnail-rollover" href="/lancastrians">
               <div class="thumbnail-text-wrap">
@@ -54,7 +53,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail eufn-thb">
             <a class="thumbnail-rollover" href="/eufn">
               <div class="thumbnail-text-wrap">
@@ -63,7 +62,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail ambr-thb">
             <a class="thumbnail-rollover" href="/ambr">
               <div class="thumbnail-text-wrap">
@@ -72,7 +71,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail layla-thb">
             <a class="thumbnail-rollover" href="/layla">
               <div class="thumbnail-text-wrap">
@@ -81,7 +80,7 @@ tag: landing
             </a>
           </div>
         </div>
-        <div class="micro-sm-col col-6 col-md-4 col-lg-3">
+        <div class="micro-sm-col col-6 col-md-4 col-lg-4">
           <div class="thumbnail saffron-thb">
             <a class="thumbnail-rollover" href="/saffron">
               <div class="thumbnail-text-wrap">
@@ -112,6 +111,7 @@ tag: landing
         -->
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="profile">
