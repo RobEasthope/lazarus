@@ -15,6 +15,9 @@
 						{% if page.github-link  %}
 							<p>Github: {{ page.github-link }}</p>
 						{% endif %}
+						{% if page.site-url  %}
+							<a href="{{ page.site-url-text }}"><p>{{ page.site-url-text }}</p></a>
+						{% endif %}
 					</aside>
 				  <div class="col-12 col-md-8 col-lg-8 main-content">
 				    {{ content | markdownify  }}
