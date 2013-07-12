@@ -145,6 +145,7 @@ p {margin-bottom: @line-height-base;}
 .section-header {
 	//font-family: @font-family-flood;
 	font-size: 5rem;
+	font-weight: 300;
 	line-height: 1;
 	//font-weight: 300;
 	text-align: center;
@@ -356,9 +357,9 @@ p {margin-bottom: @line-height-base;}
 		margin-bottom: 0;
 		
 		// Typography
-		font-family: @font-family-league;
+		font-family: @font-family-sans-serif;
 		font-size: 2.6rem;
-		font-weight: normal;
+		font-weight: 300;
 		text-transform: uppercase;
 		line-height: 1;
 		text-align: center;
@@ -381,7 +382,7 @@ p {margin-bottom: @line-height-base;}
 		}
 
 		@media screen and (min-width: @screen-tablet) {
-			font-size: 8rem;
+			//font-size: 8rem;
 		}
 	}
 }
@@ -391,7 +392,7 @@ p {margin-bottom: @line-height-base;}
 	Content
 ******************************************************************************/
 .content {
-	margin-top: @navbar-height * 1.5;
+	margin-top: @navbar-height + 10px;
 }
 
 /******************************************************************************
