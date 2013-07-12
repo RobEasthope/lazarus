@@ -41,7 +41,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="navbar-brand"></span>
+          <a class="navbar-brand" href="{{ BASE_PATH }}/#"></a>
         </button>
         
         <a class="navbar-brand hidden-sm" href="{{ BASE_PATH }}/#"> </a>
@@ -67,17 +67,19 @@
     {% if page.tag != 'landing' %}
     <footer class="footer">
         <div class="container">
-          <div class="row">
-              <div class="col-12 col-md-6 col-lg-6 contact-details">
-                  <a class="icon-email-bkg" href="mailto: robeasthope@gmail.com"></a>
-                  <a class="icon-skype-bkg" href="skype:rob01225"></a>
-                  <a class="icon-twitter-bkg" href="https://twitter.com/RobEasthope"></a>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 social-networks">
-                  <a class="icon-github-bkg" href="https://github.com/robeasthope"></a>
-                  <a class="icon-behance-bkg" href="http://www.behance.net/RobEasthope"></a>
-                  <a class="icon-linkedin-bkg" href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0"></a>
-              </div>
+          <div class="col-12 col-md-12 col-lg-10 col-centered">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 contact-details">
+                    <a class="icon-email-bkg" href="mailto: robeasthope@gmail.com"></a>
+                    <a class="icon-skype-bkg" href="skype:rob01225"></a>
+                    <a class="icon-twitter-bkg" href="https://twitter.com/RobEasthope"></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 social-networks">
+                    <a class="icon-github-bkg" href="https://github.com/robeasthope"></a>
+                    <a class="icon-behance-bkg" href="http://www.behance.net/RobEasthope"></a>
+                    <a class="icon-linkedin-bkg" href="http://uk.linkedin.com/pub/rob-easthope/36/bb4/9b0"></a>
+                </div>
+            </div>
           </div>
         </div>
     </footer>
