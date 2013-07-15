@@ -19,11 +19,12 @@ tag: landing
     -->
   <!-- /jumbotron-content-wrap -->
   </div>
+  <a class="jbt-continue" href="#portfolio"> </a>
 <!-- /Jumbotron -->
 </div>
 <section class="portfolio">
+  <a id="portfolio"> </a>
   <div class="container">
-    <a id="portfolio"> </a>
     <div class="row">
       <div class="col-12 cold-md-12 col-lg-9 col-centered">
         <h2 class="section-header">Portfolio</h2>

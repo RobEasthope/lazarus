@@ -339,7 +339,14 @@ p {margin-bottom: @line-height-base;}
 		width: 75px;
 		margin-bottom: 10px;
 
-		.at2x('../img/saffron-roundel-circle.png', 75px, 75px);
+		background-image: url('../img/saffron-roundel-circle.png');
+		@media
+		(-webkit-min-device-pixel-ratio : 1.5),
+		(-min-moz-device-pixel-ratio : 1.5),
+		(-min-device-pixel-ratio : 1.5) {
+			background-image: url('../img/saffron-roundel-circle@2x.png');
+		}
+		background-size: 75px 75px;
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
@@ -385,6 +392,23 @@ p {margin-bottom: @line-height-base;}
 			//font-size: 8rem;
 		}
 	}
+
+	
+}
+.jbt-continue {
+	// Position arrow
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+	
+	// Styling
+	height: 40px;
+	width: 80px;
+	background-image: url('../img/icon-arrow-continue.svg');
+	background-size: 80px 40px;
+	background-repeat: no-repeat;
 }
 
 
@@ -401,6 +425,7 @@ p {margin-bottom: @line-height-base;}
 
 //Thumbnails structure
 .portfolio {
+	.container {
 	padding-top: @section-padding-mobile;
 	padding-bottom: @section-padding-mobile;
 
@@ -408,6 +433,7 @@ p {margin-bottom: @line-height-base;}
 			padding-top: @section-padding;
 			padding-bottom: @section-padding;
 		}
+	}
 }
 
 .thumbnails {
@@ -572,14 +598,18 @@ p {margin-bottom: @line-height-base;}
 	About
 ******************************************************************************/
 .profile {
-	padding-top: @section-padding-mobile;
-	padding-bottom: @section-padding-mobile;
 	background-color: rgb(243, 242, 238);
 
-	@media (min-width: @screen-tablet) {
-		padding-top: @section-padding;
-		padding-bottom: @section-padding;
+	.container {
+	padding-top: @section-padding-mobile;
+	padding-bottom: @section-padding-mobile;
+
+		@media (min-width: @screen-tablet) {
+			padding-top: @section-padding;
+			padding-bottom: @section-padding;
+		}
 	}
+	
 }
 
 .profile-details, .about {
@@ -613,12 +643,14 @@ p {margin-bottom: @line-height-base;}
 ******************************************************************************/
 
 .contact {
+	.container {
 	padding-top: @section-padding-mobile;
 	padding-bottom: @section-padding-mobile;
 
-	@media (min-width: @screen-tablet) {
-		padding-top: @section-padding;
-		padding-bottom: @section-padding;
+		@media (min-width: @screen-tablet) {
+			padding-top: @section-padding;
+			padding-bottom: @section-padding;
+		}
 	}
 }
 
