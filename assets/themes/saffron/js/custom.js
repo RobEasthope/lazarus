@@ -2,7 +2,7 @@ function oknFullScreen() {
 	if ($(window).height() > $(".jumbotron-content-wrap").height()) {
 		// Enlarge jumbotron to fullscreen
 		$(".jumbotron").css("height",function(){
-			return ($(window).innerHeight());
+			return ($(window).innerHeight())- 10;
 		});
 	}
 }
