@@ -409,6 +409,16 @@ p {margin-bottom: @line-height-base;}
 	background-image: url('../img/icon-arrow-continue.svg');
 	background-size: 80px 40px;
 	background-repeat: no-repeat;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+
+	&:hover, &:focus {
+		-webkit-filter: grayscale(100%); 
+		filter: grayscale(100%);
+	}
 }
 
 
@@ -499,6 +509,10 @@ p {margin-bottom: @line-height-base;}
 			padding: 8px;
 
 			opacity: 0;
+			-webkit-transition: all 0.4s ease-in;
+			-moz-transition: all 0.4s ease-in;
+			-ms-transition: all 0.4s ease-in;
+			-o-transition: all 0.4s ease-in;
 			transition: all 0.4s ease-in;
 		}
 
@@ -666,7 +680,11 @@ p {margin-bottom: @line-height-base;}
 	height: 40px;
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
-	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
 	opacity: 0.6;
 
 	&:hover, &:focus {
