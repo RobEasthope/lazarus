@@ -1,4 +1,4 @@
-robeasthope.github.io
-=====================
+Project Lazarus
+===============
 
-Personal portfolio site running on Jekyll-Bootstrap
+Portfolio site running via AngularJS
