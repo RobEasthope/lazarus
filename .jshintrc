@@ -1,18 +1,17 @@
 {
+  "esnext": true,
   "bitwise": true,
-  "browser": true,
   "curly": true,
   "eqeqeq": true,
-  "eqnull": true,
-  "es5": true,
-  "esnext": true,
-  "immed": true,
-  "jquery": true,
-  "latedef": true,
-  "newcap": true,
+  "latedef": false,
   "noarg": true,
-  "node": true,
-  "strict": false,
-  "trailing": true,
-  "undef": true
+  "undef": true,
+  "unused": true,
+  "validthis": true,
+  "jasmine": true,
+  "globals": {
+    "angular": false,
+    "inject": false,
+    "module": false
+  }
 }
