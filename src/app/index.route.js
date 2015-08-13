@@ -9,45 +9,31 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     })
     .state('ambr', {
       url: '/ambr',
-      templateUrl: 'app/projects/ambr.html',
-      controller: 'AmbrController',
-      controllerAs: 'ambr'
+      templateUrl: 'app/projects/ambr.html'
     })
     .state('brixton', {
       url: '/brixton',
-      templateUrl: 'app/projects/brixton.html',
-      controller: 'BrixtonController',
-      controllerAs: 'brixton'
+      templateUrl: 'app/projects/brixton.html'
     })
     .state('eufn', {
       url: '/eufn',
-      templateUrl: 'app/projects/eufn.html',
-      controller: 'EufnController',
-      controllerAs: 'eufn'
+      templateUrl: 'app/projects/eufn.html'
     })
     .state('lambeth', {
       url: '/lambeth',
-      templateUrl: 'app/projects/lambeth.html',
-      controller: 'LambethController',
-      controllerAs: 'lambeth'
+      templateUrl: 'app/projects/lambeth.html'
     })
     .state('lancastrians', {
       url: '/lancastrians',
-      templateUrl: 'app/projects/lancastrians.html',
-      controller: 'LancastriansController',
-      controllerAs: 'lancastrians'
+      templateUrl: 'app/projects/lancastrians.html'
     })
     .state('layla', {
       url: '/layla',
-      templateUrl: 'app/projects/layla.html',
-      controller: 'LaylaController',
-      controllerAs: 'layla'
+      templateUrl: 'app/projects/layla.html'
     })
     .state('saffron', {
       url: '/saffron',
-      templateUrl: 'app/projects/saffron.html',
-      controller: 'SaffronController',
-      controllerAs: 'saffron'
+      templateUrl: 'app/projects/saffron.html'
     });
 
   $urlRouterProvider.otherwise('/');
