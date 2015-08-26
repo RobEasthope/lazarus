@@ -28,4 +28,4 @@ Project Lazarus
 * UI? No UI framework
 * CSS preprocessing? Libsass
 * JS language options? ES6 w/Babel
-* HTML templating? Jade
+* HTML templating? PLain HTML
