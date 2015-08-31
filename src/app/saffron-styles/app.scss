@@ -678,7 +678,7 @@ p {margin-bottom: $line-height-base;}
 
 .social-icon-base {
 	display: inline-block;
-	margin-left: 16px;
+	// margin-left: 16px;
 	margin-right: 16px;
 	width: 40px;
 	height: 40px;
@@ -690,28 +690,52 @@ p {margin-bottom: $line-height-base;}
 	-o-transition: all 0.4s ease-in;
 	transition: all 0.4s ease-in;
 	opacity: 0.6;
+  padding-left: 56px;
+  line-height: 40px;
+  margin-left: 0px;
+  margin-bottom: ($line-height-base / 2);
 
 	&:hover, &:focus {
 		opacity: 1;
 	}
 }
+
+
 // Email icon
-.social-icon-mixin (email);
+.icon-email-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-email.svg');
+}
 
 // Skype icon
-.social-icon-mixin (skype);
+.icon-skype-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-skype.svg');
+}
 
 // Twitter icon
-.social-icon-mixin (twitter);
+.icon-twitter-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-twitter.svg');
+}
 
 // Github icon
-.social-icon-mixin (github);
+.icon-github-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-github.svg');
+}
 
 // Behance icon
-.social-icon-mixin (behance);
+.icon-behance-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-behance.svg');
+}
 
 // Linkedin icon
-.social-icon-mixin (linkedin);
+.icon-linkedin-bkg {
+	@extend .social-icon-base;
+	background-image: url('../img/icon-linkedin.svg');
+}
 
 /******************************************************************************
 	Footer
