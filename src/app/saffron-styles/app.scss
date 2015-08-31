@@ -144,7 +144,7 @@ p {margin-bottom: $line-height-base;}
 
 	border-bottom: none;
 
-	@media (min-width: @screen-tablet) {
+	@media (min-width: $screen-tablet) {
 		//font-size: @font-size-base * 5;
 	}
 
