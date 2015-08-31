@@ -1,416 +1,416 @@
-// --- Sticky footer---
-
-body {}
-
-//Sticky Footer
-html, body {height: 100%;}
-
-.wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -63px auto; /* the bottom margin is the negative value of the footer's height */
-}
-
-.push {  height: 63px; /* .push must be the same height as .footer */  }
-
-footer {
-  height: 63px; /* .push must be the same height as .footer */
-}
-
-.col-centered {
-	float: none;
-	margin: 0 auto;
-}
-
-/******************************************************************************
-	Masthead
-******************************************************************************/
-.jumbotron {
-	// Layout
-	//margin-top: 15px;
-	//margin-bottom: 0px;
-	display: table;
-	width: 100%;
-
-	// Background
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: cover;
-
-	//Border
-	border-bottom: 1px solid @gray-lighter;
-
-	// Portrait
-	@media (orientation: portrait) {
-		background-image: url('../img/branding/The-Kanawaga-Wave-portrait.png');
-	}
-
-	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/branding/The-Kanawaga-Wave-portrait@2x.png');
-	} 
-
-	// Landscape
-	@media (orientation: landscape) {
-		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1400.png');
-	}
-
-	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1400@2x.jpg');
-	}
-
-	// Masthead content
-	.jumbotron-content-wrap {
-		display: table-cell;
-		margin: 0 auto;
-		text-align: center;
-		vertical-align: middle;
-	}
-
-	.brand {
-		display: block;
-		margin: 0 auto;
-		height: 75px;
-		width: 75px;
-		margin-bottom: 10px;
-
-		.at2x('../img/branding/saffron-roundel-circle.png', 75px, 75px);
-		background-repeat: no-repeat;
-		background-position: right top;
-	}
-
-	.jbt-text-wrap {
-		display: block;
-	}
-
-	h1 {
-		//Structure
-		display: inline-block;
-		float: none;
-		clear: both; 
-		margin-top: 0;
-		margin-bottom: 0;
-		
-		// Typography
-		font-family: "league-gothic", @font-family-sans-serif;
-		font-size: 2.6rem;
-		font-weight: normal;
-		text-transform: uppercase;
-		line-height: 1;
-		text-align: center;
-		color: @gray-dark;
-
-		// Bkg Stripes
-		padding: 5px 10px;
-		background-color: @jbt-heading-bkg;
-		
-		&:first-of-type {
-			//padding-bottom: 0px;
-		}
-
-		&:last-of-type {
-			//padding-top: 0px;
-		}
-
-		@media screen and (min-width: 450px) {
-			font-size: 3.75rem;
-		}
-
-		@media screen and (min-width: 797px) {
-			font-size: 5.75rem;
-		}
-	}
-
-	@media screen and (min-width: @screen-tablet) {
-	  .jumbotron {
-	    h1 {
-	      //font-size: (@font-size-base * 4.5);
-	    }
-	  }
-	}
-}
-
-
-/******************************************************************************
-	Content
-******************************************************************************/
-.content {
-	//margin-top: @navbar-height;
-}
-
-/******************************************************************************
-	Portfolio
-******************************************************************************/
-
-//Thumbnails structure
-.portfolio {
-	margin-top: 75px;
-	margin-bottom: 75px;
-}
-
-.thumbnails {
-		padding-left: @grid-gutter-width / 2;
-		padding-right: @grid-gutter-width / 2;
-	
-
-	.col {
-		padding: 0;
-	}
-
-	.thumbnail {
-		width: 100%;
-		min-height: 150px;
-		padding: 0px;
-		
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		display: table;
-		border-radius: 0;
-		border: none;
-
-		&:hover, &:focus {
-			.thumbnail-rollover {
-				background-color: rgba(255, 255, 255, 0.5);
-				.thumbnail-text-wrap {opacity: 1;}
-				.portfolio-title {opacity: 1;}
-				.portfolio-sub {opacity: 1;}
-			}
-		}
-
-		.thumbnail-rollover {
-			display: table;
-			height: 100%;
-			width: 100%;
-			transition: all 0.3s ease-in;
-		}
-
-		.thumbnail-text-wrap {
-			display: table-cell;
-			vertical-align: middle;
-			padding-left: 10%;
-			padding-right: 10%;
-			opacity: 0;
-			text-align: center;
-		}
-
-		.portfolio-title {
-			font-family: @font-family-sans-serif;
-			font-size: @font-size-base;
-			line-height: 1.1;
-			font-weight: normal;
-			text-align: center;
-			text-transform: uppercase;
-			color: #666;
-
-			background-color: white;
-
-			display: inline-block;
-			margin-top: 0;
-			margin-bottom: 0;
-			padding: 8px;
-
-			opacity: 0;
-			transition: all 0.4s ease-in;
-		}
-	}
-}
-
-// Portfolio pages structure
-.project-details {
-	text-align: center;
-	@media screen and (min-width: @screen-tablet) {
-		text-align: right;
-	}
-}
-
-
-/******************************************************************************
-	Portfolio project pages
-******************************************************************************/
-
-// Set thumbnails & project page mastheads
-// ***************************************
-
-// Portfolio Project Mixin order
-// @project-name,
-// @project-header-colour,
-// @thumbnail-filetype,
-// @masthead-filetype
-
-.page-header-bkg {
-	.page-header {
-		h1, a, p {
-			display: inline-block;
-			background-color: white;
-			padding: 8px;
-		}
-	}
-}
-
-//Ambr
-.portfolio-project-mixin (ambr, png);
-
-// Brixton
-.portfolio-project-mixin (brixton, jpg);
-
-// EUFN
-.portfolio-project-mixin (eufn, png);
-
-// Lambeth
-.portfolio-project-mixin (lambeth, jpg);
-
-// Lancastrians
-.portfolio-project-mixin (lancastrians, jpg);
-
-// Layla
-.portfolio-project-mixin (layla, png);
-
-// Saffron
-.portfolio-project-mixin (saffron, png);
-
-
-// Portfolio images
-// ****************
-
-.gallery {
-	padding: @line-height-base 0;
-	text-align: right;
-
-	figure {
-		margin-bottom: @line-height-base * 2;
-	}
-
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-
-	figcaption {
-		font-style: italic;
-		font-size: @font-size-small;
-		margin-top: @line-height-base / 2;
-	}
-}
-
-/******************************************************************************
-	Profile
-******************************************************************************/
-.profile {
-	margin-top: 75px;
-	margin-bottom: 75px;
-}
-
-/******************************************************************************
-	About
-******************************************************************************/
-.profile-details, .about {
-	h3 {
-		font-size: @font-size-base;
-		font-weight: 600;
-		line-height: 2.7rem;
-		margin: 0;
-	}
-
-	.profile-header {
-	margin-bottom: 2rem;
-}
-
-	h5 {
-		font-weight: 300;
-		line-height: 2.7rem;
-	}
-	ul {
-		margin: 0;
-		list-style-type: none;
-		color: @gray-light;
-	}
-
-	a {color: @gray-light;}
-
-}
-
-
-
-/******************************************************************************
-	Social icons
-******************************************************************************/
-
-.social-icon {
-	display: inline-block;
-	margin-left: 16px;
-	margin-right: 16px;
-	width: 48px;
-	height: 48px;
-	background-size: 48px 48px;
-}
-
-.email-icon {
-	.social-icon();
-
-	//.at2x('../img/social/email-colour.png', 64px, 64px);
-}
-
-.skype-icon {
-	.social-icon();
-	//.at2x('../img/social/skype-colour.png', 64px, 64px);
-}
-
-.twitter-icon {
-	.social-icon();
-	//.at2x('../img/social/twitter-colour.png', 64px, 64px);
-}
-
-.github-icon {
-	.social-icon();
-	//.at2x('../img/social/github-colour.png', 64px, 64px);
-}
-
-.behance-icon {
-	.social-icon();
-	//.at2x('../img/social/behance-colour.png', 64px, 64px);
-}
-
-.linkedin-icon {
-	.social-icon();
-
-	//.at2x('../img/social/linkedin-colour.png', 64px, 64px);
-}
-
-/******************************************************************************
-	Footer
-******************************************************************************/
-
-.footer {
-	border-top: 1px solid @gray-lighter;
-
-	//Contact details
-	.contact-details {
-		text-align: center;
-		@media screen and (min-width: @screen-small) {
-			text-align: left;
-		}
-
-		padding-top: @line-height-base;
-	}
-
-
-	.copyright {
-		font-family: @font-family-sans-serif;
-		font-size: @font-size-small;
-		margin: @line-height-base 0;
-		text-align: center;
-		@media screen and (min-width: @screen-small) {
-			text-align: left;
-		}
-	}
-
-	.social-networks {
-		text-align: center;
-		@media screen and (min-width: @screen-small) {
-			text-align: right;
-		}
-		padding-top: @line-height-base;
-	}
-}
-
+// // --- Sticky footer---
+//
+// body {}
+//
+// //Sticky Footer
+// html, body {height: 100%;}
+//
+// .wrap {
+//   min-height: 100%;
+//   height: auto !important;
+//   height: 100%;
+//   margin: 0 auto -63px auto; /* the bottom margin is the negative value of the footer's height */
+// }
+//
+// .push {  height: 63px; /* .push must be the same height as .footer */  }
+//
+// footer {
+//   height: 63px; /* .push must be the same height as .footer */
+// }
+//
+// .col-centered {
+// 	float: none;
+// 	margin: 0 auto;
+// }
+//
+// /******************************************************************************
+// 	Masthead
+// ******************************************************************************/
+// .jumbotron {
+// 	// Layout
+// 	//margin-top: 15px;
+// 	//margin-bottom: 0px;
+// 	display: table;
+// 	width: 100%;
+//
+// 	// Background
+// 	background-repeat: no-repeat;
+// 	background-position: left top;
+// 	background-size: cover;
+//
+// 	//Border
+// 	border-bottom: 1px solid @gray-lighter;
+//
+// 	// Portrait
+// 	@media (orientation: portrait) {
+// 		background-image: url('../img/branding/The-Kanawaga-Wave-portrait.png');
+// 	}
+//
+// 	@media all (orientation: portrait) and (-webkit-min-device-pixel-ratio : 1.5) {
+// 		background-image: url('../img/branding/The-Kanawaga-Wave-portrait@2x.png');
+// 	}
+//
+// 	// Landscape
+// 	@media (orientation: landscape) {
+// 		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1400.png');
+// 	}
+//
+// 	@media all (orientation: landscape) and (-webkit-min-device-pixel-ratio : 1.5) {
+// 		background-image: url('../img/branding/The-Kanawaga-Wave-landscape-1400@2x.jpg');
+// 	}
+//
+// 	// Masthead content
+// 	.jumbotron-content-wrap {
+// 		display: table-cell;
+// 		margin: 0 auto;
+// 		text-align: center;
+// 		vertical-align: middle;
+// 	}
+//
+// 	.brand {
+// 		display: block;
+// 		margin: 0 auto;
+// 		height: 75px;
+// 		width: 75px;
+// 		margin-bottom: 10px;
+//
+// 		// .at2x('../img/branding/saffron-roundel-circle.png', 75px, 75px);
+// 		background-repeat: no-repeat;
+// 		background-position: right top;
+// 	}
+//
+// 	.jbt-text-wrap {
+// 		display: block;
+// 	}
+//
+// 	h1 {
+// 		//Structure
+// 		display: inline-block;
+// 		float: none;
+// 		clear: both;
+// 		margin-top: 0;
+// 		margin-bottom: 0;
+//
+// 		// Typography
+// 		font-family: "league-gothic", @font-family-sans-serif;
+// 		font-size: 2.6rem;
+// 		font-weight: normal;
+// 		text-transform: uppercase;
+// 		line-height: 1;
+// 		text-align: center;
+// 		color: @gray-dark;
+//
+// 		// Bkg Stripes
+// 		padding: 5px 10px;
+// 		background-color: @jbt-heading-bkg;
+//
+// 		&:first-of-type {
+// 			//padding-bottom: 0px;
+// 		}
+//
+// 		&:last-of-type {
+// 			//padding-top: 0px;
+// 		}
+//
+// 		@media screen and (min-width: 450px) {
+// 			font-size: 3.75rem;
+// 		}
+//
+// 		@media screen and (min-width: 797px) {
+// 			font-size: 5.75rem;
+// 		}
+// 	}
+//
+// 	@media screen and (min-width: @screen-tablet) {
+// 	  .jumbotron {
+// 	    h1 {
+// 	      //font-size: (@font-size-base * 4.5);
+// 	    }
+// 	  }
+// 	}
+// }
+//
+//
+// /******************************************************************************
+// 	Content
+// ******************************************************************************/
+// .content {
+// 	//margin-top: @navbar-height;
+// }
+//
+// /******************************************************************************
+// 	Portfolio
+// ******************************************************************************/
+//
+// //Thumbnails structure
+// .portfolio {
+// 	margin-top: 75px;
+// 	margin-bottom: 75px;
+// }
+//
+// .thumbnails {
+// 		padding-left: @grid-gutter-width / 2;
+// 		padding-right: @grid-gutter-width / 2;
+//
+//
+// 	.col {
+// 		padding: 0;
+// 	}
+//
+// 	.thumbnail {
+// 		width: 100%;
+// 		min-height: 150px;
+// 		padding: 0px;
+//
+// 		background-size: cover;
+// 		background-position: center center;
+// 		background-repeat: no-repeat;
+// 		display: table;
+// 		border-radius: 0;
+// 		border: none;
+//
+// 		&:hover, &:focus {
+// 			.thumbnail-rollover {
+// 				background-color: rgba(255, 255, 255, 0.5);
+// 				.thumbnail-text-wrap {opacity: 1;}
+// 				.portfolio-title {opacity: 1;}
+// 				.portfolio-sub {opacity: 1;}
+// 			}
+// 		}
+//
+// 		.thumbnail-rollover {
+// 			display: table;
+// 			height: 100%;
+// 			width: 100%;
+// 			transition: all 0.3s ease-in;
+// 		}
+//
+// 		.thumbnail-text-wrap {
+// 			display: table-cell;
+// 			vertical-align: middle;
+// 			padding-left: 10%;
+// 			padding-right: 10%;
+// 			opacity: 0;
+// 			text-align: center;
+// 		}
+//
+// 		.portfolio-title {
+// 			font-family: @font-family-sans-serif;
+// 			font-size: @font-size-base;
+// 			line-height: 1.1;
+// 			font-weight: normal;
+// 			text-align: center;
+// 			text-transform: uppercase;
+// 			color: #666;
+//
+// 			background-color: white;
+//
+// 			display: inline-block;
+// 			margin-top: 0;
+// 			margin-bottom: 0;
+// 			padding: 8px;
+//
+// 			opacity: 0;
+// 			transition: all 0.4s ease-in;
+// 		}
+// 	}
+// }
+//
+// // Portfolio pages structure
+// .project-details {
+// 	text-align: center;
+// 	@media screen and (min-width: @screen-tablet) {
+// 		text-align: right;
+// 	}
+// }
+//
+//
+// /******************************************************************************
+// 	Portfolio project pages
+// ******************************************************************************/
+//
+// // Set thumbnails & project page mastheads
+// // ***************************************
+//
+// // Portfolio Project Mixin order
+// // @project-name,
+// // @project-header-colour,
+// // @thumbnail-filetype,
+// // @masthead-filetype
+//
+// .page-header-bkg {
+// 	.page-header {
+// 		h1, a, p {
+// 			display: inline-block;
+// 			background-color: white;
+// 			padding: 8px;
+// 		}
+// 	}
+// }
+//
+// //Ambr
+// .portfolio-project-mixin (ambr, png);
+//
+// // Brixton
+// .portfolio-project-mixin (brixton, jpg);
+//
+// // EUFN
+// .portfolio-project-mixin (eufn, png);
+//
+// // Lambeth
+// .portfolio-project-mixin (lambeth, jpg);
+//
+// // Lancastrians
+// .portfolio-project-mixin (lancastrians, jpg);
+//
+// // Layla
+// .portfolio-project-mixin (layla, png);
+//
+// // Saffron
+// .portfolio-project-mixin (saffron, png);
+//
+//
+// // Portfolio images
+// // ****************
+//
+// .gallery {
+// 	padding: @line-height-base 0;
+// 	text-align: right;
+//
+// 	figure {
+// 		margin-bottom: @line-height-base * 2;
+// 	}
+//
+// 	img {
+// 		display: block;
+// 		margin: 0 auto;
+// 	}
+//
+// 	figcaption {
+// 		font-style: italic;
+// 		font-size: @font-size-small;
+// 		margin-top: @line-height-base / 2;
+// 	}
+// }
+//
+// /******************************************************************************
+// 	Profile
+// ******************************************************************************/
+// .profile {
+// 	margin-top: 75px;
+// 	margin-bottom: 75px;
+// }
+//
+// /******************************************************************************
+// 	About
+// ******************************************************************************/
+// .profile-details, .about {
+// 	h3 {
+// 		font-size: @font-size-base;
+// 		font-weight: 600;
+// 		line-height: 2.7rem;
+// 		margin: 0;
+// 	}
+//
+// 	.profile-header {
+// 	margin-bottom: 2rem;
+// }
+//
+// 	h5 {
+// 		font-weight: 300;
+// 		line-height: 2.7rem;
+// 	}
+// 	ul {
+// 		margin: 0;
+// 		list-style-type: none;
+// 		color: @gray-light;
+// 	}
+//
+// 	a {color: @gray-light;}
+//
+// }
+//
+//
+//
+// /******************************************************************************
+// 	Social icons
+// ******************************************************************************/
+//
+// .social-icon {
+// 	display: inline-block;
+// 	margin-left: 16px;
+// 	margin-right: 16px;
+// 	width: 48px;
+// 	height: 48px;
+// 	background-size: 48px 48px;
+// }
+//
+// .email-icon {
+// 	.social-icon();
+//
+// 	//.at2x('../img/social/email-colour.png', 64px, 64px);
+// }
+//
+// .skype-icon {
+// 	.social-icon();
+// 	//.at2x('../img/social/skype-colour.png', 64px, 64px);
+// }
+//
+// .twitter-icon {
+// 	.social-icon();
+// 	//.at2x('../img/social/twitter-colour.png', 64px, 64px);
+// }
+//
+// .github-icon {
+// 	.social-icon();
+// 	//.at2x('../img/social/github-colour.png', 64px, 64px);
+// }
+//
+// .behance-icon {
+// 	.social-icon();
+// 	//.at2x('../img/social/behance-colour.png', 64px, 64px);
+// }
+//
+// .linkedin-icon {
+// 	.social-icon();
+//
+// 	//.at2x('../img/social/linkedin-colour.png', 64px, 64px);
+// }
+//
+// /******************************************************************************
+// 	Footer
+// ******************************************************************************/
+//
+// .footer {
+// 	border-top: 1px solid @gray-lighter;
+//
+// 	//Contact details
+// 	.contact-details {
+// 		text-align: center;
+// 		@media screen and (min-width: @screen-small) {
+// 			text-align: left;
+// 		}
+//
+// 		padding-top: @line-height-base;
+// 	}
+//
+//
+// 	.copyright {
+// 		font-family: @font-family-sans-serif;
+// 		font-size: @font-size-small;
+// 		margin: @line-height-base 0;
+// 		text-align: center;
+// 		@media screen and (min-width: @screen-small) {
+// 			text-align: left;
+// 		}
+// 	}
+//
+// 	.social-networks {
+// 		text-align: center;
+// 		@media screen and (min-width: @screen-small) {
+// 			text-align: right;
+// 		}
+// 		padding-top: @line-height-base;
+// 	}
+// }
+//
