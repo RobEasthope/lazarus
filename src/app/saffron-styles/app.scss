@@ -121,10 +121,10 @@ p {margin-bottom: $line-height-base;}
 	background-position: center top;
 	margin: 0;
 	h1, a, p {margin: 0;}
-	@media screen and (max-width: $screen-small) {
+	@media screen and (max-width: $screen-sm) {
 		font-size: 3rem;
 	}
-	@media screen and (min-width: $screen-small) {
+	@media screen and (min-width: $screen-sm) {
 		text-align: left;
 		margin: 0;
 		margin-bottom: $line-height-base * 1.5;
@@ -268,7 +268,7 @@ p {margin-bottom: $line-height-base;}
 	}
 
 	// Tablet (Portrait)
-	@media only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: $screen-small) {
+	@media only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: $screen-sm) {
 		background-image: url('../img/The-Wave-portrait-700.png');
 	}
 
@@ -726,7 +726,7 @@ p {margin-bottom: $line-height-base;}
 	//Contact details
 	.contact-details {
 		text-align: center;
-		@media screen and (min-width: $screen-small) {
+		@media screen and (min-width: $screen-sm) {
 			text-align: left;
 		}
 	}
@@ -738,7 +738,7 @@ p {margin-bottom: $line-height-base;}
 		margin: $line-height-base 0;
 		text-align: center;
 
-		@media screen and (min-width: $screen-small) {
+		@media screen and (min-width: $screen-sm) {
 			text-align: left;
 		}
 	}
@@ -746,7 +746,7 @@ p {margin-bottom: $line-height-base;}
 	.social-networks {
 		text-align: center;
 
-		@media screen and (min-width: $screen-small) {
+		@media screen and (min-width: $screen-sm) {
 			text-align: right;
 		}
 	}
