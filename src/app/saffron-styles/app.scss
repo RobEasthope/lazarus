@@ -217,7 +217,7 @@ p {margin-bottom: $line-height-base;}
 		height: 30px;
 		width: 30px;
 
-		.at2x('../img/roundel-micro.png', 30px, 30px);
+		// .at2x('../img/roundel-micro.png', 30px, 30px);
 		background-repeat: no-repeat;
 		background-position: center center;
 
@@ -529,25 +529,39 @@ p {margin-bottom: $line-height-base;}
 // @masthead-filetype
 
 //Ambr
-.portfolio-project-mixin (ambr, png);
+.ambr-thb {
+  background-image: url('http://robeasthope.com/assets/img/ambr/ambr-thumbnail.png');
+}
 
 // Brixton
-.portfolio-project-mixin (brixton, jpg);
+.brixton-thb {
+  background-image: url('http://robeasthope.com/assets/img/brixton/brixton-thumbnail.jpg');
+}
 
 // EUFN
-.portfolio-project-mixin (eufn, png);
+.eufn-thb {
+  background-image: url('http://robeasthope.com/assets/img/eufn/eufn-thumbnail.png');
+}
 
 // Lambeth
-.portfolio-project-mixin (lambeth, jpg);
+.lambeth-thb {
+  background-image: url('http://robeasthope.com/assets/img/lambeth/lambeth-thumbnail.jpg');
+}
 
 // Lancastrians
-.portfolio-project-mixin (lancastrians, jpg);
+.lancastrians-thb {
+  background-image: url('http://robeasthope.com/assets/img/lancastrians/lancastrians-thumbnail.jpg');
+}
 
 // Layla
-.portfolio-project-mixin (layla, png);
+.layla-thb {
+  background-image: url('http://robeasthope.com/assets/img/layla/layla-thumbnail.png');
+}
 
 // Saffron
-.portfolio-project-mixin (saffron, png);
+.saffron-thb {
+  background-image: url('http://robeasthope.com/assets/img/saffron/saffron-thumbnail.png');
+}
 
 
 // Portfolio pages structure
@@ -962,7 +976,7 @@ p {margin-bottom: @line-height-base;}
 		height: 30px;
 		width: 30px;
 
-		.at2x('../img/roundel-micro.png', 30px, 30px);
+		// .at2x('../img/roundel-micro.png', 30px, 30px);
 		background-repeat: no-repeat;
 		background-position: center center;
 
