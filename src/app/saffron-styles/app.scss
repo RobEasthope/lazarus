@@ -184,71 +184,71 @@ p {margin-bottom: $line-height-base;}
 
 	// Mobile (Portrait)
 	@media only screen and (orientation: portrait) and (max-width: $screen-phone) {
-		background-image: url('../img/The-Wave-portrait-500.png');
+		background-image: url('../assets/images/index-page/The-Wave-portrait-500.png');
 	}
 
 	@media only screen and (orientation: portrait) and (max-width: $screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (orientation: portrait) and (max-width: $screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
 	only screen and (orientation: portrait) and (max-width: $screen-phone) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Wave-portrait-500@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-portrait-500@2x.png');
 	}
 
 	// Mobile (Landscape)
 	@media only screen and (orientation: landscape) and (max-height: $screen-phone) {
-		background-image: url('../img/The-Wave-landscape-500.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-500.png');
 	}
 
 	@media screen and (orientation: landscape) and (max-height: $screen-phone) and (-webkit-min-device-pixel-ratio: 1.5),
 	screen and (orientation: landscape) and (max-height: $screen-phone) and (-min-moz-device-pixel-ratio: 1.5),
 	screen and (orientation: landscape) and (max-height: $screen-phone) and (-min-device-pixel-ratio: 1.5) {
-		background-image: url('../img/The-Wave-landscape-500@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-500@2x.png');
 	}
 
 	// Tablet (Portrait)
 	@media only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: $screen-sm) {
-		background-image: url('../img/The-Wave-portrait-700.png');
+		background-image: url('../assets/images/index-page/The-Wave-portrait-700.png');
 	}
 
 	@media only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
 	only screen and (orientation: portrait) and (min-width: $screen-phone) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Wave-portrait-700@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-portrait-700@2x.png');
 	}
 
 	// Tablet (Landscape)
 	@media only screen and (orientation: landscape) and (min-height: $screen-phone) and (max-height: $screen-tablet) {
-		background-image: url('../img/The-Wave-landscape-700.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-700.png');
 	}
 
 	@media
 	only screen and (orientation: landscape) and (min-height: $screen-phone) and (max-height: $screen-tablet) and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-height: $screen-phone) and (max-height: $screen-tablet) and (-min-moz-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-height: $screen-phone) and (max-height: $screen-tablet) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Wave-landscape-700@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-700@2x.png');
 	}
 
 	// Desktop (max-1400px)
 	@media only screen and (orientation: landscape) and (min-width: $screen-tablet) and (max-width: 1400px) {
-		background-image: url('../img/The-Wave-landscape-1400.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-1400.png');
 	}
 
 	@media
 	only screen and (orientation: landscape) and (min-width: $screen-tablet) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-width: $screen-tablet) and (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-width: $screen-tablet) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Wave-landscape-1400@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-1400@2x.png');
 	}
 
 		// Desktop (max-1400px)
 	@media only screen and (orientation: landscape) and (min-width: 1400px) {
-		background-image: url('../img/The-Wave-landscape-2000.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-2000.png');
 	}
 
 	@media
 	only screen and (orientation: landscape) and (min-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
 	only screen and (orientation: landscape) and (min-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/The-Wave-landscape-2000@2x.png');
+		background-image: url('../assets/images/index-page/The-Wave-landscape-2000@2x.png');
 	}
 
 	// Masthead content
@@ -467,37 +467,37 @@ p {margin-bottom: $line-height-base;}
 
 //Ambr
 .ambr-thb {
-  background-image: url('http://robeasthope.com/assets/img/ambr/ambr-thumbnail.png');
+  background-image: url('../assets/images/ambr/ambr-thumbnail.png');
 }
 
 // Brixton
 .brixton-thb {
-  background-image: url('http://robeasthope.com/assets/img/brixton/brixton-thumbnail.jpg');
+  background-image: url('../assets/images/brixton/brixton-thumbnail.jpg');
 }
 
 // EUFN
 .eufn-thb {
-  background-image: url('http://robeasthope.com/assets/img/eufn/eufn-thumbnail.png');
+  background-image: url('../assets/images/eufn/eufn-thumbnail.png');
 }
 
 // Lambeth
 .lambeth-thb {
-  background-image: url('http://robeasthope.com/assets/img/lambeth/lambeth-thumbnail.jpg');
+  background-image: url('../assets/images/lambeth/lambeth-thumbnail.jpg');
 }
 
 // Lancastrians
 .lancastrians-thb {
-  background-image: url('http://robeasthope.com/assets/img/lancastrians/lancastrians-thumbnail.jpg');
+  background-image: url('../assets/images/lancastrians/lancastrians-thumbnail.jpg');
 }
 
 // Layla
 .layla-thb {
-  background-image: url('http://robeasthope.com/assets/img/layla/layla-thumbnail.png');
+  background-image: url('../assets/images/layla/layla-thumbnail.png');
 }
 
 // Saffron
 .saffron-thb {
-  background-image: url('http://robeasthope.com/assets/img/saffron/saffron-thumbnail.png');
+  background-image: url('../assets/images/saffron/saffron-thumbnail.png');
 }
 
 
@@ -641,37 +641,37 @@ p {margin-bottom: $line-height-base;}
 // Email icon
 .icon-email-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-email.svg');
+	background-image: url('../assets/images/index-page/icon-email.svg');
 }
 
 // Skype icon
 .icon-skype-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-skype.svg');
+	background-image: url('../assets/images/index-page/icon-skype.svg');
 }
 
 // Twitter icon
 .icon-twitter-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-twitter.svg');
+	background-image: url('../assets/images/index-page/icon-twitter.svg');
 }
 
 // Github icon
 .icon-github-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-github.svg');
+	background-image: url('../assets/images/index-page/icon-github.svg');
 }
 
 // Behance icon
 .icon-behance-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-behance.svg');
+	background-image: url('../assets/images/index-page/icon-behance.svg');
 }
 
 // Linkedin icon
 .icon-linkedin-bkg {
 	@extend .social-icon-base;
-	background-image: url('../img/icon-linkedin.svg');
+	background-image: url('../assets/images/index-page/icon-linkedin.svg');
 }
 
 /******************************************************************************
