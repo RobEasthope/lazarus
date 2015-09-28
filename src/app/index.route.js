@@ -10,7 +10,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
           controllerAs: 'home'
         }
       }
-
+    })
+    .state('project-sandbox', {
+      url: '/project-sandbox',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/project-sandbox.html'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise('/');
