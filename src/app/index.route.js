@@ -3,9 +3,21 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController',
-      controllerAs: 'main'
+      views: {
+        'content': {
+          templateUrl: 'app/home/home.html',
+          controller: 'HomeController',
+          controllerAs: 'home'
+        }
+      }
+    })
+    .state('project-sandbox', {
+      url: '/project-sandbox',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/project-sandbox.html'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise('/');
