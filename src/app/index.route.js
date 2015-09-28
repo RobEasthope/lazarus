@@ -3,9 +3,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/home/home.html',
-      controller: 'HomeController',
-      controllerAs: 'home'
+      views: {
+        'content': {
+          templateUrl: 'app/home/home.html',
+          controller: 'HomeController',
+          controllerAs: 'home'
+        }
+      }
+
     });
 
   $urlRouterProvider.otherwise('/');
