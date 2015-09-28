@@ -8,8 +8,6 @@ var fs = require('fs');
 var aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 gulp.task('aws-assets', function(done) {
-  // aws = JSON.parse(fs.readFileSync('./aws.json'));
-
   gulp.src('./src/assets/**/*.*')
     .pipe(s3(aws));
 });
