@@ -4,7 +4,7 @@ import config from './index.config';
 import routerConfig from './index.route';
 
 import runBlock from './index.run';
-import MainController from './main/main.controller';
+import HomeController from './home/home.controller';
 
 angular.module('lazarus', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router'])
   // General config
@@ -14,4 +14,4 @@ angular.module('lazarus', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .config(routerConfig)
 
   .run(runBlock)
-  .controller('MainController', MainController);
+  .controller('HomeController', HomeController);
