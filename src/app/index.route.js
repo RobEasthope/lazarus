@@ -11,11 +11,11 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('project-sandbox', {
-      url: '/project-sandbox',
+    .state('ambr', {
+      url: '/ambr',
       views: {
         'content': {
-          templateUrl: 'app/projects/project-sandbox.html'
+          templateUrl: 'app/projects/ambr/ambr.html'
         }
       }
     });
