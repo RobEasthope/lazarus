@@ -1,0 +1,14 @@
+body {
+  // margin: 0;
+}
+// Allow opening section to be full height
+body, html, .main-content-view {
+  height: 100%;
+}
+
+.opener {
+  // Full height opener
+  height: 100%;
+
+  background-color: $teal;
+}
