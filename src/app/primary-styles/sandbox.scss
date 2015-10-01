@@ -11,9 +11,17 @@ body, html, .main-content-view {
   height: 100%;
 
   background-color: $teal;
-
+  
   .saladin-logo {
     width: 75px;
     height: 75px;
+  }
+
+  .name {
+    color: white;
+  }
+
+  .title {
+    color: white;
   }
 }
