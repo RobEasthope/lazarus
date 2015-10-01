@@ -12,7 +12,8 @@
     "animate.css": "~3.3.0",
     "angular": "~1.4.0",
     "bourbon": "~4.2.5",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "normalize-scss": "~3.0.3"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
