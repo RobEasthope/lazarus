@@ -1,11 +1,11 @@
-@import "../primary-styles/colours";
+@import "../primary-styles/base";
 
 // Opening section
 .opener {
   // Full height opener
   height: 100%;
 
-  background-color: $teal;
+  background-color: $white;
   text-align: center;
 
   .opener-content {
@@ -15,15 +15,26 @@
   }
 
   .saladin-logo {
-    width: 75px;
-    height: 75px;
+    width: $h1-line-height * 2;
+    height: $h1-line-height * 2;
+
+    @media screen and (min-width: $medium-screen) {
+      width: $h1-line-height-large * 2;
+      height: $h1-line-height-large * 2;
+    }
   }
 
   .name {
-    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .title {
-    color: white;
+    margin-top: 0;
+    margin-bottom: 1 * $h3-line;
+
+    @media screen and (min-width: $medium-screen) {
+      margin-bottom: 1 * $h3-line-large;
+    }
   }
 }
