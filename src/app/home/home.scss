@@ -1,0 +1,29 @@
+@import "../primary-styles/colours";
+
+// Opening section
+.opener {
+  // Full height opener
+  height: 100%;
+
+  background-color: $teal;
+  text-align: center;
+
+  .opener-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .saladin-logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .name {
+    color: white;
+  }
+
+  .title {
+    color: white;
+  }
+}
