@@ -38,3 +38,20 @@
     }
   }
 }
+
+.portfolio {
+  @include outer-container;
+
+  .project-card {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+
+  .project-title {
+    text-align: center;
+  }
+}
+
+.section-title {
+  text-align: center;
+}
