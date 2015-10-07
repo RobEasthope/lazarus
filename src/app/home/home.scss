@@ -42,6 +42,9 @@
 .portfolio {
   @include outer-container;
 
+  ul {
+    @include span-columns(12);
+  }
   .project-card {
     @include span-columns(3);
     @include omega(4n);
