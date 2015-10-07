@@ -22,5 +22,10 @@
   "resolutions": {
     "jquery": "~2.1.4",
     "angular": "~1.4.0"
+  },
+  "overrides": {
+    "foundation": {
+      "main": ["../app/base-styles/foundation-scss.scss", "js/foundation.js"]
+    }
   }
 }
