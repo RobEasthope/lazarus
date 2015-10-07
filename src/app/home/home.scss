@@ -1,5 +1,7 @@
 @import "../primary-styles/base";
 
+
+
 // Opening section
 .opener {
   // Full height opener
@@ -41,13 +43,17 @@
 
 .portfolio {
   @include outer-container;
+  margin-left: rem(10);
+  margin-right: rem(10);
 
   ul {
-    @include span-columns(12);
+    // @include span-columns(12);
   }
   .project-card {
-    @include span-columns(3);
+    @include span-columns(6);
     @include omega(4n);
+    // display: inline-block;
+    // margin-right: 0;
   }
 
   .project-title {
