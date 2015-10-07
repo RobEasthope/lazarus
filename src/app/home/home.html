@@ -9,8 +9,8 @@
 
 <section class="portfolio">
   <h2 class="section-title">Portfolio</h2>
-  <ul ng-repeat="portfolioContent in home.indexContents">
-    <li class="project-card">
+  <ul>
+    <li class="project-card" ng-repeat="portfolioContent in home.indexContents">
       <img class="portfolio-thumbnail" ng-src="{{ portfolioContent.image }}" alt="">
       <h3 class="project-title">{{ portfolioContent.title }}</h3>
     </li>
