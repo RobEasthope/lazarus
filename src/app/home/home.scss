@@ -43,7 +43,8 @@
   margin-right: rem(10);
 
   ul {
-    max-width: 50em;
+    @extend .row;
+    // max-width: 50em;
     margin: 0 auto;
   }
   .project-card {
