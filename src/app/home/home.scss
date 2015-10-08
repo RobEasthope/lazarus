@@ -43,7 +43,8 @@
   margin-right: rem(10);
 
   ul {
-    // @include span-columns(12);
+    max-width: 50em;
+    margin: 0 auto;
   }
   .project-card {
     // @include span-columns(6);
