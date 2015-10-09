@@ -64,7 +64,7 @@ gulp.task('deploy-index', function(done) {
         {
           match: /href="assets/g,
           replacement: function () {
-            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com';
+            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
           }
         }
       ]
