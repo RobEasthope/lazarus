@@ -5,68 +5,83 @@ class PortfolioIndexService {
     this.data = [
       {
         title : 'Sony Wheel',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff/39CCCC/ffffff',
         state  : 'sony-wheel'
       },
       {
         title : 'Haygarth digital room',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'haygarth-digital-room'
       },
       {
+        title : 'Think Differently',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'think-differently'
+      },
+      {
         title : 'YSL Rock Chick',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'ysl-rock-chick'
       },
       {
-        title : 'Layla Moran',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'layla-moran'
-      },
-      {
-        title : 'Lambeth Advice Centre',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'lambeth-advice-centre'
-      },
-      {
-        title : 'The Association of Lancastrians in London',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'lancastrians'
-      },
-      {
-        title : 'EUFN',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'eufn'
+        title : 'Gulp emails',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'gulp-emails'
       },
       {
         title : 'Haygarth',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'haygarth'
       },
       {
         title : 'Sony Demo Bay',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'sony-demo-bay'
       },
       {
-        title : 'Gulp emails',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'gulp-emails'
+        title : 'Giles Deacon',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'giles-deacon'
       },
       {
-        title : 'Think Differently',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'think-differently'
+        title : 'Toni & Guy',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'toni-and-guy'
       },
       {
-        title : 'Waterleaf',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
-        state  : 'waterleaf'
+        title : 'Dumfries House',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'dumfries-h'
+      },
+      {
+        title : 'Lambeth Advice Centre',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'lambeth-advice-centre'
       },
       {
         title : 'AMBR Media',
-      	image : 'assets/images/saladin-logo-dark-with-diamond.svg',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'ambr'
+      },
+      {
+        title : 'Layla Moran',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'layla-moran'
+      },
+      {
+        title : 'The Association of Lancastrians in London',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'lancastrians'
+      },
+      {
+        title : 'EUFN',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'eufn'
+      },
+      {
+        title : 'Waterleaf',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'waterleaf'
       }
     ];
   }
