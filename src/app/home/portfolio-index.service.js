@@ -9,7 +9,7 @@ class PortfolioIndexService {
         state  : 'sony-wheel'
       },
       {
-        title : 'Haygarth digital room',
+        title : 'Digital Room',
       	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'haygarth-digital-room'
       },
@@ -49,12 +49,17 @@ class PortfolioIndexService {
         state  : 'toni-and-guy'
       },
       {
-        title : 'Dumfries House',
+        title : 'Louise & Daniel',
       	image : 'http://placehold.it/400x400/39CCCC/ffffff',
-        state  : 'dumfries-h'
+        state  : 'louise-and-daniel'
       },
       {
-        title : 'Lambeth Advice Centre',
+        title : 'Dumfries House',
+      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        state  : 'dumfries-house'
+      },
+      {
+        title : 'Lambeth Advice Network',
       	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'lambeth-advice-centre'
       },
@@ -69,7 +74,7 @@ class PortfolioIndexService {
         state  : 'layla-moran'
       },
       {
-        title : 'The Association of Lancastrians in London',
+        title : 'Lancastrians',
       	image : 'http://placehold.it/400x400/39CCCC/ffffff',
         state  : 'lancastrians'
       },
