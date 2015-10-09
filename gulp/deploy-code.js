@@ -27,7 +27,7 @@ gulp.task('asset-paths', function(done) {
         }
       ]
     }))
-    .pipe(gulp.dest('./dist/scripts/*.js'));
+    .pipe(gulp.dest('./dist/scripts'));
 });
 
 
