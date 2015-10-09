@@ -1,9 +1,19 @@
 function routerConfig ($stateProvider, $urlRouterProvider) {
   'ngInject';
   $stateProvider
+    // Holding page
+    .state('holding-page', {
+      url: '/',
+      views: {
+        'content': {
+          templateUrl: 'app/holding-page/holding-page.html'
+        }
+      }
+    })
+
     // Home page
     .state('home', {
-      url: '/',
+      url: '/home',
       views: {
         'content': {
           templateUrl: 'app/home/home.html',
