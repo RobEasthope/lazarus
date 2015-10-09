@@ -74,7 +74,7 @@ gulp.task('deploy-index', function(done) {
 
 
 // Deploy assets to AWS
-gulp.task('aws-assets', function(done) {
+gulp.task('aws', function(done) {
   gulp.src(['./dist/**/*.*'])
     .pipe(s3(aws));
 });
