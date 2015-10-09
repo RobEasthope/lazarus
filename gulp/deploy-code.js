@@ -20,9 +20,9 @@ gulp.task('asset-paths', function(done) {
     .pipe(replace({
       patterns: [
         {
-          match: /href="assets/g,
+          match: /ng-src="assets/g,
           replacement: function () {
-            return 'ng-src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets'; // replaces "foo" to "bar"
+            return 'ng-src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
           }
         }
       ]
@@ -79,7 +79,7 @@ gulp.task('aws', function(done) {
     .pipe(s3(aws));
 });
 
-// Deploy task
+// Combined deploy task
 gulp.task('deploy', ['asset-paths', 'deploy-index' ], function(done) {
 
 });
