@@ -11,10 +11,10 @@ var fs = require('fs');
 var aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 
-gulp.task('clean', require('del').bind(null, ['dist']));
+gulp.task('clean', require('del').bind(null, ['./dist']));
 
 // Update asset paths in JS files
-gulp.task('assets-paths', function(done) {
+gulp.task('asset-paths', function(done) {
   gulp.src('./dist/scripts/*.js')
     // Rewrite assets paths to AWS CDN
     .pipe(replace({
@@ -33,7 +33,7 @@ gulp.task('assets-paths', function(done) {
 
 // Update asset, JS, and CSS paths
 gulp.task('deploy-index', function(done) {
-  gulp.src(['./dist/index.html', ''])
+  gulp.src(['./dist/index.html'])
     // Replace CSS paths
     .pipe(replace({
       patterns: [
