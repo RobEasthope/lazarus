@@ -52,7 +52,7 @@ gulp.task('deploy-index', function(done) {
         {
           match: /src="scripts/g,
           replacement: function () {
-            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/scripts';
+            return 'src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/scripts';
           }
         }
       ]
