@@ -117,6 +117,39 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     //       templateUrl: 'app/projects/ambr/ambr.html'
     //     }
     //   }
+    // }),
+    // .state('giles-deacon', {
+    //   url: '/giles-deacon',
+    //   views: {
+    //     'content': {
+    //       templateUrl: 'app/projects/ambr/ambr.html'
+    //     }
+    //   }
+    // }),
+    // .state('toni-and-guy', {
+    //   url: '/toni-and-guy',
+    //   views: {
+    //     'content': {
+    //       templateUrl: 'app/projects/ambr/ambr.html'
+    //     }
+    //   }
+    // }),
+    // .state('dumfries-house', {
+    //   url: '/dumfries-house',
+    //   views: {
+    //     'content': {
+    //       templateUrl: 'app/projects/ambr/ambr.html'
+    //     }
+    //   }
+    // })
+    // .state('louise-and-daniel', {
+    //   url: '/louise-and-daniel',
+    //   views: {
+    //     'content': {
+    //       templateUrl: 'app/projects/ambr/ambr.html'
+    //     }
+    //   }
+    // })
     });
 
   $urlRouterProvider.otherwise('/');
