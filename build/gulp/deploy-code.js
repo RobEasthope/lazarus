@@ -4,5 +4,5 @@ var gulp = require('gulp');
 
 gulp.task('deploy', ['build'], function(done) {
   gulp.src('./dist/**/*.*')
-    .pipe(gulp.dest('./../robeasthope.github.io'));
+    .pipe(gulp.dest('./../'));
 });
