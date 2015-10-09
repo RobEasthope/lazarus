@@ -20,9 +20,9 @@ gulp.task('asset-paths', function(done) {
     .pipe(replace({
       patterns: [
         {
-          match: /assets/g,
+          match: /href="assets/g,
           replacement: function () {
-            return 'https://s3-eu-west-1.amazonaws.com/robeasthope.com'; // replaces "foo" to "bar"
+            return 'ng-src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets'; // replaces "foo" to "bar"
           }
         }
       ]
@@ -38,9 +38,9 @@ gulp.task('deploy-index', function(done) {
     .pipe(replace({
       patterns: [
         {
-          match: /styles/g,
+          match: /href="styles/g,
           replacement: function () {
-            return 'https://s3-eu-west-1.amazonaws.com/robeasthope.com/styles';
+            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/styles';
           }
         }
       ]
@@ -50,9 +50,9 @@ gulp.task('deploy-index', function(done) {
     .pipe(replace({
       patterns: [
         {
-          match: /scripts/g,
+          match: /src="scripts/g,
           replacement: function () {
-            return 'https://s3-eu-west-1.amazonaws.com/robeasthope.com/scripts';
+            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/scripts';
           }
         }
       ]
@@ -62,9 +62,9 @@ gulp.task('deploy-index', function(done) {
     .pipe(replace({
       patterns: [
         {
-          match: /assets/g,
+          match: /href="assets/g,
           replacement: function () {
-            return 'https://s3-eu-west-1.amazonaws.com/robeasthope.com';
+            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com';
           }
         }
       ]
@@ -80,6 +80,6 @@ gulp.task('aws-assets', function(done) {
 });
 
 // Deploy task
-gulp.task('deploy', ['clean', 'build', 'asset-paths', 'aws-assets', 'deploy-index' ], function(done) {
+gulp.task('deploy', ['asset-paths', 'deploy-index' ], function(done) {
 
 });
