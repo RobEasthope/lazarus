@@ -5,7 +5,7 @@
     <title>Rob Easthope</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    
+
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- <link rel="apple-touch-icon" href="/custom_icon.png"> -->
@@ -32,7 +32,9 @@
     <![endif]-->
 
     <!-- Main content -->
-    <div ui-view="content" class="main-content-view"></div>
+    <div class="ui-view-container">
+      <div ui-view="content" class="main-content-view"></div>
+    </div>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
