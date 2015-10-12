@@ -82,12 +82,12 @@ class PortfolioIndexService {
         title : 'EUFN',
       	image : 'assets/images/projects/eufn/eufn-thumbnail.png',
         state  : 'eufn'
-      },
-      {
-        title : 'Waterleaf',
-      	image : 'assets/images/projects/waterleaf/waterleaf-thumbnail.png',
-        state  : 'waterleaf'
       }
+      // {
+      //   title : 'Waterleaf',
+      // 	image : 'assets/images/projects/waterleaf/waterleaf-thumbnail.png',
+      //   state  : 'waterleaf'
+      // }
     ];
   }
 
