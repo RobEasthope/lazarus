@@ -24,8 +24,8 @@ class PortfolioIndexService {
         state  : 'ysl-rock-chick'
       },
       {
-        title : 'Gulp emails',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+        title : 'Gulp Emails',
+      	image : 'assets/images/projects/gulp-emails/gulp-emails-thumbnail.jpg',
         state  : 'gulp-emails'
       },
       {
