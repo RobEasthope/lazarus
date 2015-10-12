@@ -5,12 +5,12 @@ class PortfolioIndexService {
     this.data = [
       {
         title : 'Sony Wheel',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff/39CCCC/ffffff',
+      	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
         state  : 'sony-wheel'
       },
       {
         title : 'Digital Room',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/haygarth-digital-room/haygarth-digital-room-thumbnail.jpg',
         state  : 'haygarth-digital-room'
       },
       {
@@ -20,7 +20,7 @@ class PortfolioIndexService {
       },
       {
         title : 'YSL Rock Chick',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/ysl-rock-chick/ysl-rock-chick-thumbnail.jpg',
         state  : 'ysl-rock-chick'
       },
       {
@@ -30,32 +30,32 @@ class PortfolioIndexService {
       },
       {
         title : 'Haygarth',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/haygarth/haygarth-thumbnail.jpg',
         state  : 'haygarth'
       },
       {
         title : 'Sony Demo Bay',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/sony-demo-bay/sony-demo-bay-thumbnail.jpg',
         state  : 'sony-demo-bay'
       },
       {
         title : 'Giles Deacon',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/giles-deacon/giles-deacon-thumbnail.jpg',
         state  : 'giles-deacon'
       },
       {
         title : 'Toni & Guy',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/toni-and-guy/toni-and-guy-thumbnail.png',
         state  : 'toni-and-guy'
       },
       {
         title : 'Louise & Daniel',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/louise-and-daniel/louise-and-daniel-thumbnail.jpg',
         state  : 'louise-and-daniel'
       },
       {
         title : 'Dumfries House',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/dumfries-house/dumfries-house-thumbnail.jpg',
         state  : 'dumfries-house'
       },
       {
