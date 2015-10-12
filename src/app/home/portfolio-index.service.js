@@ -60,32 +60,32 @@ class PortfolioIndexService {
       },
       {
         title : 'Lambeth Advice Network',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/lambeth/lambeth-thumbnail.jpg',
         state  : 'lambeth-advice-centre'
       },
       {
         title : 'AMBR Media',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/ambr/ambr-thumbnail.png',
         state  : 'ambr'
       },
       {
         title : 'Layla Moran',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/layla/layla-thumbnail.png',
         state  : 'layla-moran'
       },
       {
         title : 'Lancastrians',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/lancastrians/lancastrians-thumbnail.jpg',
         state  : 'lancastrians'
       },
       {
         title : 'EUFN',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/eufn/eufn-thumbnail.png',
         state  : 'eufn'
       },
       {
         title : 'Waterleaf',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/waterleaf/waterleaf-thumbnail.png',
         state  : 'waterleaf'
       }
     ];
