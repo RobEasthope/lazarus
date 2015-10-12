@@ -15,7 +15,7 @@ class PortfolioIndexService {
       },
       {
         title : 'Think Differently',
-      	image : 'http://placehold.it/400x400/39CCCC/ffffff',
+      	image : 'assets/images/projects/think-differently/think-differently-thumbnail.jpg',
         state  : 'think-differently'
       },
       {
