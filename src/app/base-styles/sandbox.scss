@@ -60,26 +60,41 @@ body, html, .main-content-view {
   // transform:translate3d(100px, 0, 0);
 }
 
-.project-header {
-  text-align: center;
-  height: 50%;
-  position: relative;
-}
-
-.project-title {
-  margin-top: 1 * $h2-line;
-  margin-bottom: 1 * $h2-line;
-}
-
 %vertically-centre {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.project-header {
+  text-align: center;
+  height: 50%;
+  min-height: rem(320);
+  max-height: rem(1000);
+  position: relative;
+}
+
 .project-header-copy {
   @extend %vertically-centre;
 }
+
+.project-title {
+  display: inline-block;
+  padding: 0 em(5);
+  margin-top: 1 * $h2-line;
+  margin-bottom: 1 * $h2-line;
+  background-color: white;
+}
+
+.client {
+  display: inline-block;
+  padding: em(5) em(7);
+  background-color: white;
+
+  font-family: $sans-serif-font-family;
+}
+
+
 
 .caption {
   text-align: center;

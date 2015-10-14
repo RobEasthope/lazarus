@@ -1,7 +1,10 @@
 @import "colours";
 
 // Typography
-$base-font-family: "freight-text-pro", serif;
+$serif-font-family: "freight-text-pro", serif;
+$sans-serif-font-family: "freight-sans-pro", serif;
+
+$base-font-family: $serif-font-family;
 $heading-font-family: "freight-text-pro", serif;
 
 // Font Sizes
