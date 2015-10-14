@@ -63,5 +63,20 @@ body, html, .main-content-view {
 }
 
 .project-intro {
+
+}
+
+.caption {
   text-align: center;
+  font-style: italic;
+}
+
+.caption-wrap {
+  @extend .caption;
+}
+
+.copy {
+  // @extend .columns;
+  margin: 0 auto;
+  max-width: 34em;
 }
