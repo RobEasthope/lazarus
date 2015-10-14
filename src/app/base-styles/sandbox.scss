@@ -1,3 +1,5 @@
+@import 'base';
+
 body {
   // margin: 0;
 }
@@ -60,10 +62,23 @@ body, html, .main-content-view {
 
 .project-header {
   text-align: center;
+  height: 50%;
+  position: relative;
 }
 
-.project-intro {
+.project-title {
+  margin-top: 1 * $h2-line;
+  margin-bottom: 1 * $h2-line;
+}
 
+%vertically-centre {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-header-copy {
+  @extend %vertically-centre;
 }
 
 .caption {
@@ -73,10 +88,4 @@ body, html, .main-content-view {
 
 .caption-wrap {
   @extend .caption;
-}
-
-.copy {
-  // @extend .columns;
-  // margin: 0 auto;
-  // max-width: 34em;
 }
