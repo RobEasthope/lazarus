@@ -69,9 +69,16 @@ body, html, .main-content-view {
 .project-header {
   text-align: center;
   height: 50%;
-  min-height: rem(320);
   max-height: rem(1000);
   position: relative;
+
+  @media #{$portrait} {
+    min-height: rem(250);
+  }
+
+  @media #{$landscape} {
+    min-height: rem(320);
+  }
 }
 
 .project-header-copy {
