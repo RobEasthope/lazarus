@@ -8,6 +8,16 @@ import HomeController from './home/home.controller';
 import PortfolioIndexService from './home/portfolio-index.service';
 
 angular.module('lazarus', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router'])
+  .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
+    $rootScope
+      .$on('$stateChangeSuccess',
+        function(event){
+          if (!$window.ga)
+              return;
+
+          $window.ga('send', 'pageview', { page: $location.path() });
+      });
+  }])
   // General config
   .config(config)
 
