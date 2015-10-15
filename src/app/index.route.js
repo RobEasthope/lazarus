@@ -24,11 +24,19 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     })
 
     // Projects
-    .state('ambr', {
-      url: '/ambr',
+    .state('eufn', {
+      url: '/eufn',
       views: {
         'content': {
-          templateUrl: 'app/projects/ambr/ambr.html'
+          templateUrl: 'app/projects/eufn/eufn.html'
+        }
+      }
+    })
+    .state('lancastrians', {
+      url: '/lancastrians',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/lancastrians/lancastrians.html'
         }
       }
     })
@@ -37,6 +45,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       views: {
         'content': {
           templateUrl: 'app/projects/layla/layla.html'
+        }
+      }
+    })
+    .state('ambr', {
+      url: '/ambr',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/ambr/ambr.html'
         }
       }
     });
