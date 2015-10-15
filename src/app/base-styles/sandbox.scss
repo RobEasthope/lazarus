@@ -70,7 +70,6 @@ body, html, .main-content-view {
   text-align: center;
   height: 50%;
   max-height: rem(1000);
-  position: relative;
 
   @media #{$portrait} {
     min-height: rem(250);
@@ -78,6 +77,10 @@ body, html, .main-content-view {
 
   @media #{$landscape} {
     min-height: rem(320);
+  }
+
+  .height-fix {
+    height: 100%;
   }
 }
 
