@@ -110,7 +110,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       url: '/dumfries-house',
       views: {
         'content': {
-          templateUrl: 'app/projects/dumfries/dumfries.html'
+          templateUrl: 'app/projects/dumfries-house/dumfries-house.html'
         }
       }
     })

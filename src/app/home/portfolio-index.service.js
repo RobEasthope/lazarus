@@ -61,7 +61,7 @@ class PortfolioIndexService {
       {
         title : 'Lambeth Advice Network',
       	image : 'assets/images/projects/lambeth/lambeth-thumbnail.jpg',
-        state  : 'lambeth-advice-centre'
+        state  : 'lambeth'
       },
       {
         title : 'AMBR Media',
