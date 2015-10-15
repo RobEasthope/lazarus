@@ -1,0 +1,71 @@
+@import 'base';
+
+.project-header {
+  text-align: center;
+  height: 50%;
+  max-height: rem(1000);
+
+  @media #{$portrait} {
+    min-height: rem(250);
+  }
+
+  @media #{$landscape} {
+    min-height: rem(320);
+  }
+
+  .height-fix {
+    height: 100%;
+  }
+}
+
+.project-header-copy {
+  @extend %vertically-centre;
+}
+
+.project-title {
+  display: inline-block;
+  padding: 0 em(5);
+  margin-top: 1 * $h2-line;
+  margin-bottom: 1 * $h2-line;
+  background-color: white;
+}
+
+.client {
+  display: inline-block;
+  padding: em(5) em(7);
+  background-color: white;
+
+  font-family: $sans-serif-font-family;
+}
+
+.project-intro {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $base-line-height-large * 1.5;
+  margin-bottom: $base-line-height-large * 1.5;
+
+  @media #{$medium} {
+    margin-top: $base-line-height-large * 2;
+    margin-bottom: $base-line-height-large * 2;
+  }
+
+  @media #{$large} {
+    margin-top: $base-line-height-large * 2.5;
+    margin-bottom: $base-line-height-large * 2.5;
+  }
+}
+
+.text-wrap {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+}
+
+.caption-wrap {
+  @extend .caption;
+}
