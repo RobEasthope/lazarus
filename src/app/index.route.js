@@ -31,14 +31,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
           templateUrl: 'app/projects/ambr/ambr.html'
         }
       }
-    // }),
-    // .state('layla', {
-    //   url: '/layla-moran',
-    //   views: {
-    //     'content': {
-    //       templateUrl: 'app/projects/layla/layla.html'
-    //     }
-    //   }
+    }),
+    .state('layla', {
+      url: '/layla-moran',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/layla/layla.html'
+        }
+      }
     // }),
     // .state('eufn', {
     //   url: '/EUFN',
