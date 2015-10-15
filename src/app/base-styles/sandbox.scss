@@ -103,10 +103,20 @@ body, html, .main-content-view {
 
 .project-intro {
   max-width: 38rem;
-  margin-top: $base-line-height-large * 1.5;
-  margin-bottom: $base-line-height-large * 1.5;
   margin-left: auto;
   margin-right: auto;
+  margin-top: $base-line-height-large * 1.5;
+  margin-bottom: $base-line-height-large * 1.5;
+
+  @media #{$medium} {
+    margin-top: $base-line-height-large * 2;
+    margin-bottom: $base-line-height-large * 2;
+  }
+
+  @media #{$large} {
+    margin-top: $base-line-height-large * 2.5;
+    margin-bottom: $base-line-height-large * 2.5;
+  }
 }
 
 .text-wrap {
