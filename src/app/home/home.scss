@@ -1,3 +1,5 @@
+@import "../base-styles/base";
+
 // Opening section
 .opener {
   // Full height opener
@@ -47,12 +49,48 @@
     // max-width: 50em;
     margin: 0 auto;
   }
-  .project-card {
+  .portfolio-card {
     line-height: 0;
+    padding-bottom: 0;
+    margin-bottom: 1.25rem;
+    position: relative;
   }
 
-  .project-title {
+  .portfolio-thumbnail {
+    opacity: 0.15;
+  }
+
+  .portfolio-overlay {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // display: block;
+    // width: 100%;
+    // height: 100%;
+    // background-color: white;
+    // opacity: 0.85;
+    // z-index: 1002;
+  }
+
+  .portfolio-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+  }
+
+  .portfolio-title {
+    font-family: $sans-serif-font-family;
     text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    // margin-top: $h3-line / 2;
+    // background-color: white;
   }
 }
 
