@@ -8,8 +8,7 @@ body, html, .main-content-view {
   height: 100%;
 }
 
-.section-title {
-  text-align: center;
+%ornamentation {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +25,13 @@ body, html, .main-content-view {
     content: ""
   }
 }
+
+.section-title {
+  @extend %ornamentation;
+  text-align: center;
+}
+
+
 
 *, *:before, *:after {
     box-sizing: border-box;
