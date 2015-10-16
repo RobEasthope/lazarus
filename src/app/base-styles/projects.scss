@@ -40,11 +40,11 @@
 }
 
 .project-intro {
-  max-width: 38rem;
+  max-width: rem(760);
   margin-left: auto;
   margin-right: auto;
-  margin-top: $base-line-height-large * 1.5;
-  margin-bottom: $base-line-height-large * 1.5;
+  margin-top: $base-line-height * 1.5;
+  margin-bottom: $base-line-height * 1.5;
 
   @media #{$medium} {
     margin-top: $base-line-height-large * 2;
@@ -58,7 +58,7 @@
 }
 
 .text-wrap {
-  max-width: 38rem;
+  max-width: rem(760);
   margin: 0 auto;
 }
 
