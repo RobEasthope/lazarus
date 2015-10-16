@@ -90,11 +90,14 @@
     z-index: 1003;
     color: $base-font-color;
 
-    &:hover {
-      .portfolio-title {
-        opacity: 1;
+    @media #{$large} {
+      &:hover {
+        .portfolio-title {
+          opacity: 1;
+        }
       }
     }
+
   }
 
   .portfolio-title-wrap {
@@ -108,8 +111,12 @@
     margin: 0 rem(10);
     background-color: white;
     padding: em(3) em(6) em(5.2);
-    transition: opacity 0.4s;
-    opacity: 0;
+
+    @media #{$large} {
+      transition: opacity 0.4s;
+      opacity: 0;
+    }
+
   }
 }
 
