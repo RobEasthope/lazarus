@@ -24,7 +24,7 @@
 
 .project-title {
   display: inline-block;
-  padding: 0 em(5);
+  padding: em(1) em(5) em(3.2);
   margin-top: 1 * $h2-line;
   margin-bottom: 1 * $h2-line;
   background-color: white;
@@ -32,7 +32,7 @@
 
 .client {
   display: inline-block;
-  padding: em(5) em(7);
+  padding: em(3) em(6) em(5.2);
   background-color: white;
 
   font-family: $sans-serif-font-family;
