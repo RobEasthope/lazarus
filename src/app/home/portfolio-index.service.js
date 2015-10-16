@@ -9,7 +9,7 @@ class PortfolioIndexService {
         state  : 'sony-wheel'
       },
       {
-        title : 'Digital Room',
+        title : 'Haygarth Digital Room',
       	image : 'assets/images/projects/haygarth-digital-room/haygarth-digital-room-thumbnail.jpg',
         state  : 'haygarth-digital-room'
       },
