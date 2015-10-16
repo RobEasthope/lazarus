@@ -20,9 +20,10 @@ body, html, .main-content-view {
     height: 0;
     padding-bottom: rem(159) / 4;
     margin: 0 auto;
-    margin-top: $base-line-height;
-    margin-bottom: $base-line-height * 4;
-    background-image: url('../assets/images/ornamentation-dark.svg');
+    margin-top: $base-line-height / 2;
+    margin-bottom: $base-line-height * 2.5;
+    background-image: url('../assets/images/ornamentation_orange.svg');
+    // background-image: url('../assets/images/ornamentation_turquoise.svg');
     background-repeat: no-repeat;
     content: ""
   }
