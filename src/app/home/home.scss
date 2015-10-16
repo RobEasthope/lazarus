@@ -45,8 +45,6 @@
   margin-right: rem(10);
 
   ul {
-    @extend .row;
-    // max-width: 50em;
     margin: 0 auto;
 
     li {

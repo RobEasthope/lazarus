@@ -4,6 +4,7 @@
   text-align: center;
   height: 50%;
   max-height: rem(1000);
+  background-size: cover;
 
   @media #{$portrait} {
     min-height: rem(250);
