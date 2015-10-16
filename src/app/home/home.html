@@ -12,12 +12,15 @@
   <h2 class="section-title">Portfolio</h2>
 
   <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    <li class="portfolio-card" ng-repeat="portfolioContent in home.indexContents">
-      <img class="portfolio-thumbnail" ng-src="{{ portfolioContent.image }}" alt="">
-      <a class="portfolio-link" ui-sref="{{ portfolioContent.state }}">
-        <h3 class="portfolio-title">{{ portfolioContent.title }}</h3>
-      </a>
-      <div class="portfolio-overlay"></div>
+    <li ng-repeat="portfolioContent in home.indexContents">
+      <div class="portfolio-card" style="background-image: url('{{ portfolioContent.image }}')">
+        <a class="portfolio-link" ui-sref="{{ portfolioContent.state }}">
+          <h3 class="portfolio-title">{{ portfolioContent.title }}</h3>
+        </a>
+        <div class="portfolio-overlay"></div>
+      </div>
+
+
     </li>
   </ul>
 </section>
