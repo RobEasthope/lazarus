@@ -10,6 +10,22 @@ body, html, .main-content-view {
 
 .section-title {
   text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    display: block;
+    width: rem(200);
+    height: 0;
+    padding-bottom: rem(159) / 4;
+    margin: 0 auto;
+    margin-top: $base-line-height;
+    margin-bottom: $base-line-height * 4;
+    background-image: url('../assets/images/ornamentation-dark.svg');
+    background-repeat: no-repeat;
+    content: ""
+  }
 }
 
 *, *:before, *:after {
@@ -20,4 +36,8 @@ body, html, .main-content-view {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.media {
+  max-width: rem(1600);
 }
