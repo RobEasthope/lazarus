@@ -15,7 +15,9 @@
     <li ng-repeat="portfolioContent in home.indexContents">
       <div class="portfolio-card" style="background-image: url('{{ portfolioContent.image }}')">
         <a class="portfolio-link" ui-sref="{{ portfolioContent.state }}">
-          <h3 class="portfolio-title">{{ portfolioContent.title }}</h3>
+          <div class="portfolio-title-wrap">
+            <h3 class="portfolio-title">{{ portfolioContent.title }}</h3>
+          </div>
         </a>
         <div class="portfolio-overlay"></div>
       </div>
