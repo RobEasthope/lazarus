@@ -5,7 +5,7 @@
 body {
   font-family: $base-font-family;
   font-feature-settings: "kern", "liga", "pnum";
-  color: #222222;
+  color: $base-font-color;
 
   font-size: $base-font-size;
   line-height: $base-line-height;
