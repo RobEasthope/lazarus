@@ -8,11 +8,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
         state  : 'sony-wheel'
       },
-      // {
-      //   title : 'Haygarth Digital Room',
-      // 	image : 'assets/images/projects/haygarth-digital-room/haygarth-digital-room-thumbnail.jpg',
-      //   state  : 'haygarth-digital-room'
-      // },
+      {
+        title : 'Haygarth Digital Room',
+      	image : 'assets/images/projects/haygarth-digital-room/haygarth-digital-room-thumbnail.jpg',
+        state  : 'haygarth-digital-room'
+      },
       // {
       //   title : 'Think Differently',
       // 	image : 'assets/images/projects/think-differently/think-differently-thumbnail.jpg',
@@ -23,11 +23,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/ysl-rock-chick/ysl-rock-chick-thumbnail.jpg',
         state  : 'ysl-rock-chick'
       },
-      // {
-      //   title : 'Gulp Emails',
-      // 	image : 'assets/images/projects/gulp-emails/gulp-emails-thumbnail.jpg',
-      //   state  : 'gulp-emails'
-      // },
+      {
+        title : 'Gulp Emails',
+      	image : 'assets/images/projects/gulp-emails/gulp-emails-thumbnail.jpg',
+        state  : 'gulp-emails'
+      },
       {
         title : 'Haygarth',
       	image : 'assets/images/projects/haygarth/haygarth-thumbnail.jpg',
@@ -68,11 +68,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/ambr/ambr-thumbnail.png',
         state  : 'ambr'
       },
-      {
-        title : 'Layla Moran',
-      	image : 'assets/images/projects/layla/layla-thumbnail.png',
-        state  : 'layla-moran'
-      },
+      // {
+      //   title : 'Layla Moran',
+      // 	image : 'assets/images/projects/layla/layla-thumbnail.png',
+      //   state  : 'layla-moran'
+      // },
       // {
       //   title : 'Lancastrians',
       // 	image : 'assets/images/projects/lancastrians/lancastrians-thumbnail.jpg',
