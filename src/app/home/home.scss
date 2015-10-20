@@ -90,7 +90,7 @@
     z-index: 1003;
     color: $base-font-color;
 
-    @media #{$large} {
+    @media (min-width:#{$large-screen}) {
       &:hover {
         .portfolio-title {
           opacity: 1;
@@ -112,7 +112,7 @@
     background-color: white;
     padding: em(3) em(6) em(5.2);
 
-    @media #{$large} {
+    @media (min-width:#{$large-screen}) {
       transition: opacity 0.4s;
       opacity: 0;
     }
