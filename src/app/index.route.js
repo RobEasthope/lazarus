@@ -3,7 +3,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     // Home page
     .state('home', {
-      url: '/home',
+      url: '/',
       views: {
         'content': {
           templateUrl: 'app/home/home.html',
@@ -15,7 +15,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 
     // Holding page
     .state('holding-page', {
-      url: '/',
+      url: '/holding-page',
       views: {
         'content': {
           templateUrl: 'app/holding-page/holding-page.html'
