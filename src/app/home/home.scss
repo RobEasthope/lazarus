@@ -7,6 +7,14 @@
 
   background-color: white;
   text-align: center;
+  background-size: cover;
+  @media (orientation: portrait) {
+    background-image: url('../assets/images/the-wave/the-wave-portrait.jpg');
+  }
+
+  @media (orientation: landscape) {
+    background-image: url('../assets/images/the-wave/the-wave-landscape.jpg');
+  }
 
   .opener-content {
     position: relative;
@@ -15,6 +23,7 @@
   }
 
   .saladin-logo {
+    display: none;
     width: rem(80);
     height: rem(80);
 
@@ -27,6 +36,9 @@
   .name {
     margin-top: 0;
     margin-bottom: 0;
+    display: inline-block;
+    padding: em(1) em(5) em(3.2);
+    background-color: white;
   }
 
   .title {
@@ -36,6 +48,11 @@
     // @media screen and (min-width: $medium-screen) {
     //   margin-bottom: 1 * $h3-line-large;
     // }
+    display: inline-block;
+    padding: em(1) em(5) em(3.2);
+    // margin-top: 1 * $h2-line;
+    // margin-bottom: 1 * $h2-line;
+    background-color: white;
   }
 }
 
