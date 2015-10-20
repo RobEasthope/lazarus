@@ -23,11 +23,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/ysl-rock-chick/ysl-rock-chick-thumbnail.jpg',
         state  : 'ysl-rock-chick'
       },
-      {
-        title : 'Gulp Emails',
-      	image : 'assets/images/projects/gulp-emails/gulp-emails-thumbnail.jpg',
-        state  : 'gulp-emails'
-      },
+      // {
+      //   title : 'Gulp Emails',
+      // 	image : 'assets/images/projects/gulp-emails/gulp-emails-thumbnail.jpg',
+      //   state  : 'gulp-emails'
+      // },
       {
         title : 'Haygarth',
       	image : 'assets/images/projects/haygarth/haygarth-thumbnail.jpg',
