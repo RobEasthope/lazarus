@@ -38,8 +38,12 @@
     margin-top: 0;
     margin-bottom: $base-line-height / 2;
     display: inline-block;
-    padding: em(1) em(5) em(3.2);
+    padding: em(5) em(5) em(6.2);
     background-color: white;
+
+    @media #{$medium-up} {
+      padding: em(4) em(10) em(6.2);
+    }
   }
 
   .title {
