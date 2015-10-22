@@ -78,12 +78,12 @@
     padding-bottom: 0;
     position: relative;
     height: 0;
-    padding-bottom: 25%;
+    padding-bottom: 100%;
     background-size: cover;
     background-position: center center;
 
-    @media (min-width: #{rem(400)}) {
-      padding-bottom: 100%;
+    @media (max-width: #{rem(400)}) {
+      padding-bottom: 25%;
     }
   }
 
