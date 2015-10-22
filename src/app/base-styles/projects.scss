@@ -25,10 +25,14 @@
 
 .project-title {
   display: inline-block;
-  padding: em(1) em(5) em(3.2);
+  padding: em(5) em(5) em(6.2);
   margin-top: 1 * $h2-line;
   margin-bottom: 1 * $h2-line;
   background-color: white;
+
+  @media #{$medium-up} {
+    padding: em(0) em(5) em(1.2);
+  }
 }
 
 .client {
