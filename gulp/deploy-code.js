@@ -51,7 +51,7 @@ gulp.task('asset-paths-css', function(done) {
         {
           match: /url\("\.\.\/assets/g,
           replacement: function () {
-            return 'url(\'https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+            return 'url(\"https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
           }
         }
       ]
