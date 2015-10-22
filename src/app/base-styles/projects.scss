@@ -2,9 +2,10 @@
 
 .project-header {
   text-align: center;
-  height: 50%;
-  max-height: rem(1000);
+  height: 100%;
+  // max-height: rem(1000);
   background-size: cover;
+  background-repeat: no-repeat;
 
   @media #{$portrait} {
     min-height: rem(250);
@@ -12,6 +13,10 @@
 
   @media #{$landscape} {
     min-height: rem(320);
+  }
+
+  @media #{$medium-up} {
+    // height: 50%;
   }
 
   .height-fix {
