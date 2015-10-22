@@ -14,7 +14,7 @@ var aws = JSON.parse(fs.readFileSync('./aws.json'));
 gulp.task('clean', require('del').bind(null, ['./dist']));
 
 // Update asset paths in JS files
-gulp.task('asset-paths', function(done) {
+gulp.task('asset-paths-js', function(done) {
   gulp.src('./dist/scripts/*.js')
     // Rewrite assets paths to AWS CDN
     .pipe(replace({
@@ -27,12 +27,42 @@ gulp.task('asset-paths', function(done) {
         }
       ]
     }))
+
+    // Replace paths for js served assets
+    .pipe(replace({
+      patterns: [
+        {
+          match: /image:"assets/g,
+          replacement: function () {
+            return 'image:"https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+          }
+        }
+      ]
+    }))
+
     .pipe(gulp.dest('./dist/scripts'));
+});
+
+gulp.task('asset-paths-css', function(done) {
+  gulp.src('./dist/styles/*.css')
+    // Rewrite assets paths to AWS CDN
+    .pipe(replace({
+      patterns: [
+        {
+          match: /url\("\.\.\/assets/g,
+          replacement: function () {
+            return 'url(\'https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+          }
+        }
+      ]
+    }))
+
+    .pipe(gulp.dest('./dist/styles'));
 });
 
 
 // Update asset, JS, and CSS paths
-gulp.task('deploy-index', function(done) {
+gulp.task('asset-paths-html', function(done) {
   gulp.src(['./dist/index.html'])
     // Replace CSS paths
     .pipe(replace({
@@ -74,12 +104,12 @@ gulp.task('deploy-index', function(done) {
 
 
 // Deploy assets to AWS
-gulp.task('aws', function(done) {
+gulp.task('aws', ['asset-paths'] function(done) {
   gulp.src(['./dist/**/*.*'])
     .pipe(s3(aws));
 });
 
 // Combined deploy task
-gulp.task('deploy', ['asset-paths', 'deploy-index' ], function(done) {
+gulp.task('asset-paths', ['asset-paths-js', 'asset-paths-css', 'asset-paths-html' ], function(done) {
 
 });
