@@ -64,7 +64,7 @@ blockquote {
 
 
 // Medium screens
-@media screen and (min-width: $medium-screen) {
+@media #{$medium-up} {
 
   // Large typography css (8:9 Major second)
   body {
