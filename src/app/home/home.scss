@@ -63,6 +63,20 @@
   margin-left: rem(10);
   margin-right: rem(10);
 
+  margin: ($base-line-height-large * 2) 0;
+
+  @media #{$medium-up} {
+    margin: ($base-line-height-large * 3) 0;
+  }
+
+  @media #{$large-up} {
+    margin: ($base-line-height-large * 5) 0;
+  }
+
+  @media #{$xlarge-up} {
+    margin: ($base-line-height-large * 7) 0;
+  }
+
   ul {
     margin: 0 auto;
 
@@ -140,7 +154,19 @@
 }
 
 .contact {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
   text-align: center;
+
+  margin: ($base-line-height-large * 2) 0;
+
+  @media #{$medium-up} {
+    margin: ($base-line-height-large * 3) 0;
+  }
+
+  @media #{$large-up} {
+    margin: ($base-line-height-large * 5) 0;
+  }
+
+  @media #{$xlarge-up} {
+    margin: ($base-line-height-large * 7) 0;
+  }
 }
