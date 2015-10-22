@@ -30,22 +30,6 @@ gulp.task('asset-paths', function(done) {
     .pipe(gulp.dest('./dist/scripts'));
 });
 
-gulp.task('css-paths', function(done) {
-  gulp.src('./dist/styles/*.css')
-    // Rewrite assets paths to AWS CDN
-    .pipe(replace({
-      patterns: [
-        {
-          match: /../g,
-          replacement: function () {
-            return 'https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
-          }
-        }
-      ]
-    }))
-    .pipe(gulp.dest('./dist/styles'));
-});
-
 
 // Update asset, JS, and CSS paths
 gulp.task('deploy-index', function(done) {
