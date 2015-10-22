@@ -104,12 +104,12 @@ gulp.task('asset-paths-html', function(done) {
 
 
 // Deploy assets to AWS
-gulp.task('aws', ['asset-paths'] function(done) {
+gulp.task('aws', function(done) {
   gulp.src(['./dist/**/*.*'])
     .pipe(s3(aws));
 });
 
-// Combined deploy task
+// Combined asset paths task
 gulp.task('asset-paths', ['asset-paths-js', 'asset-paths-css', 'asset-paths-html' ], function(done) {
 
 });
