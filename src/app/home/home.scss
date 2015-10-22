@@ -8,12 +8,13 @@
   background-color: white;
   text-align: center;
   background-size: cover;
+  background-position: center center;
   @media (orientation: portrait) {
-    background-image: url('../assets/images/the-wave/the-wave-portrait.jpg');
+    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
   }
 
   @media (orientation: landscape) {
-    background-image: url('../assets/images/the-wave/the-wave-landscape.jpg');
+    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
   }
 
   .opener-content {
