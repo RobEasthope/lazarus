@@ -12,8 +12,9 @@ body, html, .main-content-view {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  
   @media #{$medium-up} {
-    margin-bottom: $h2-line * 2;
+    margin-bottom: $base-line-height-large * 2;
   }
 
   &:after {

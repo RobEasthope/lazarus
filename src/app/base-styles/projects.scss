@@ -39,6 +39,8 @@
 
   @media #{$medium-up} {
     padding: em(4) em(10) em(6.2);
+    margin-top: 1 * $h2-line-large;
+    margin-bottom: 1 * $h2-line-large;
   }
 }
 
