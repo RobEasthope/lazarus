@@ -8,12 +8,13 @@
   background-color: white;
   text-align: center;
   background-size: cover;
+  background-position: center center;
   @media (orientation: portrait) {
-    background-image: url('../assets/images/the-wave/the-wave-portrait.jpg');
+    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
   }
 
   @media (orientation: landscape) {
-    background-image: url('../assets/images/the-wave/the-wave-landscape.jpg');
+    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
   }
 
   .opener-content {
@@ -36,16 +37,20 @@
   .name {
     // font-family: $sans-serif-font-family;
     margin-top: 0;
-    margin-bottom: $base-line-height / 2;
+    margin-bottom: $base-line-height / 4;
     display: inline-block;
-    padding: em(1) em(5) em(3.2);
+    padding: em(5) em(5) em(6.2);
     background-color: white;
+
+    @media #{$medium-up} {
+      padding: em(4) em(10) em(6.2);
+    }
   }
 
   .title {
     font-family: $sans-serif-font-family;
-    margin-top: 0;
-    // margin-bottom: 1 * $h3-line;
+    margin-top: $base-line-height / 4;
+    margin-bottom: $base-line-height / 4;
 
     // @media screen and (min-width: $medium-screen) {
     //   margin-bottom: 1 * $h3-line-large;
