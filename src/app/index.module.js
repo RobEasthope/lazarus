@@ -18,6 +18,12 @@ angular.module('lazarus', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   //         $window.ga('send', 'pageview', { page: $location.path() });
   //     });
   // }])
+
+  .run(function ($rootScope) {
+    $rootScope.$on('$viewContentLoaded',function(){
+      jQuery('html, body').animate({ scrollTop: 0 }, 0);
+    });
+  })
   // General config
   .config(config)
 
