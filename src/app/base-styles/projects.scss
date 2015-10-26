@@ -16,7 +16,11 @@
   }
 
   @media #{$medium-up} {
-    // height: 50%;
+    height: 80%;
+  }
+
+  @media #{$large-up} {
+    height: 66.66%;
   }
 
   .height-fix {
