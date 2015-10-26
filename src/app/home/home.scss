@@ -9,12 +9,15 @@
   text-align: center;
   background-size: cover;
   background-position: center center;
-  @media (orientation: portrait) {
-    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
+
+  background-image: url('../assets/images/isfahan/isfahan-1000.jpg');
+
+  @media (min-width: 1000px) {
+    background-image: url('../assets/images/isfahan/isfahan-2000.jpg');
   }
 
-  @media (orientation: landscape) {
-    background-image: url('../assets/images/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg');
+  @media (min-width: 1280px) {
+    background-image: url('../assets/images/isfahan/isfahan-2560.jpg');
   }
 
   .opener-content {
