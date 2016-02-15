@@ -5,4 +5,3 @@ bower_components/
 .tmp/
 dist/
 aws.json
-src/assets
