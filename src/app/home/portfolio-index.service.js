@@ -4,7 +4,7 @@ class PortfolioIndexService {
 
     this.data = [
       {
-        title : 'Trail Link',
+        title : 'TrailLink',
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
         state  : 'trail-link'
       },
