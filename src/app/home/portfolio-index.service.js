@@ -4,14 +4,14 @@ class PortfolioIndexService {
 
     this.data = [
       // {
-      //   title : 'Trail Link',
+      //   title : 'TrailLink',
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-      //   state  : 'sony-wheel'
+      //   state  : 'trail-link'
       // },
       // {
       //   title : 'Banners',
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-      //   state  : 'sony-wheel'
+      //   state  : 'sapient-banners'
       // },
       {
         title : 'Sony Wheel',
@@ -78,11 +78,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/ambr/ambr-thumbnail.png',
         state  : 'ambr'
       },
-      // {
-      //   title : 'Layla Moran',
-      // 	image : 'assets/images/projects/layla/layla-thumbnail.png',
-      //   state  : 'layla-moran'
-      // },
+      {
+        title : 'Layla Moran',
+      	image : 'assets/images/projects/layla/layla-thumbnail.png',
+        state  : 'layla-moran'
+      },
       // {
       //   title : 'Lancastrians',
       // 	image : 'assets/images/projects/lancastrians/lancastrians-thumbnail.jpg',
