@@ -99,7 +99,7 @@ gulp.task('asset-paths-html', function(done) {
         }
       ]
     }))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./dist'));
 });
 
 
@@ -109,12 +109,9 @@ gulp.task('aws', function(done) {
     .pipe(s3(aws));
 });
 
-// Deploy assets to AWS
+// Deploy assets to github repo
 gulp.task('github-deploy', function(done) {
   return gulp.src(['./dist/**/*.*'])
-    .pipe(gulp.dest('../robeasthope.github.io'));
-
-  return gulp.src(['./robeasthope.github.io/**/*.*'])
     .pipe(gulp.dest('../robeasthope.github.io'));
 });
 
