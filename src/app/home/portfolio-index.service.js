@@ -3,16 +3,16 @@ class PortfolioIndexService {
     'ngInject';
 
     this.data = [
-      {
-        title : 'Trail Link',
-      	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-        state  : 'sony-wheel'
-      },
-      {
-        title : 'Banners',
-      	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-        state  : 'sony-wheel'
-      },
+      // {
+      //   title : 'Trail Link',
+      // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
+      //   state  : 'sony-wheel'
+      // },
+      // {
+      //   title : 'Banners',
+      // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
+      //   state  : 'sony-wheel'
+      // },
       {
         title : 'Sony Wheel',
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
