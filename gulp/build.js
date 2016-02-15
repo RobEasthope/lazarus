@@ -60,7 +60,7 @@ gulp.task('html', ['inject', 'partials'], function () {
       conditionals: true
     }))
     .pipe(htmlFilter.restore())
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/')))
+    .pipe(gulp.dest(path.join(conf.paths.dist, '../robeasthope.github.io')))
     .pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
 });
 
