@@ -1,5 +1,7 @@
 @import 'base';
 
+$project-copy-max-width: rem(660);
+
 .project-header {
   text-align: center;
   height: 100%;
@@ -72,7 +74,7 @@
 }
 
 .project-intro {
-  max-width: rem(760);
+  max-width: $project-copy-max-width;
   margin-left: auto;
   margin-right: auto;
   // margin-top: $base-line-height;
@@ -90,7 +92,7 @@
 }
 
 .text-wrap {
-  max-width: rem(760);
+  max-width: $project-copy-max-width;
   margin: 0 auto;
 }
 
