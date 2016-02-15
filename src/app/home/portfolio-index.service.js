@@ -6,12 +6,12 @@ class PortfolioIndexService {
       {
         title : 'Trail Link',
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-        state  : 'sony-wheel'
+        state  : 'trail-link'
       },
       {
         title : 'Banners',
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-        state  : 'sony-wheel'
+        state  : 'sapient-banners'
       },
       {
         title : 'Sony Wheel',

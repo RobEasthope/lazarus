@@ -26,6 +26,22 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     // *
 
     // Projects
+    .state('trail-link', {
+      url: '/trail-link',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/trail-link/trail-link.html'
+        }
+      }
+    })
+    .state('sapient-banners', {
+      url: '/sapient-banners',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/sapient-banners/sapient-banners.html'
+        }
+      }
+    })
     .state('sony-wheel', {
       url: '/sony-wheel',
       views: {
