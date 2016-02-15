@@ -22,7 +22,7 @@ gulp.task('asset-paths-js', function(done) {
         {
           match: /ng-src="assets/g,
           replacement: function () {
-            return 'ng-src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+            return 'ng-src="https://robeasthope.com/assets';
           }
         }
       ]
@@ -34,7 +34,7 @@ gulp.task('asset-paths-js', function(done) {
         {
           match: /image:"assets/g,
           replacement: function () {
-            return 'image:"https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+            return 'image:"https://robeasthope.com/assets';
           }
         }
       ]
@@ -51,7 +51,7 @@ gulp.task('asset-paths-css', function(done) {
         {
           match: /url\("\.\.\/assets/g,
           replacement: function () {
-            return 'url(\"https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+            return 'url(\"https://robeasthope.com/assets';
           }
         }
       ]
@@ -70,7 +70,7 @@ gulp.task('asset-paths-html', function(done) {
         {
           match: /href="styles/g,
           replacement: function () {
-            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/styles';
+            return 'href="https://robeasthope.com/styles';
           }
         }
       ]
@@ -82,7 +82,7 @@ gulp.task('asset-paths-html', function(done) {
         {
           match: /src="scripts/g,
           replacement: function () {
-            return 'src="https://s3-eu-west-1.amazonaws.com/robeasthope.com/scripts';
+            return 'src="https://robeasthope.com/scripts';
           }
         }
       ]
@@ -94,7 +94,7 @@ gulp.task('asset-paths-html', function(done) {
         {
           match: /href="assets/g,
           replacement: function () {
-            return 'href="https://s3-eu-west-1.amazonaws.com/robeasthope.com/assets';
+            return 'href="https://robeasthope.com/assets';
           }
         }
       ]
@@ -107,6 +107,12 @@ gulp.task('asset-paths-html', function(done) {
 gulp.task('aws', function(done) {
   gulp.src(['./dist/**/*.*'])
     .pipe(s3(aws));
+});
+
+// Deploy assets to AWS
+gulp.task('github-deploy', function(done) {
+  gulp.src(['./dist/**/*.*'])
+    .pipe(gulp.dest('../robeasthope.githib.io'));
 });
 
 // Combined asset paths task
