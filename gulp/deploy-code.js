@@ -111,8 +111,11 @@ gulp.task('aws', function(done) {
 
 // Deploy assets to AWS
 gulp.task('github-deploy', function(done) {
-  gulp.src(['./dist/**/*.*'])
-    .pipe(gulp.dest('../robeasthope.githib.io'));
+  return gulp.src(['./dist/**/*.*'])
+    .pipe(gulp.dest('../robeasthope.github.io'));
+
+  return gulp.src(['./robeasthope.github.io/**/*.*'])
+    .pipe(gulp.dest('../robeasthope.github.io'));
 });
 
 // Combined asset paths task
