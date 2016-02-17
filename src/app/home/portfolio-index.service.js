@@ -83,11 +83,11 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/layla/layla-thumbnail.png',
         state  : 'layla-moran'
       },
-      // {
-      //   title : 'Lancastrians',
-      // 	image : 'assets/images/projects/lancastrians/lancastrians-thumbnail.jpg',
-      //   state  : 'lancastrians'
-      // },
+      {
+        title : 'Lancastrians',
+      	image : 'assets/images/projects/lancastrians/lancastrians-thumbnail.jpg',
+        state  : 'lancastrians'
+      },
       {
         title : 'EUFN',
       	image : 'assets/images/projects/eufn/eufn-thumbnail.png',
