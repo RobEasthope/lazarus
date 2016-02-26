@@ -3,7 +3,7 @@
   "version": "3.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/robeasthope/lazarus"
   },
   "dependencies": {
     "gulp-replace": "^0.5.4",
