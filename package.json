@@ -11,8 +11,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install && gulp build",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "bower install && gulp build"
   },
   "dependencies": {
     "babel-core": "~5.5.8",
