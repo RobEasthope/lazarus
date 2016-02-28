@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/dist'));
 // app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  // response.render('pages/index');
+  response.render('dist');
 });
 
 app.listen(app.get('port'), function() {
