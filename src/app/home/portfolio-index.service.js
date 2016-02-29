@@ -8,11 +8,11 @@ class PortfolioIndexService {
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
       //   state  : 'trail-link'
       // },
-      // {
-      //   title : 'Banners',
-      // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
-      //   state  : 'sapient-banners'
-      // },
+      {
+        title : 'Banners',
+      	image : 'assets/images/projects/sapient-banners/sapient-banners-thumbnail.jpg',
+        state  : 'sapient-banners'
+      },
       {
         title : 'Sony Wheel',
       	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
