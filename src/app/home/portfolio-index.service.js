@@ -4,6 +4,11 @@ class PortfolioIndexService {
 
     this.data = [
       // {
+      //   title : 'E.ON Homebuyer',
+      // 	image : 'assets/images/projects/eon-homebuyer/eon-homebuyer-thumbnail.jpg',
+      //   state  : 'eon-homebuyer'
+      // },
+      // {
       //   title : 'TrailLink',
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
       //   state  : 'trail-link'
