@@ -3,6 +3,11 @@ class PortfolioIndexService {
     'ngInject';
 
     this.data = [
+      {
+        title : 'Pladis',
+      	image : 'assets/images/projects/pladis/pladis-thumbnail.jpg',
+        state  : 'pladis'
+      },
       // {
       //   title : 'TrailLink',
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
