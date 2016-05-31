@@ -3,11 +3,11 @@ class PortfolioIndexService {
     'ngInject';
 
     this.data = [
-      // {
-      //   title : 'E.ON Homebuyer',
-      // 	image : 'assets/images/projects/eon-homebuyer/eon-homebuyer-thumbnail.jpg',
-      //   state  : 'eon-homebuyer'
-      // },
+      {
+        title : 'E.ON Homebuyer',
+      	image : 'assets/images/projects/eon-homebuyer/eon-homebuyer-thumbnail.jpg',
+        state  : 'eon-homebuyer'
+      },
       // {
       //   title : 'TrailLink',
       // 	image : 'assets/images/projects/sony-wheel/sony-wheel-thumbnail.jpg',
