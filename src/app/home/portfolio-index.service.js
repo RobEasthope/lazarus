@@ -4,7 +4,7 @@ class PortfolioIndexService {
 
     this.data = [
       {
-        title : 'E.ON Homebuyer',
+        title : 'E.ON',
       	image : 'assets/images/projects/eon-homebuyers/eon-homebuyers-thumbnail.jpg',
         state  : 'eon-homebuyers'
       },
