@@ -26,6 +26,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     // *
 
     // Projects
+    .state('eon-homebuyers', {
+      url: '/eon-homebuyers',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/eon-homebuyers/eon-homebuyers.html'
+        }
+      }
+    })
     .state('trail-link', {
       url: '/trail-link',
       views: {
