@@ -5,8 +5,8 @@ class PortfolioIndexService {
     this.data = [
       {
         title : 'E.ON Homebuyer',
-      	image : 'assets/images/projects/eon-homebuyer/eon-homebuyer-thumbnail.jpg',
-        state  : 'eon-homebuyer'
+      	image : 'assets/images/projects/eon-homebuyers/eon-homebuyers-thumbnail.jpg',
+        state  : 'eon-homebuyers'
       },
       // {
       //   title : 'TrailLink',
