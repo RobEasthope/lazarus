@@ -2,7 +2,12 @@ class PortfolioIndexService {
   constructor () {
     'ngInject';
 
-    this.data = [      
+    this.data = [
+      {
+        title : 'Pladis',
+      	image : 'assets/images/projects/pladis/pladis-thumbnail.jpg',
+        state  : 'pladis'
+      },
       {
         title : 'E.ON',
       	image : 'assets/images/projects/eon-homebuyers/eon-homebuyers-thumbnail.jpg',

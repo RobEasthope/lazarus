@@ -26,6 +26,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     // *
 
     // Projects
+    .state('pladis', {
+      url: '/pladis',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/pladis/pladis.html'
+        }
+      }
+    })
     .state('eon-homebuyers', {
       url: '/eon-homebuyers',
       views: {
