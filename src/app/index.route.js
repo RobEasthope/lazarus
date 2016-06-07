@@ -74,27 +74,11 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('think-differently', {
-      url: '/think-differently',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/think-differently/think-differently.html'
-        }
-      }
-    })
     .state('ysl-rock-chick', {
       url: '/ysl-rock-chick',
       views: {
         'content': {
           templateUrl: 'app/projects/ysl-rock-chick/ysl-rock-chick.html'
-        }
-      }
-    })
-    .state('gulp-emails', {
-      url: '/gulp-emails',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/gulp-emails/gulp-emails.html'
         }
       }
     })
@@ -119,38 +103,6 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       views: {
         'content': {
           templateUrl: 'app/projects/giles-deacon/giles-deacon.html'
-        }
-      }
-    })
-    .state('toni-and-guy', {
-      url: '/toni-and-guy',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/toni-and-guy/toni-and-guy.html'
-        }
-      }
-    })
-    .state('louise-and-daniel', {
-      url: '/louise-and-daniel',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/louise-and-daniel/louise-and-daniel.html'
-        }
-      }
-    })
-    .state('dumfries-house', {
-      url: '/dumfries-house',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/dumfries-house/dumfries-house.html'
-        }
-      }
-    })
-    .state('lambeth', {
-      url: '/lambeth-advice-network',
-      views: {
-        'content': {
-          templateUrl: 'app/projects/lambeth/lambeth.html'
         }
       }
     })
