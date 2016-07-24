@@ -53,6 +53,26 @@ class PortfolioIndexService {
       	image : 'assets/images/projects/giles-deacon/giles-deacon-thumbnail.jpg',
         state  : 'giles-deacon'
       },
+      // {
+      //   title : 'Toni & Guy',
+      // 	image : 'assets/images/projects/toni-and-guy/toni-and-guy-thumbnail.png',
+      //   state  : 'toni-and-guy'
+      // },
+      {
+        title : 'Louise & Daniel',
+      	image : 'assets/images/projects/louise-and-daniel/louise-and-daniel-thumbnail.jpg',
+        state  : 'louise-and-daniel'
+      },
+      // {
+      //   title : 'Dumfries House',
+      // 	image : 'assets/images/projects/dumfries-house/dumfries-house-thumbnail.jpg',
+      //   state  : 'dumfries-house'
+      // },
+      // {
+      //   title : 'Lambeth Advice Network',
+      // 	image : 'assets/images/projects/lambeth/lambeth-thumbnail.jpg',
+      //   state  : 'lambeth'
+      // },
       {
         title : 'AMBR Media',
       	image : 'assets/images/projects/ambr/ambr-thumbnail.png',
