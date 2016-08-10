@@ -1,8 +1,0 @@
-{
-  "name": "Lazarus",
-  "description": "Portfolio",
-  "repository": "https://github.com/robeasthope/lazarus",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
-}
