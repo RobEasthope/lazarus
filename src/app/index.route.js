@@ -26,6 +26,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     // *
 
     // Projects
+    .state('arup', {
+      url: '/arup',
+      views: {
+        'content': {
+          templateUrl: 'app/projects/arup/arup.html'
+        }
+      }
+    })
     .state('pladis', {
       url: '/pladis',
       views: {

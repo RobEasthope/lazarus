@@ -4,6 +4,11 @@ class PortfolioIndexService {
 
     this.data = [
       {
+        title : 'Arup',
+      	image : 'assets/images/projects/arup/arup-thumbnail.jpg',
+        state  : 'arup'
+      },
+      {
         title : 'Pladis',
       	image : 'assets/images/projects/pladis/pladis-thumbnail.jpg',
         state  : 'pladis'
