@@ -81,13 +81,13 @@ $project-copy-max-width: rem(620);
   // margin-bottom: $base-line-height;
 
   @media #{$medium-up} {
-    margin-top: $base-line-height-large * 4;
-    margin-bottom: $base-line-height-large * 4;
+    margin-top: $base-line-height-large * 2;
+    margin-bottom: $base-line-height-large * 2;
   }
 
   @media #{$large-up} {
-    margin-top: $base-line-height-large * 5;
-    margin-bottom: $base-line-height-large * 5;
+    margin-top: $base-line-height-large * 3;
+    margin-bottom: $base-line-height-large * 3;
   }
 }
 
