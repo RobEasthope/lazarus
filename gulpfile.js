@@ -35,6 +35,16 @@ gulp.task('scripts', () => {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('JSX', () => {
+  return gulp.src('app/scripts/**/*.jsx')
+    .pipe($.sourcemaps.init())
+    .pipe($.babel({
+      presets: ['es2015','react']
+    }))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('.tmp/scripts'));
+});
+
 // JS Linting
 function lint(files, options) {
   return gulp.src(files)
@@ -70,7 +80,7 @@ gulp.task('jade', () => {
 });
 
 // HTML post-processing
-gulp.task('html', ['jade', 'styles', 'scripts'], () => {
+gulp.task('html', ['jade', 'styles', 'scripts', 'JSX'], () => {
   return gulp.src(['app/*.html', '.tmp/*.html'])
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
@@ -115,7 +125,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Development server
-gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['jade', 'styles', 'scripts', 'JSX', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -130,12 +140,15 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
   gulp.watch([
     '.tmp/*.html',
     'app/images/**/*',
+		'.tmp/scripts/**/*.js',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
 	gulp.watch('app/**/*.jade', ['jade']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
+	gulp.watch('app/scripts/**/*.jsx', ['templates', reload]);
+
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
