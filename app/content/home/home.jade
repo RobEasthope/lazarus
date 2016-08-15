@@ -15,11 +15,15 @@ section.opener
 section.portfolio
 	h1.section-title Portfolio
 	ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4.media
-		li(ng-repeat='portfolioContent in home.indexContents')
-			.portfolio-card(style="background-image: url('{{ portfolioContent.image }}')")
+		li.portfolio-card(style="background-image: url('./content/arup/arup-thumbnail.jpg')")
 				a.portfolio-link(ui-sref='{{ portfolioContent.state }}')
 					.portfolio-title-wrap
-						h3.portfolio-title {{ portfolioContent.title }}
+						h3.portfolio-title Arup
+				.portfolio-overlay
+		li.portfolio-card(style="background-image: url('./content/pladis/pladis-thumbnail.jpg')")
+				a.portfolio-link(ui-sref='{{ portfolioContent.state }}')
+					.portfolio-title-wrap
+						h3.portfolio-title Pladis
 				.portfolio-overlay
 				
 // Contact section
