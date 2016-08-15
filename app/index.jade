@@ -19,21 +19,15 @@ html.no-js(lang='')
 		// endbuild
 		
 		body
-		//if lt IE 10
+			//if lt IE 10
 			p.browserupgrade
 				| You are using an 
 				strong outdated
 				|  browser. Please 
 				a(href='http://browsehappy.com/') upgrade your browser
 				|  to improve your experience.
-		.hero-unit
-			h1 'Allo, 'Allo!
-			p You now have
-			ul
-				li HTML5 Boilerplate
-				li Sass
-				li Modernizr
-				li jQuery
+		
+			include ./content/home/home.jade
 				
 		// Google Analytics: change UA-XXXXX-X to be your site's ID.
 		script.
