@@ -4,6 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
+const webpack = require('webpack');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -35,6 +36,7 @@ gulp.task('scripts', () => {
     .pipe(reload({stream: true}));
 });
 
+// JSX templating
 gulp.task('JSX', () => {
   return gulp.src('app/scripts/**/*.jsx')
     .pipe($.sourcemaps.init())
@@ -43,6 +45,23 @@ gulp.task('JSX', () => {
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/scripts'));
+});
+
+// Webpack compile
+gulp.task('webpack', cb => {
+  webpack({
+    entry: './app/scripts/webpack.js',
+    output: {
+      path: '.tmp/scripts/',
+      filename: 'bundle.js',
+    },
+  }, (err, stats) => {
+    if (err) {
+      throw new gutil.PluginError('webpack', err);
+    }
+
+    cb();
+  });
 });
 
 // JS Linting
@@ -80,7 +99,7 @@ gulp.task('jade', () => {
 });
 
 // HTML post-processing
-gulp.task('html', ['jade', 'styles', 'scripts', 'JSX'], () => {
+gulp.task('html', ['jade', 'styles', 'scripts', 'JSX', 'webpack'], () => {
   return gulp.src(['app/*.html', '.tmp/*.html'])
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
@@ -125,7 +144,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Development server
-gulp.task('serve', ['jade', 'styles', 'scripts', 'JSX', 'fonts'], () => {
+gulp.task('serve', ['jade', 'styles', 'scripts', 'JSX', 'webpack', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -148,6 +167,7 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'JSX', 'fonts'], () => {
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
 	gulp.watch('app/scripts/**/*.jsx', ['templates', reload]);
+	gulp.watch('app/scripts/**/webpack.js', ['webpack']);
 
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
