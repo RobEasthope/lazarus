@@ -1,2 +1,0 @@
-Project Lazarus - Marvin Edition
-================================
