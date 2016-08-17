@@ -49,7 +49,10 @@ module.exports = (options) => ({
     }, {
       test: /\.(mp4|webm)$/,
       loader: 'url-loader?limit=10000',
-    }],
+    }, {
+			test: /\.md$/,
+			loader: "html!markdown"
+		}],
   },
   plugins: options.plugins.concat([
     new webpack.ProvidePlugin({
