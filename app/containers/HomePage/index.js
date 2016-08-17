@@ -16,10 +16,11 @@ import ReactMarkdown from 'react-markdown';
 
 var input = require('html!markdown!./markdown-test.md');
 
-export default class HomePage extends React.Component {
+export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
   render() {
     return (
-      <ReactMarkdown source={input} />
+			<ReactMarkdown source={input} />
     );
   }
 }
