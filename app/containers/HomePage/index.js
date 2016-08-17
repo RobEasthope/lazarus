@@ -11,18 +11,15 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import messages from './messages';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 
-// var input = '# This is a title \n\nAnd this is a paragraph of copy';
 var input = require('html!markdown!./markdown-test.md');
 
-export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
+export default class HomePage extends React.Component {
   render() {
     return (
-			<ReactMarkdown source={input} />
+      <ReactMarkdown source={input} />
     );
   }
 }
