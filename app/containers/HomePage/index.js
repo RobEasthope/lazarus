@@ -13,6 +13,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
+import styles from './styles.css';
 
 var input = require('html!markdown!./markdown-test.md');
 
