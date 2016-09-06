@@ -15,13 +15,13 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import styles from './styles.css';
 
-var input = require('html!markdown!./markdown-test.md');
+var input = require('./markdown-test.md');
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-			<ReactMarkdown source={input} />
+      <ReactMarkdown source={input} />
     );
   }
 }
