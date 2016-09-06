@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import styles from './styles.css';
 
-var input = require('html!markdown!./project-index.md');
+var input = require('./project-index.md');
 
 export default class Projects extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
