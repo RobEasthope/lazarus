@@ -1,0 +1,35 @@
+{
+  "name": "lazarus",
+  "version": "3.1.0",
+  "dependencies": {
+    "angular-animate": "~1.4.0",
+    "angular-cookies": "~1.4.0",
+    "angular-touch": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "jquery": "~2.1.4",
+    "angular-resource": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "animate.css": "~3.3.0",
+    "angular": "~1.4.0",
+    "bourbon": "~4.2.5",
+    "normalize-scss": "~3.0.3",
+    "foundation": "~5.5.3",
+    "neat": "~1.7.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0",
+    "garnish": "~0.2.1"
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.0"
+  },
+  "overrides": {
+    "foundation": {
+      "main": [
+        "../app/base-styles/foundation-scss.scss",
+        "js/foundation.js"
+      ]
+    }
+  }
+}
